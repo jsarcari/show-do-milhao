@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Answer {
     private Participant participant;
     private double premium;
@@ -21,6 +25,17 @@ public class Answer {
 
     public void setRight(Boolean right) {
         this.right = right;
+    }
+
+    public List createArrayOptions(Question question) {
+        Random generator = new Random();
+        int index = generator.nextInt(4);
+        List<String> array = new ArrayList<String>(4);
+        for(String option : question.getIncorrect_answers()) {
+            array.add(option);
+        }
+        array.add(index, question.getCorrect_answer());
+        return array;
     }
 
     public Boolean validateAnswer(String answerParticipant, Question question) {
