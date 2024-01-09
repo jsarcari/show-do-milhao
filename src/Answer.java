@@ -5,6 +5,8 @@ import java.util.Random;
 public class Answer {
     private Participant participant;
     private double premium;
+    private double premiumStop = 0;
+    private double premiumMiss = 0;
     private Boolean right = true;
 
     public Answer(double premium) {
@@ -19,12 +21,41 @@ public class Answer {
         this.premium = premium;
     }
 
+
+    public double getPremiumStop() {
+        return premiumStop;
+    }
+
+    public void setPremiumStop(double premiumStop) {
+        this.premiumStop = premiumStop;
+    }
+
+    public double getPremiumMiss() {
+        return premiumMiss;
+    }
+
+    public void setPremiumMiss(double premiumMiss) {
+        this.premiumMiss = premiumMiss;
+    }
+
     public Boolean getRight() {
         return right;
     }
 
     public void setRight(Boolean right) {
         this.right = right;
+    }
+
+    public void printActions() {
+        System.out.println("""
+                Você quer ajuda, pular ou parar?
+                0 - Pular
+                1 - Solicitar ajuda aos universitários
+                2 - Solicitar ajuda às placas
+                3 - Solicitar ajuda às cartas
+                4 - Parar
+                5 - Quero responder
+                """);
     }
 
     public List createArrayOptions(Question question) {

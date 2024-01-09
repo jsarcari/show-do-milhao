@@ -6,12 +6,15 @@ public class Main {
         int i = 0, j = 0;
         String iAmRight;
         Participant person = new Participant("Juan");
+        Boolean win = false, action;
         Answer answer = new Answer(1000);
+        Guests guests = new Guests();
         ArrayList<Question> listQuestions = new ArrayList<>();
         listQuestions.add(new Question("Qual é a capital dos Estados Unidos?", "Washington", "easy", "Geografia", new String[] {"Nova York", "Miami", "Chicago"}));
         listQuestions.add(new Question("Qual dessas é considerada uma doença na coluna vertebral?", "Artrose", "medium", "Ciência", new String[] {"Apendicite", "Gastrite", "Artrite"}));
         listQuestions.add(new Question("Em um ano bissexto que mês tem um dia a mais?", "Fevereiro", "easy", "Conhecimentos gerais", new String[] {"Março", "Abril", "Outubro"}));
         listQuestions.add(new Question("Qual alimento não é derivado do leite?", "Mostarda", "easy", "Conhecimentos gerais", new String[] {"Queijo", "Iogurte", "Coalhada"}));
+        listQuestions.add(new Question("Como é conhecida a campanha que alerta a sociedade sobre a prevenção do câncer de mama?", "Outubro rosa", "easy", "Conhecimentos gerais", new String[] {"Janeiro branco", "Setembro amarelo", "Novembro azul"}));
         listQuestions.add(new Question("Qual desses órgãos faz parte do aparelho digestivo?", "Intestino", "easy", "Ciência", new String[] {"Baço", "Pulmão", "Rim"}));
         listQuestions.add(new Question("Quem é o homem de aço das histórias em quadrinhos?", "Super homem", "easy", "Filmes, desenhos e televisão", new String[] {"Batman", "Hulk", "He-man"}));
         listQuestions.add(new Question("Qual dessas palavras não é um palíndromo?", "Uva", "easy", "Português e literatura", new String[] {"Arara", "Reviver", "Osso"}));
@@ -29,12 +32,13 @@ public class Main {
         listQuestions.add(new Question("Qual autor escreveu \"Primeiras Estórias\"?", "Guimarães Rosa", "hard", "Português e literatura", new String[] {"Olavo Bilac", "Euclides da Cunha", "José de Alencar"}));
         listQuestions.add(new Question("Quem foi eleito presidente da África do Sul em 1994?", "Nelson Mandela", "hard", "História e política", new String[] {"Nelson Piquet", "Nelson Eddy", "John Nelson"}));
         listQuestions.add(new Question("Qual história Francis Ford Coppola dirigiu em três partes", "O poderoso chefão", "hard", "Filmes, desenhos e televisão", new String[] {"Titanic", "Sexta-feira treze", "Guerra nas estrelas"}));
-        while (answer.getRight() == true && person.getStop() == false && answer.getPremium()<=1000000) {
+        while (answer.getRight() == true && person.getStop() == false && !win) {
             int iWantHelp=-1;
             Question ask = listQuestions.get(j);
             List printOptions = answer.createArrayOptions(ask);
             do {
                 System.out.println("Valendo R$%.2f".formatted(answer.getPremium()));
+                System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(answer.getPremiumMiss(),answer.getPremiumStop()));
                 System.out.println("%s".formatted(ask.getQuestion()));
                 for (Object option : printOptions) {
                     System.out.println(printOptions.indexOf(option)+1 + ". " + option);
@@ -48,33 +52,41 @@ public class Main {
                     answer.setRight(answer.validateAnswer(valueAnswer, ask));
                     if (answer.getRight()) {
                         System.out.println("Certa resposta!");
+                        answer.setPremiumStop(answer.getPremium());
+                        answer.setPremiumMiss(answer.getPremium()/2);
                         if(answer.getPremium()==1000000) {
                             System.out.println("PARABÉNS! Você ganhou R$ 1 milhão!");
+                            win = true;
                         }
                     } else {
                         System.out.println("Que pena. Você errou!");
-                        System.out.println("Você ganhou R$"+ answer.getPremium());
+                        System.out.println("Você ganhou R$"+ answer.getPremiumMiss());
                         answer.setRight(false);
                     }
                 } else {
                     do {
-                        System.out.println("""
-                                Você quer ajuda, pular ou parar?
-                                0 - Pular
-                                1 - Solicitar ajuda aos universitários
-                                2 - Solicitar ajuda às placas
-                                3 - Solicitar ajuda às cartas
-                                4 - Parar
-                                5 - Quero responder
-                                 """);
+                        action = true;
+                        answer.printActions();
                         iWantHelp = input.nextInt();
+                        if (iWantHelp == 1) {
+                            if (guests.getAvailable()) {
+                                guests.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
+                                guests.printAnswers();
+                                guests.setAvailable(false);
+                            } else {
+                                System.out.println("Você não pode mais acionar aos universitários!");
+                                action = false;
+                            }
+                        }
                         if (iWantHelp == 4) {
                             person.setStop(true);
+                            System.out.println("Você ganhou R$" + answer.getPremiumStop());
                         }
                         if (iWantHelp == 0 && person.getCanSkip() == 0) {
                             System.out.println("Você não pode mais pular!");
+                            action = false;
                         }
-                    } while (iWantHelp == 0 && person.getCanSkip() == 0);
+                    } while (!action);
                 }
             } while (iWantHelp != 4 && iWantHelp != 0 && !iAmRight.equals("y"));
             if (iWantHelp!=0) {
