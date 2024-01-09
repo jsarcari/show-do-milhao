@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int j = 0;
+        int i = 0, j = 0;
         String iAmRight;
         Participant person = new Participant("Juan");
         Answer answer = new Answer(1000);
@@ -17,15 +17,20 @@ public class Main {
         listQuestions.add(new Question("Qual dessas palavras não é um palíndromo?", "Uva", "easy", "Português e literatura", new String[] {"Arara", "Reviver", "Osso"}));
         listQuestions.add(new Question("Qual é a moeda oficial dos Estados Unidos?", "Dólar", "easy", "Conhecimentos gerais", new String[] {"Escudo", "Coroa", "Libra"}));
         listQuestions.add(new Question("O saquê é uma bebida originária de qual país?", "Japão", "medium", "História e política", new String[] {"Estados Unidos", "Coréia do Sul", "China"}));
+        listQuestions.add(new Question("Quem libertou os escravos em 1888?", "Princesa Isabel", "easy", "História e política", new String[] {"Joana d'Arc", "Anita Garibaldi", "Imperatriz Leopoldina"}));
         listQuestions.add(new Question("Que criatura mitológica é metade mulher e metade peixe?", "Sereia", "easy", "História e política", new String[] {"Medusa", "Cleópatra", "Iemanjá"}));
         listQuestions.add(new Question("Qual atriz protagonizou ao lado de Leonardo Da Vinci o filme Titanic?", "Kate Winslet", "medium", "Filmes, desenhos e televisão", new String[] {"Cameron Diaz", "Bridget Fonda", "C. Zetta Jones"}));
         listQuestions.add(new Question("Onde é mais usado o sismógrafo?", "Terremotos", "medium", "Geografia", new String[] {"Furacões", "Maremotos", "Tempestades"}));
+        listQuestions.add(new Question("Qual orixá é conhecida como a Rainha do Mar?", "Iemanjá", "medium", "Conhecimentos gerais", new String[] {"Mamãe Oxum", "Pomba-gira", "Iansã"}));
         listQuestions.add(new Question("Qual o recipiente utilizado para conservar quente os liquidos que contém?", "Garrafa térmica", "easy", "Ciência", new String[] {"Jarra", "Bacia", "Taça"}));
         listQuestions.add(new Question("A compensação por perda é chamada de:", "Indenização", "medium", "Matemática", new String[] {"Défict", "Indexação", "Indébito"}));
         listQuestions.add(new Question("Qual é o nome dado aos segmentos ósseos dos dedos das mãos e dos pés?", "Falange", "hard", "Ciência", new String[] {"Clávicula", "Temporal", "Esterno"}));
+        listQuestions.add(new Question("Qual destes itens tem numerador e denominador?", "Fração", "medium", "Matemática", new String[] {"Soma", "Multiplicação", "Potência"}));
         listQuestions.add(new Question("Qual autor escreveu \"Primeiras Estórias\"?", "Guimarães Rosa", "hard", "Português e literatura", new String[] {"Olavo Bilac", "Euclides da Cunha", "José de Alencar"}));
-        while (answer.getRight() == true && person.getStop() == false && j < listQuestions.size()) {
-            int iWantHelp = 0;
+        listQuestions.add(new Question("Quem foi eleito presidente da África do Sul em 1994?", "Nelson Mandela", "hard", "História e política", new String[] {"Nelson Piquet", "Nelson Eddy", "John Nelson"}));
+        listQuestions.add(new Question("Qual história Francis Ford Coppola dirigiu em três partes", "O poderoso chefão", "hard", "Filmes, desenhos e televisão", new String[] {"Titanic", "Sexta-feira treze", "Guerra nas estrelas"}));
+        while (answer.getRight() == true && person.getStop() == false && answer.getPremium()<=1000000) {
+            int iWantHelp=-1;
             Question ask = listQuestions.get(j);
             List printOptions = answer.createArrayOptions(ask);
             do {
@@ -43,42 +48,43 @@ public class Main {
                     answer.setRight(answer.validateAnswer(valueAnswer, ask));
                     if (answer.getRight()) {
                         System.out.println("Certa resposta!");
+                        if(answer.getPremium()==1000000) {
+                            System.out.println("PARABÉNS! Você ganhou R$ 1 milhão!");
+                        }
                     } else {
                         System.out.println("Que pena. Você errou!");
+                        System.out.println("Você ganhou R$"+ answer.getPremium());
                         answer.setRight(false);
                     }
                 } else {
-                    System.out.println("""
-                            Você quer ajuda ou parar?
-                            1 - Solicitar ajuda aos universitários
-                            2 - Solicitar ajuda às placas
-                            3 - Solicitar ajuda às cartas
-                            4 - Parar
-                            5 - Quero responder
-                             """);
-                    iWantHelp = input.nextInt();
-                    if (iWantHelp == 4) {
-                        person.setStop(true);
-                    }
+                    do {
+                        System.out.println("""
+                                Você quer ajuda, pular ou parar?
+                                0 - Pular
+                                1 - Solicitar ajuda aos universitários
+                                2 - Solicitar ajuda às placas
+                                3 - Solicitar ajuda às cartas
+                                4 - Parar
+                                5 - Quero responder
+                                 """);
+                        iWantHelp = input.nextInt();
+                        if (iWantHelp == 4) {
+                            person.setStop(true);
+                        }
+                        if (iWantHelp == 0 && person.getCanSkip() == 0) {
+                            System.out.println("Você não pode mais pular!");
+                        }
+                    } while (iWantHelp == 0 && person.getCanSkip() == 0);
                 }
-            } while (iWantHelp != 4 && !iAmRight.equals("y"));
-            if (j<4) {
-                double premium = answer.getPremium()+1000;
-                answer.setPremium(premium);
-            } else if (j>4 && j<9) {
-                double premium = answer.getPremium()+10000;
-                answer.setPremium(premium);
-            } else if (j==4 || j==9 || j==14) {
-                double premium = answer.getPremium()*2;
-                answer.setPremium(premium);
-            }else if (j>9 && j<14) {
-                double premium = answer.getPremium()+100000;
-                answer.setPremium(premium);
+            } while (iWantHelp != 4 && iWantHelp != 0 && !iAmRight.equals("y"));
+            if (iWantHelp!=0) {
+                answer.calculatePremium(i);
+                i++;
+            } else {
+                int skip = person.getCanSkip()-1;
+                person.setCanSkip(skip);
             }
             j++;
-            if(j==16) {
-                System.out.println("PARABÉNS! Você ganhou R$ 1 milhão!");
-            }
         }
     }
 }
