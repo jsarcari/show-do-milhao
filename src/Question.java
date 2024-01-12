@@ -1,18 +1,28 @@
 import java.lang.reflect.Array;
 
 public class Question {
+    private int id;
     private String question;
     private String correct_answer;
     private String difficulty;
     private String category;
     private String[] incorrect_answers;
 
-    public Question(String question, String correct, String difficulty, String category, String[] other_answers) {
+    public Question(int id, String question, String correct, String difficulty, String category, String[] other_answers) {
+        this.setId(id);
         this.setQuestion(question);
         this.setCorrect_answer(correct);
         this.setDifficulty(difficulty);
         this.setCategory(category);
         this.setIncorrect_answers(other_answers);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getQuestion() {

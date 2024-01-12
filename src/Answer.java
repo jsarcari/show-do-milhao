@@ -46,6 +46,27 @@ public class Answer {
         this.right = right;
     }
 
+    public int choiceQuestion(ArrayList<Question> list, List ids, int i) {
+        Random generator = new Random();
+        int id = 0;
+        Boolean containsId = true;
+        while (containsId) {
+            id = generator.nextInt(list.size()-1);
+            if (!ids.contains(id)) {
+                if (i<5 && list.get(id).getDifficulty().equals("easy")) {
+                    containsId = false;
+                }
+                if (i>=5 && i<10 && list.get(id).getDifficulty().equals("medium")) {
+                    containsId = false;
+                }
+                if (i>=10 && list.get(id).getDifficulty().equals("hard")) {
+                    containsId = false;
+                }
+            }
+        }
+        return id;
+    }
+
     public void printActions() {
         System.out.println("""
                 Você quer ajuda, pular ou parar?
