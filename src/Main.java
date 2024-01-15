@@ -102,50 +102,60 @@ public class Main {
                         action = true;
                         answer.printActions();
                         iWantHelp = input.nextInt();
-                        if (iWantHelp == 1) {
-                            if (guests.getAvailable()) {
-                                guests.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
-                                guests.printHelp();
-                                guests.setAvailable(false);
-                            } else {
-                                System.out.println("Você não pode mais acionar aos universitários!");
-                                action = false;
-                            }
-                        }
-                        if (iWantHelp == 3) {
-                            if (cards.getAvailable()) {
-                                cards.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
-                                cards.printHelp();
-                                cards.generateValueCards();
-                                Integer card = input.nextInt();
-                                numQuestions = cards.readCard(card);
-                                cards.printCards();
-                                if(numQuestions!=4) {
-                                    emptyOptions = cards.generateQuestionsEliminated(ask, printOptions, numQuestions);
+                        switch (iWantHelp) {
+                            case 0:
+                                if (person.getCanSkip() == 0) {
+                                    System.out.println("Você não pode mais pular!");
+                                    action = false;
+                                } else {
+                                    int skip = person.getCanSkip()-1;
+                                    person.setCanSkip(skip);
                                 }
-                                cards.setAvailable(false);
-                            } else {
-                                System.out.println("Você não pode mais recorrer às cartas");
-                                action = false;
-                            }
-                        }
-                        if (iWantHelp == 2) {
-                            if (plaques.getAvailable()) {
-                                plaques.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
-                                plaques.printHelp();
-                                plaques.setAvailable(false);
-                            } else {
-                                System.out.println("Você não pode mais recorrer às placas");
-                                action = false;
-                            }
-                        }
-                        if (iWantHelp == 4) {
-                            person.setStop(true);
-                            System.out.println("Você ganhou R$%.2f".formatted(answer.getPremiumStop()));
-                        }
-                        if (iWantHelp == 0 && person.getCanSkip() == 0) {
-                            System.out.println("Você não pode mais pular!");
-                            action = false;
+                                break;
+                            case 1:
+                                if (guests.getAvailable()) {
+                                    guests.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
+                                    guests.printHelp();
+                                    guests.setAvailable(false);
+                                } else {
+                                    System.out.println("Você não pode mais acionar aos universitários!");
+                                    action = false;
+                                }
+                                break;
+                            case 2:
+                                if (plaques.getAvailable()) {
+                                    plaques.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
+                                    plaques.printHelp();
+                                    plaques.setAvailable(false);
+                                } else {
+                                    System.out.println("Você não pode mais recorrer às placas");
+                                    action = false;
+                                }
+                                break;
+                            case 3:
+                                if (cards.getAvailable()) {
+                                    cards.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
+                                    cards.printHelp();
+                                    cards.generateValueCards();
+                                    Integer card = input.nextInt();
+                                    numQuestions = cards.readCard(card);
+                                    cards.printCards();
+                                    if(numQuestions!=4) {
+                                        emptyOptions = cards.generateQuestionsEliminated(ask, printOptions, numQuestions);
+                                    }
+                                    cards.setAvailable(false);
+                                } else {
+                                    System.out.println("Você não pode mais recorrer às cartas");
+                                    action = false;
+                                }
+                                break;
+                            case 4:
+                                person.setStop(true);
+                                System.out.println("Você ganhou R$%.2f".formatted(answer.getPremiumStop()));
+                                break;
+                            default:
+                                System.out.println("Opção inválida");
+                                break;
                         }
                     } while (!action);
                 }
@@ -153,9 +163,6 @@ public class Main {
             if (iWantHelp!=0) {
                 answer.calculatePremium(i);
                 i++;
-            } else {
-                int skip = person.getCanSkip()-1;
-                person.setCanSkip(skip);
             }
         }
     }
