@@ -51,7 +51,7 @@ public class Answer {
         int id = 0;
         Boolean containsId = true;
         while (containsId) {
-            id = generator.nextInt(list.size()-1);
+            id = generator.nextInt(list.size());
             if (!ids.contains(id)) {
                 if (i<5 && list.get(id).getDifficulty().equals("easy")) {
                     containsId = false;

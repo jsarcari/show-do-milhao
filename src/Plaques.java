@@ -11,12 +11,12 @@ public class Plaques extends Help {
         this.available = available;
     }
 
-    public void printAnswers() {
+    public void printHelp() {
         int correct = getCorrectAnswer()+1;
         System.out.println("Alternativa " + correct + ": " + generatePercentage() + "%");
     }
 
-    public int generatePercentage() {
+    private int generatePercentage() {
         Random generator = new Random();
         int numDado = generator.nextInt(50) + 50;
         return numDado;

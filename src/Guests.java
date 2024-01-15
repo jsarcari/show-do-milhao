@@ -29,7 +29,7 @@ public class Guests extends Help {
         this.guest = guest;
     }
 
-    public void printAnswers() {
+    public void printHelp() {
         generateWrongAnswers();
         int num = getNumber()+1;
         int correct = getCorrectAnswer()+1;
@@ -50,12 +50,12 @@ public class Guests extends Help {
         }
     }
 
-    public void generateWrongAnswers() {
+    private void generateWrongAnswers() {
         Random generator = new Random();
         this.setNumber(this.correctAnswer);
         while (this.getNumber() == this.correctAnswer) {
             this.setNumber(generator.nextInt(4));
         }
-        this.setGuest(generator.nextInt(3));
+        this.setGuest(generator.nextInt(4));
     }
 }

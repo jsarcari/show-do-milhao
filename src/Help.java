@@ -9,6 +9,6 @@ public abstract class Help {
         return correctAnswer;
     }
 
-    protected abstract void printAnswers();
+    protected abstract void printHelp();
 
 }

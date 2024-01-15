@@ -3,17 +3,19 @@ import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int i = 0, j;
+        int i = 0, j, numQuestions = 0;
         String iAmRight;
         Participant person = new Participant("Juan");
         Boolean win = false, action;
         Answer answer = new Answer(1000);
         Guests guests = new Guests();
         Plaques plaques = new Plaques();
+        Cards cards = new Cards();
         List<Integer> ids = new ArrayList<Integer>();
+        List<Integer> emptyOptions = new ArrayList<Integer>();
         ArrayList<Question> listQuestions = new ArrayList<>();
         listQuestions.add(new Question(0, "Qual é a capital dos Estados Unidos?", "Washington", "easy", "Geografia", new String[] {"Nova York", "Miami", "Chicago"}));
-        listQuestions.add(new Question(1, "Qual dessas é considerada uma doença na coluna vertebral?", "Artrose", "medium", "Ciência", new String[] {"Apendicite", "Gastrite", "Artrite"}));
+        listQuestions.add(new Question(1, "Qual réptil que muda de cor conforme o ambiente e o meio onde vive?", "Camaleão", "medium", "Ciência", new String[] {"Sapo", "Lagarto", "Jacaré"}));
         listQuestions.add(new Question(2, "Em um ano bissexto que mês tem um dia a mais?", "Fevereiro", "easy", "Conhecimentos gerais", new String[] {"Março", "Abril", "Outubro"}));
         listQuestions.add(new Question(3, "Qual alimento não é derivado do leite?", "Mostarda", "easy", "Conhecimentos gerais", new String[] {"Queijo", "Iogurte", "Coalhada"}));
         listQuestions.add(new Question(4, "Como é conhecida a campanha que alerta a sociedade sobre a prevenção do câncer de mama?", "Outubro rosa", "easy", "Conhecimentos gerais", new String[] {"Janeiro branco", "Setembro amarelo", "Novembro azul"}));
@@ -47,7 +49,17 @@ public class Main {
         listQuestions.add(new Question(32, "Qual a fórmula química da água?", "H20", "easy", "Ciência", new String[] {"HO", "H", "H02"}));
         listQuestions.add(new Question(33, "De quantos em quantos dias a lua muda de fase", "7", "medium", "Geografia", new String[] {"5", "8", "15"}));
         listQuestions.add(new Question(34, "Como é o nome do riacho em cujas margens foi proclamada a independência do Brasil?", "Ipiranga", "easy", "História e política", new String[] {"Cambuci", "Sacomâ", "Independente"}));
+        listQuestions.add(new Question(35, "Quantos centavos tem 1 real?", "Cem", "easy", "Matemática", new String[] {"Dez", "Mil", "Cinquenta"}));
+        listQuestions.add(new Question(36, "Quantas dentições tem o ser humano durante a vida?", "Duas", "hard", "Ciência", new String[] {"Uma", "Três", "Quatro"}));
+        listQuestions.add(new Question(37, "Qual é a pedra preciosa mais dura encontrada na natureza?", "Diamante", "medium", "Conhecimentos gerais", new String[] {"Esmeralda", "Rubi", "Pérola"}));
+        listQuestions.add(new Question(38, "Qual a cantora que tinha o apelido de Ternurinha na época da jovem guarda?", "Wanderléia", "medium", "História e política", new String[] {"Silvinha", "Gretchen", "Martinha"}));
+        listQuestions.add(new Question(39, "Qual era o código da identidade secreta do James Bond?", "007", "easy", "Filmes, desenhos e televisão", new String[] {"707", "907", "008"}));
+        listQuestions.add(new Question(40, "A que continente pertence o Rio Amazonas?", "Americano", "easy", "Geografia", new String[] {"Africano", "Europeu", "Asiático"}));
+        listQuestions.add(new Question(41, "Qual estação é conhecida como a que caem as folhas das árvores?", "Outono", "medium", "Geografia", new String[] {"Verão", "Inverno", "Primavera"}));
+        listQuestions.add(new Question(42, "Qual a profissão dos sete anões?", "Mineiros", "medium", "Filmes, desenhos e televisão", new String[] {"Lenhadores", "Agricultores", "Pastores"}));
+        listQuestions.add(new Question(43, "Qual é considerado o mês das noivas?", "Maio", "easy", "Conhecimentos gerais", new String[] {"Setembro", "Junho", "Novembro"}));
         while (answer.getRight() == true && person.getStop() == false && !win) {
+            emptyOptions.clear();
             int iWantHelp=-1;
             j = answer.choiceQuestion(listQuestions,ids, i);
             ids.add(j);
@@ -58,7 +70,11 @@ public class Main {
                 System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(answer.getPremiumMiss(),answer.getPremiumStop()));
                 System.out.println("%s".formatted(ask.getQuestion()));
                 for (Object option : printOptions) {
-                    System.out.println(printOptions.indexOf(option)+1 + ". " + option);
+                    if (!emptyOptions.contains(printOptions.indexOf(option))) {
+                        System.out.println(printOptions.indexOf(option)+1 + ". " +  option);
+                    } else {
+                        System.out.println(printOptions.indexOf(option)+1 + ". ");
+                    }
                 }
                 Scanner input = new Scanner(System.in);
                 Integer myAnswer = Integer.parseInt(input.nextLine());
@@ -77,7 +93,8 @@ public class Main {
                         }
                     } else {
                         System.out.println("Que pena. Você errou!");
-                        System.out.println("Você ganhou R$.2f"+ answer.getPremiumMiss());
+                        System.out.println("A resposta certa é " + ask.getCorrect_answer());
+                        System.out.println("Você ganhou R$%.2f".formatted(answer.getPremiumMiss()));
                         answer.setRight(false);
                     }
                 } else {
@@ -88,17 +105,34 @@ public class Main {
                         if (iWantHelp == 1) {
                             if (guests.getAvailable()) {
                                 guests.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
-                                guests.printAnswers();
+                                guests.printHelp();
                                 guests.setAvailable(false);
                             } else {
                                 System.out.println("Você não pode mais acionar aos universitários!");
                                 action = false;
                             }
                         }
+                        if (iWantHelp == 3) {
+                            if (cards.getAvailable()) {
+                                cards.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
+                                cards.printHelp();
+                                cards.generateValueCards();
+                                Integer card = input.nextInt();
+                                numQuestions = cards.readCard(card);
+                                cards.printCards();
+                                if(numQuestions!=4) {
+                                    emptyOptions = cards.generateQuestionsEliminated(ask, printOptions, numQuestions);
+                                }
+                                cards.setAvailable(false);
+                            } else {
+                                System.out.println("Você não pode mais recorrer às cartas");
+                                action = false;
+                            }
+                        }
                         if (iWantHelp == 2) {
                             if (plaques.getAvailable()) {
                                 plaques.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
-                                plaques.printAnswers();
+                                plaques.printHelp();
                                 plaques.setAvailable(false);
                             } else {
                                 System.out.println("Você não pode mais recorrer às placas");
@@ -107,7 +141,7 @@ public class Main {
                         }
                         if (iWantHelp == 4) {
                             person.setStop(true);
-                            System.out.println("Você ganhou R$.2f" + answer.getPremiumStop());
+                            System.out.println("Você ganhou R$%.2f".formatted(answer.getPremiumStop()));
                         }
                         if (iWantHelp == 0 && person.getCanSkip() == 0) {
                             System.out.println("Você não pode mais pular!");
