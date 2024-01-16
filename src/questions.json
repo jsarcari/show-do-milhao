@@ -327,7 +327,7 @@
     "id": 27,
     "question": "Qual é o metal encontrado no interior de um termômetro?",
     "correct_answer": "Mercúrio",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "category": "Ciência",
     "incorrect_answers": [
       "Aço",
@@ -525,6 +525,150 @@
       "Setembro",
       "Junho",
       "Novembro"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Qual é a teoria unificada desenvolvida para explicar a relação entre a eletricidade e o magnetismo?",
+    "correct_answer": "Eletromagnetismo",
+    "difficulty": "easy",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Gravitação",
+      "Movimento Browniano",
+      "Mecanismo"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "O salto em distância é uma modalidade de qual desses esportes?",
+    "correct_answer": "Atletismo",
+    "difficulty": "easy",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Voleibol",
+      "Automobilismo",
+      "Natação"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "O que é uma partitura?",
+    "correct_answer": "Representação escrita da música",
+    "difficulty": "medium",
+    "category": "Português e literatura",
+    "incorrect_answers": [
+      "Modelo de repartição de bens",
+      "Método de corte de carne",
+      "Equipamento utilizado no futebol americano"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Titubear é o mesmo que:",
+    "correct_answer": "Hesitar",
+    "difficulty": "hard",
+    "category": "Português e literatura",
+    "incorrect_answers": [
+      "Aprovar",
+      "Concordar",
+      "Aceitar"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Em qual cidade italiana está localizado o Coliseu?",
+    "correct_answer": "Roma",
+    "difficulty": "medium",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Milão",
+      "Veneza",
+      "Florença"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Qual é o coletivo de borboletas?",
+    "correct_answer": "Panapaná",
+    "difficulty": "hard",
+    "category": "Português e literatura",
+    "incorrect_answers": [
+      "Cardume",
+      "Enxame",
+      "Cáfila"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "Em um prédio, quem é o responsável pela administração do condomínio?",
+    "correct_answer": "Síndico",
+    "difficulty": "easy",
+    "category": "Português e literatura",
+    "incorrect_answers": [
+      "Inquilino",
+      "Locador",
+      "Porteiro"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "A qual família pertence o tigre?",
+    "correct_answer": "Felídeos",
+    "difficulty": "hard",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Canídeos",
+      "Suídeos",
+      "Bovídeos"
+    ]
+  },
+  {
+    "id": 52,
+    "question": "Qual desses sentimentos é simbolizado por uma pomba branca?",
+    "correct_answer": "Paz",
+    "difficulty": "easy",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Saudade",
+      "Coragem",
+      "Esperança"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "No futebol, após quantos cartões amarelos o jogador recebe um cartão vermelho?",
+    "correct_answer": "Dois",
+    "difficulty": "easy",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Três",
+      "Cinco",
+      "Quatro"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Qual era o verdadeiro nome do cantor Tim Maia?",
+    "correct_answer": "Sebastião",
+    "difficulty": "medium",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Francisco",
+      "João",
+      "Joaquim"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Como é chamado cada capítulo do alcorão?",
+    "correct_answer": "Surata",
+    "difficulty": "hard",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Suna",
+      "Sefardim",
+      "Torá"
     ]
   }
 ]
