@@ -1,0 +1,530 @@
+[
+    {
+      "id": 0,
+      "question": "Qual é a capital dos Estados Unidos?",
+      "correct_answer": "Washington",
+      "difficulty": "easy",
+      "category": "Geografia",
+      "incorrect_answers": [
+        "Nova York",
+        "Miami",
+        "Chicago"
+      ]
+    },
+    {
+      "id": 1,
+      "question": "Qual réptil que muda de cor conforme o ambiente e o meio onde vive?",
+      "correct_answer": "Camaleão",
+      "difficulty": "medium",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "Sapo",
+        "Lagarto",
+        "Jacaré"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Em um ano bissexto que mês tem um dia a mais?",
+      "correct_answer": "Fevereiro",
+      "difficulty": "easy",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Março",
+        "Abril",
+        "Outubro"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual alimento não é derivado do leite?",
+      "correct_answer": "Mostarda",
+      "difficulty": "easy",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Queijo",
+        "Iogurte",
+        "Coalhada"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Como é conhecida a campanha que alerta a sociedade sobre a prevenção do câncer de mama?",
+      "correct_answer": "Outubro rosa",
+      "difficulty": "easy",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Janeiro branco",
+        "Setembro amarelo",
+        "Novembro azul"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Qual desses órgãos faz parte do aparelho digestivo?",
+      "correct_answer": "Intestino",
+      "difficulty": "easy",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "Baço",
+        "Pulmão",
+        "Rim"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Quem é o homem de aço das histórias em quadrinhos?",
+      "correct_answer": "Superman",
+      "difficulty": "easy",
+      "category": "Filmes, desenhos e televisão",
+      "incorrect_answers": [
+        "Batman",
+        "Hulk",
+        "He-man"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Qual dessas palavras não é um palíndromo?",
+      "correct_answer": "Uva",
+      "difficulty": "easy",
+      "category": "Português e literatura",
+      "incorrect_answers": [
+        "Arara",
+        "Reviver",
+        "Osso"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qual é a moeda oficial dos Estados Unidos?",
+      "correct_answer": "Dólar",
+      "difficulty": "easy",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Escudo",
+        "Coroa",
+        "Libra"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "O saquê é uma bebida originária de qual país?",
+      "correct_answer": "Japão",
+      "difficulty": "medium",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Estados Unidos",
+        "Coréia do Sul",
+        "China"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Quem libertou os escravos em 1888?",
+      "correct_answer": "Princesa Isabel",
+      "difficulty": "easy",
+      "category": "História e política",
+      "incorrect_answers": [
+        "Joana d'Arc",
+        "Anita Garibaldi",
+        "Imperatriz Leopoldina"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Que criatura mitológica é metade mulher e metade peixe?",
+      "correct_answer": "Sereia",
+      "difficulty": "easy",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Medusa",
+        "Cleópatra",
+        "Iemanjá"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Qual atriz protagonizou ao lado de Leonardo Da Vinci o filme Titanic?",
+      "correct_answer": "Kate Winslet",
+      "difficulty": "medium",
+      "category": "Filmes, desenhos e televisão",
+      "incorrect_answers": [
+        "Cameron Diaz",
+        "Bridget Fonda",
+        "C. Zetta Jones"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Onde é mais usado o sismógrafo?",
+      "correct_answer": "Terremotos",
+      "difficulty": "medium",
+      "category": "Geografia",
+      "incorrect_answers": [
+        "Furacões",
+        "Maremotos",
+        "Tempestades"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Qual orixá é conhecida como a Rainha do Mar?",
+      "correct_answer": "Iemanjá",
+      "difficulty": "medium",
+      "category": "Conhecimentos gerais",
+      "incorrect_answers": [
+        "Mamãe Oxum",
+        "Pomba-gira",
+        "Iansã"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Qual o recipiente utilizado para conservar quente os liquidos que contém?",
+      "correct_answer": "Garrafa térmica",
+      "difficulty": "easy",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "Jarra",
+        "Bacia",
+        "Taça"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A compensação por perda é chamada de:",
+      "correct_answer": "Indenização",
+      "difficulty": "hard",
+      "category": "Matemática",
+      "incorrect_answers": [
+        "Déficit",
+        "Indexação",
+        "Indébito"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Qual é o nome dado aos segmentos ósseos dos dedos das mãos e dos pés?",
+      "correct_answer": "Falange",
+      "difficulty": "hard",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "Clavícula",
+        "Temporal",
+        "Esterno"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Qual destes itens tem numerador e denominador?",
+      "correct_answer": "Fração",
+      "difficulty": "medium",
+      "category": "Matemática",
+      "incorrect_answers": [
+        "Soma",
+        "Multiplicação",
+        "Potência"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Qual autor escreveu \"Primeiras Estórias\"?",
+      "correct_answer": "Guimarães Rosa",
+      "difficulty": "hard",
+      "category": "Português e literatura",
+      "incorrect_answers": [
+        "Olavo Bilac",
+        "Euclides da Cunha",
+        "José de Alencar"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Quem foi eleito presidente da África do Sul em 1994?",
+      "correct_answer": "Nelson Mandela",
+      "difficulty": "hard",
+      "category": "História e política",
+      "incorrect_answers": [
+        "Nelson Piquet",
+        "Nelson Eddy",
+        "John Nelson"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Qual história Francis Ford Coppola dirigiu em três partes",
+      "correct_answer": "O Poderoso Chefão",
+      "difficulty": "hard",
+      "category": "Filmes, desenhos e televisão",
+      "incorrect_answers": [
+        "Titanic",
+        "Sexta-feira treze",
+        "Guerra nas estrelas"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Com quantos graus centígrados a água ferve?",
+      "correct_answer": "100",
+      "difficulty": "medium",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "200",
+        "170",
+        "220"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Quantos signos astrológicos formam o zoodíaco?",
+      "correct_answer": "12",
+      "difficulty": "medium",
+      "category": "Geografia",
+      "incorrect_answers": [
+        "9",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Como se chama o alimento extraído pelas plantas do solo?",
+      "correct_answer": "Seiva",
+      "difficulty": "hard",
+      "category": "Ciência",
+      "incorrect_answers": [
+        "Celulose",
+        "Mitose",
+        "Clorofila"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Qual jogador brasileiro de futebol recebeu o apelido de Imperador duarante sua passagem pela Itália?",
+      "correct_answer": "Adriano",
+      "difficulty": "medium",
+      "category": "Esportes",
+      "incorrect_answers": [
+        "Robinho",
+        "Marcelinho Carioca",
+        "Dunga"
+      ]
+    },
+  {
+    "id": 26,
+    "question": "Qual órgão do nosso corpo produz a urina",
+    "correct_answer": "Rim",
+    "difficulty": "medium",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Fígado",
+      "Coração",
+      "Boca"
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Qual é o metal encontrado no interior de um termômetro?",
+    "correct_answer": "Mercúrio",
+    "difficulty": "hard",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Aço",
+      "Alumínio",
+      "Ferro"
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Qual composto químico representa a fórmula Pb(NO3)2?",
+    "correct_answer": "Nitrato de Chumbo",
+    "difficulty": "hard",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Ácido Fluorídrico",
+      "Cloreto de Cromilo",
+      "Nitrato de Amônio"
+    ]
+  },
+  {
+    "id": 29,
+    "question": "Linha que estabelece a mais curta distância entre dois pontos é a:",
+    "correct_answer": "Reta",
+    "difficulty": "medium",
+    "category": "Matemática",
+    "incorrect_answers": [
+      "Curva",
+      "Ângulo",
+      "Zig-zague"
+    ]
+  },
+  {
+    "id": 30,
+    "question": "Quem é o primeiro substituto do presidente?",
+    "correct_answer": "Vice-presidente",
+    "difficulty": "easy",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Vereador",
+      "Senador",
+      "Deputado"
+    ]
+  },
+  {
+    "id": 31,
+    "question": "Quem dirigiu o filme \"Central do Brasil\" indicado para o Oscar como o melhor filme estrangeiro em 1999?",
+    "correct_answer": "Walter Salles Jr.",
+    "difficulty": "hard",
+    "category": "Filmes, desenhos e televisão",
+    "incorrect_answers": [
+      "Bruno Barreto",
+      "Hector Babenco",
+      "Arnaldo Jabor"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Qual a fórmula química da água?",
+    "correct_answer": "H20",
+    "difficulty": "easy",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "HO",
+      "H",
+      "H02"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "De quantos em quantos dias a lua muda de fase?",
+    "correct_answer": "7",
+    "difficulty": "medium",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "5",
+      "8",
+      "15"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Como é o nome do riacho em cujas margens foi proclamada a independência do Brasil?",
+    "correct_answer": "Ipiranga",
+    "difficulty": "easy",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Cambuci",
+      "Sacomâ",
+      "Independente"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Quantos centavos tem 1 real?",
+    "correct_answer": "Cem",
+    "difficulty": "easy",
+    "category": "Matemática",
+    "incorrect_answers": [
+      "Dez",
+      "Mil",
+      "Cinquenta"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Quantas dentições tem o ser humano durante a vida?",
+    "correct_answer": "Duas",
+    "difficulty": "hard",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Uma",
+      "Três",
+      "Quatro"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Qual é a pedra preciosa mais dura encontrada na natureza?",
+    "correct_answer": "Diamante",
+    "difficulty": "hard",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Esmeralda",
+      "Rubi",
+      "Pérola"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "Qual a cantora que tinha o apelido de Ternurinha na época da jovem guarda?",
+    "correct_answer": "Wanderléia",
+    "difficulty": "hard",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Silvinha",
+      "Gretchen",
+      "Martinha"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Qual era o código da identidade secreta do James Bond?",
+    "correct_answer": "007",
+    "difficulty": "easy",
+    "category": "Filmes, desenhos e televisão",
+    "incorrect_answers": [
+      "707",
+      "907",
+      "008"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "A que continente pertence o Rio Amazonas?",
+    "correct_answer": "Americano",
+    "difficulty": "easy",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "Africano",
+      "Europeu",
+      "Asiático"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Qual estação é conhecida como a que caem as folhas das árvores?",
+    "correct_answer": "Outono",
+    "difficulty": "medium",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "Verão",
+      "Inverno",
+      "Primavera"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Qual a profissão dos sete anões?",
+    "correct_answer": "Mineradores",
+    "difficulty": "medium",
+    "category": "Filmes, desenhos e televisão",
+    "incorrect_answers": [
+      "Lenhadores",
+      "Agricultores",
+      "Pastores"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Qual é considerado o mês das noivas?",
+    "correct_answer": "Maio",
+    "difficulty": "easy",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Setembro",
+      "Junho",
+      "Novembro"
+    ]
+  }
+]
