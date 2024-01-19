@@ -670,5 +670,341 @@
       "Sefardim",
       "Torá"
     ]
+  },
+  {
+    "id": 56,
+    "question": "Quem proclamou a república do Brasil em 1889?",
+    "correct_answer": "Marechal Deodoro",
+    "difficulty": "medium",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Duque de Caxias",
+      "Dom Pedro II",
+      "Marechal Rondon"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Qual a unidade de peso utilizada para medir a delicadeza da seda e das fibras feitas pelo homem?",
+    "correct_answer": "Denier",
+    "difficulty": "hard",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "TOJ",
+      "ELL",
+      "RLI"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Mike Tyson se destacou mundialmente em qual esporte?",
+    "correct_answer": "Boxe",
+    "difficulty": "easy",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Futebol americano",
+      "Basquete",
+      "Tênis"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Qual é o estabelecimento que vende especificamente materiais de costura?",
+    "correct_answer": "Armarinho",
+    "difficulty": "easy",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Papelaria",
+      "Sebo",
+      "Quitanda"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Qual é a sigla do Movimento dos Trabalhadores Rurais Sem-Terra?",
+    "correct_answer": "MST",
+    "difficulty": "easy",
+    "category": "História e política",
+    "incorrect_answers": [
+      "MTS",
+      "MTRS",
+      "MTRST"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Qual é o local de trabalho de um presbítero?",
+    "correct_answer": "Igreja",
+    "difficulty": "easy",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Escola",
+      "Delegacia",
+      "Museu"
+    ]
+  },
+  {
+    "id": 62,
+    "question": "O que é fagote?",
+    "correct_answer": "Instrumento de sopro",
+    "difficulty": "medium",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Incêndio",
+      "Foguete pequeno",
+      "Frango pequeno"
+    ]
+  },
+  {
+    "id": 63,
+    "question": "Uma hora e quarenta minutos corresponde a:",
+    "correct_answer": "100 minutos",
+    "difficulty": "easy",
+    "category": "Matemática",
+    "incorrect_answers": [
+      "90 minutos",
+      "80 minutos",
+      "110 minutos"
+    ]
+  },
+  {
+    "id": 64,
+    "question": "As variações da luz refletida pela lua são chamadas de:",
+    "correct_answer": "Fases",
+    "difficulty": "medium",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "Formas",
+      "Cores",
+      "Marés"
+    ]
+  },
+  {
+    "id": 65,
+    "question": "Uma equipe de vôlei começa uma partida com quantos titulares em quadra?",
+    "correct_answer": "Seis",
+    "difficulty": "medium",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Cinco",
+      "Sete",
+      "Oito"
+    ]
+  },
+  {
+    "id": 66,
+    "question": "Qual é a capital do Iraque?",
+    "correct_answer": "Bagdá",
+    "difficulty": "medium",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "Belém",
+      "Beirute",
+      "Budapeste"
+    ]
+  },
+  {
+    "id": 67,
+    "question": "Que presidente dos Estados Unidos foi ator de cinema?",
+    "correct_answer": "Ronald Reagan",
+    "difficulty": "hard",
+    "category": "Filmes, desenhos e televisão",
+    "incorrect_answers": [
+      "George Bush",
+      "Richard Nixon",
+      "Bill Clinton"
+    ]
+  },
+  {
+    "id": 68,
+    "question": "Como é chamado o lugar sagrado dos judeus?",
+    "correct_answer": "Sinagoga",
+    "difficulty": "medium",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Igreja",
+      "Capela",
+      "Altar"
+    ]
+  },
+  {
+    "id": 69,
+    "question": "Qual é o país que participou de todas as copas do mundo de futebol?",
+    "correct_answer": "Brasil",
+    "difficulty": "easy",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Itália",
+      "Uruguai",
+      "Argentina"
+    ]
+  },
+  {
+    "id": 70,
+    "question": "Qual a parte da física estuda os fenômenos visuais?",
+    "correct_answer": "Óptica",
+    "difficulty": "easy",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Cinemática",
+      "Eletromagnetismo",
+      "Termodinâmica"
+    ]
+  },
+  {
+    "id": 71,
+    "question": "Em qual desses estados está localizado o Pantanal brasileiro?",
+    "correct_answer": "Mato Grosso",
+    "difficulty": "easy",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "Paraná",
+      "Amazonas",
+      "Goiás"
+    ]
+  },
+  {
+    "id": 72,
+    "question": "Quais são os naipes vermelhos do baralho?",
+    "correct_answer": "Ouros e copas",
+    "difficulty": "hard",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Copas e paus",
+      "Paus e ouros",
+      "Espadas e paus"
+    ]
+  },
+  {
+    "id": 73,
+    "question": "A patente de brigadeiro é concedida a um membro:",
+    "correct_answer": "Da aeronáutica",
+    "difficulty": "medium",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Da marinha",
+      "Do exército",
+      "Do FBI"
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Qual é o menor número divisível por 6?",
+    "correct_answer": "6",
+    "difficulty": "easy",
+    "category": "Matemática",
+    "incorrect_answers": [
+      "12",
+      "36",
+      "24"
+    ]
+  },
+  {
+    "id": 75,
+    "question": "Em que dia é iniciado o verão no Brasil?",
+    "correct_answer": "21 de dezembro",
+    "difficulty": "medium",
+    "category": "Geografia",
+    "incorrect_answers": [
+      "19 de dezembro",
+      "23 de dezembro",
+      "25 de dezembro"
+    ]
+  },
+  {
+    "id": 76,
+    "question": "Qual a área médica que estuda o sistema endócrino?",
+    "correct_answer": "Endocrinologia",
+    "difficulty": "easy",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Encrinobiologia",
+      "Endocrinolobia",
+      "Biocrinologia"
+    ]
+  },
+  {
+    "id": 77,
+    "question": "Quem eram os primeiros habitantes do Brasil?",
+    "correct_answer": "Índios",
+    "difficulty": "easy",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Espanhois",
+      "Não havia ninguém",
+      "Portugueses"
+    ]
+  },
+  {
+    "id": 78,
+    "question": "Harry Potter é selecionado para qual casa em A Pedra Filosofal?",
+    "correct_answer": "Grifinória",
+    "difficulty": "medium",
+    "category": "Filmes, desenhos e televisão",
+    "incorrect_answers": [
+      "Sonserina",
+      "Lufa-lufa",
+      "Cornival"
+    ]
+  },
+  {
+    "id": 79,
+    "question": "A sigla 'Cl' representa qual elemento da tabela periódica?",
+    "correct_answer": "Cloro",
+    "difficulty": "easy",
+    "category": "Ciência",
+    "incorrect_answers": [
+      "Cobalto",
+      "Césio",
+      "Cobre"
+    ]
+  },
+  {
+    "id": 80,
+    "question": "Qual dessas substâncias é um sedativo?",
+    "correct_answer": "Morfina",
+    "difficulty": "easy",
+    "category": "Conhecimentos gerais",
+    "incorrect_answers": [
+      "Adrenalina",
+      "Anfetamina",
+      "Acetona"
+    ]
+  },
+  {
+    "id": 81,
+    "question": "Qual é a praça em São Paulo que leva o nome da pessoa que trouxe o futebol para o Brasil?",
+    "correct_answer": "Praça Charles Miller",
+    "difficulty": "hard",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Praça Rudolfo Spoon",
+      "Praça Stewart Kildon",
+      "Praça Joseph Smith"
+    ]
+  },
+  {
+    "id": 82,
+    "question": "Raí Souza Vieira de Oliveira é o nome de batismo de qual famoso ex-jogador de futebol?",
+    "correct_answer": "Raí",
+    "difficulty": "easy",
+    "category": "Esportes",
+    "incorrect_answers": [
+      "Neto",
+      "Capitão",
+      "Sócrates"
+    ]
+  },
+  {
+    "id": 83,
+    "question": "Quem foi o herói lendário que tirava sua força dos cabelos?",
+    "correct_answer": "Sansão",
+    "difficulty": "medium",
+    "category": "História e política",
+    "incorrect_answers": [
+      "Hércules",
+      "João Batista",
+      "Golias"
+    ]
   }
 ]
