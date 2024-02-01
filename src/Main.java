@@ -6,8 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         int i = 0, j, numQuestions = 0;
+        System.out.println("Qual é o seu nome?");
+        Scanner input = new Scanner(System.in);
         String iAmRight;
-        Participant person = new Participant("Juan");
+        String name = input.nextLine();
+        Participant person = new Participant(name);
         Boolean win = false, action;
         Answer answer = new Answer(1000);
         Guests guests = new Guests();
@@ -35,7 +38,7 @@ public class Main {
                         System.out.println(printOptions.indexOf(option)+1 + ". ");
                     }
                 }
-                Scanner input = new Scanner(System.in);
+
                 Integer myAnswer = Integer.parseInt(input.nextLine());
                 String valueAnswer = printOptions.get(myAnswer-1).toString();
                 System.out.println("Você está certo disso? (y/n)");
@@ -47,7 +50,7 @@ public class Main {
                         answer.setPremiumStop(answer.getPremium());
                         answer.setPremiumMiss(answer.getPremium()/2);
                         if(answer.getPremium()==1000000) {
-                            System.out.println("PARABÉNS! Você ganhou R$ 1 milhão!");
+                            System.out.println("PARABÉNS %s! Você ganhou R$ 1 milhão!".formatted(person.getName()));
                             win = true;
                         }
                     } else {
@@ -60,7 +63,7 @@ public class Main {
                     do {
                         action = true;
                         answer.printActions();
-                        iWantHelp = input.nextInt();
+                        iWantHelp = Integer.parseInt(input.nextLine());
                         switch (iWantHelp) {
                             case 0:
                                 if (person.getCanSkip() == 0) {
@@ -96,7 +99,7 @@ public class Main {
                                     cards.setCorrectAnswer(printOptions.indexOf(ask.getCorrect_answer()));
                                     cards.printHelp();
                                     cards.generateValueCards();
-                                    Integer card = input.nextInt();
+                                    Integer card = Integer.parseInt(input.nextLine());
                                     numQuestions = cards.readCard(card);
                                     cards.printCards();
                                     if(numQuestions!=4) {
