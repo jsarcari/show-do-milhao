@@ -28,9 +28,7 @@ public class Main {
             Question ask = listQuestions.get(j);
             List printOptions = answer.createArrayOptions(ask);
             do {
-                System.out.println("Valendo R$%.2f".formatted(answer.getPremium()));
-                System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(answer.getPremiumMiss(),answer.getPremiumStop()));
-                System.out.println("%s".formatted(ask.getQuestion()));
+                answer.printQuestion(ask);
                 for (Object option : printOptions) {
                     if (!emptyOptions.contains(printOptions.indexOf(option))) {
                         System.out.println(printOptions.indexOf(option)+1 + ". " +  option);

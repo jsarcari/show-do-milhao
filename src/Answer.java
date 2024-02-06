@@ -66,6 +66,12 @@ public class Answer {
         }
         return id;
     }
+    
+    public void printQuestion(Question question) {
+    	System.out.println("Valendo R$%.2f".formatted(this.getPremium()));
+        System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(this.getPremiumMiss(),this.getPremiumStop()));
+        System.out.println("%s".formatted(question.getQuestion()));
+    }
 
     public void printActions() {
         System.out.println("""
