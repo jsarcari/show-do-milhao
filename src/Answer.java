@@ -72,6 +72,29 @@ public class Answer {
         System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(this.getPremiumMiss(),this.getPremiumStop()));
         System.out.println("%s".formatted(question.getQuestion()));
     }
+    
+    public void printOptions(List options, List<Integer> emptyOptions) {
+    	for (Object option : options) {
+            if (!emptyOptions.contains(options.indexOf(option))) {
+                System.out.println(options.indexOf(option)+1 + ". " +  option);
+            } else {
+                System.out.println(options.indexOf(option)+1 + ". ");
+            }
+        }
+    }
+    
+    public void printCorrect() {
+    	System.out.println("Certa resposta!");
+        setPremiumStop(getPremium());
+        setPremiumMiss(getPremium()/2);
+    }
+    
+    public void printIncorrect(Question question) {
+    	System.out.println("Que pena. Você errou!");
+        System.out.println("A resposta certa é " + question.getCorrect_answer());
+        System.out.println("Você ganhou R$%.2f".formatted(getPremiumMiss()));
+        setRight(false);
+    }
 
     public void printActions() {
         System.out.println("""

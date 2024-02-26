@@ -1,18 +1,29 @@
 import com.google.gson.Gson;
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.http.HttpResponse.BodyHandlers;
 import java.util.ArrayList;
 
 public class JSONRead  {
+	
+	public static ArrayList<Question> WebServiceComumnication() throws IOException, InterruptedException {
+		HttpClient client = HttpClient.newHttpClient();
+		String url = "http://localhost:3000/";
+		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+		HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+		return readJSON(response.body());
+		
+	}
 
-    public static ArrayList<Question> readFile() throws FileNotFoundException {
+    public static ArrayList<Question> readJSON(String json) {
         ArrayList<Question> questions = new ArrayList<>();
         Gson gson = new Gson();
-        BufferedReader json = new BufferedReader(new FileReader(System.getProperty("user.dir") + "/src/questions.json"));
         Question[] array = gson.fromJson(json, Question[].class);
-        for(Question que : array) {
-            questions.add(que);
+        for(Question question : array) {
+            questions.add(question);
         }
 
         return questions;
