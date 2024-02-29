@@ -9,18 +9,19 @@ import java.util.ArrayList;
 
 public class JSONRead  {
 	
-	public static ArrayList<Question> WebServiceComumnication() throws IOException, InterruptedException {
+	public static String WebServiceCommunication() throws IOException, InterruptedException {
 		HttpClient client = HttpClient.newHttpClient();
 		String url = "http://localhost:3000/";
 		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
 		HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-		return readJSON(response.body());
+		return response.body();
 		
 	}
 
-    public static ArrayList<Question> readJSON(String json) {
+    public static ArrayList<Question> jsonToQuestions() throws IOException, InterruptedException {
         ArrayList<Question> questions = new ArrayList<>();
         Gson gson = new Gson();
+        String json = WebServiceCommunication();
         Question[] array = gson.fromJson(json, Question[].class);
         for(Question question : array) {
             questions.add(question);

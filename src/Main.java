@@ -19,7 +19,7 @@ public class Main {
         List<Integer> ids = new ArrayList<Integer>();
         List<Integer> emptyOptions = new ArrayList<Integer>();
         JSONRead read = new JSONRead();
-        ArrayList<Question> listQuestions = read.WebServiceComumnication();
+        ArrayList<Question> listQuestions = read.jsonToQuestions();
         while (answer.getRight() == true && person.getStop() == false && !win) {
             emptyOptions.clear();
             int iWantHelp=-1;
