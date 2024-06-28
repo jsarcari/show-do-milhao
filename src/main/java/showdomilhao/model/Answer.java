@@ -10,6 +10,7 @@ public class Answer {
     private double premiumStop = 0;
     private double premiumMiss = 0;
     private Boolean right = true;
+    private List<Integer> emptyOptions = new ArrayList<Integer>();
 
     public Answer(double premium) {
         this.setPremium(premium);
@@ -26,6 +27,10 @@ public class Answer {
 
     public double getPremiumStop() {
         return premiumStop;
+    }
+
+    public List<Integer> getEmptyOptions() {
+        return emptyOptions;
     }
 
     public void setPremiumStop(double premiumStop) {
@@ -46,6 +51,10 @@ public class Answer {
 
     public void setRight(Boolean right) {
         this.right = right;
+    }
+
+    public void setEmptyOptions(List<Integer> emptyOptions) {
+        this.emptyOptions = emptyOptions;
     }
 
     public int choiceQuestion(ArrayList<Question> list, List ids, int i) {
@@ -75,9 +84,9 @@ public class Answer {
         System.out.println("%s".formatted(question.getQuestion()));
     }
     
-    public void printOptions(List options, List<Integer> emptyOptions) {
+    public void printOptions(List options) {
     	for (Object option : options) {
-            if (!emptyOptions.contains(options.indexOf(option))) {
+            if (!this.emptyOptions.contains(options.indexOf(option))) {
                 System.out.println(options.indexOf(option)+1 + ". " +  option);
             } else {
                 System.out.println(options.indexOf(option)+1 + ". ");

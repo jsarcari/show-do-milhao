@@ -52,7 +52,7 @@ public class Cards extends Help {
         this.available = available;
     }
 
-    protected void printHelp() {
+    public void printHelp() {
         System.out.println("""
                 Escolha uma carta:
                 1 - Carta Um
