@@ -122,6 +122,7 @@ public class Option {
                 break;
             case 4:
                 this.person.setStop(true);
+                System.out.println("A resposta certa é " + question.getCorrect_answer());
                 System.out.println("Você ganhou R$%.2f".formatted(this.answer.getPremiumStop()));
                 break;
             default:
