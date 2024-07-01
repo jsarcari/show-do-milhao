@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Qual é o seu nome?</h1>
-<form method="post" action="question">
+<form method="post" action="question?id=1">
     <input type="text" name="name" />
     <button type="submit">Iniciar</button>
 </form>

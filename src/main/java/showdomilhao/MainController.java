@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import showdomilhao.model.Answer;
@@ -36,14 +37,21 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant user) {
+    public ModelAndView questionPage(Participant user, @RequestParam int id) {
         ModelAndView mv = new ModelAndView();
+        this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
         this.idsChoice.add(this.indexQuestion);
         Question question = this.questions.get(this.indexQuestion);
         List options = this.answer.createArrayOptions(question);
+        
+        String valuePremium = String.format("%.0f", this.answer.getPremium());
+        String valueWrong = String.format("%.0f", this.answer.getPremiumMiss());
+        String valueStop = String.format("%.0f", this.answer.getPremiumStop());
 
-        mv.addObject("VALUE_PREMIUM", this.answer.getPremium());
+        mv.addObject("VALUE_PREMIUM", valuePremium);
+        mv.addObject("VALUE_WRONG", valueWrong);
+        mv.addObject("VALUE_STOP", valueStop);
         mv.addObject("PARTICIPANT", user.getName());
         mv.addObject("QUESTION", question.getQuestion());
         mv.addObject("ANSWER_ONE", options.get(0));
