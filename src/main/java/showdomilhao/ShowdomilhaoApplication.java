@@ -1,21 +1,21 @@
 package showdomilhao;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+// import java.util.ArrayList;
+// import java.util.List;
+// import java.util.Scanner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import showdomilhao.model.Answer;
-import showdomilhao.model.Cards;
-import showdomilhao.model.Guests;
-import showdomilhao.model.Option;
-import showdomilhao.model.Participant;
-import showdomilhao.model.Plaques;
-import showdomilhao.model.Question;
-import showdomilhao.service.ReadApi;
+// import showdomilhao.model.Answer;
+// import showdomilhao.model.Cards;
+// import showdomilhao.model.Guests;
+// import showdomilhao.model.Option;
+// import showdomilhao.model.Participant;
+// import showdomilhao.model.Plaques;
+// import showdomilhao.model.Question;
+// import showdomilhao.service.ReadApi;
 
 @SpringBootApplication
 public class ShowdomilhaoApplication implements CommandLineRunner {
@@ -26,9 +26,9 @@ public class ShowdomilhaoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		int i = 0, j;
-        System.out.println("Qual é o seu nome?");
-        Scanner input = new Scanner(System.in);
+		//int i = 0, j;
+        System.out.println("Bem-vindo ao Show do Milhão!");
+        /*Scanner input = new Scanner(System.in);
         String iAmRight;
         String name = input.nextLine();
         Participant person = new Participant(name);
@@ -83,7 +83,7 @@ public class ShowdomilhaoApplication implements CommandLineRunner {
                 answer.calculatePremium(i);
                 i++;
             }
-        }
+        }*/
 	}
 
 }

@@ -66,6 +66,9 @@ time, mark, audio, video {
     gap: 2%;
     cursor: pointer;
 }
+.question-li:hover {
+    opacity: 0.9;
+}
 .number {
     border-radius: 50%;
     background-color: #fff;
@@ -98,7 +101,7 @@ time, mark, audio, video {
 .menu-help {
     width: 50vw;
     height: 30vh;
-    background-color: #f0d115;
+    background-color: #ffc509;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,15 +215,39 @@ time, mark, audio, video {
 #modal-help {
     width: 900px;
     height: 500px;
-    align-items: center;
     position: absolute;
     left: 50%;
     margin-right: -50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
+    padding: 60px;
     display: none;
+    font-weight: bold;
+    align-content: center;
+}
+
+.content-help {
+    display: flex;
+}
+
+.content-guests {
+    display: none;
+}
+
+.content-help, .content-guests {
     justify-content: space-between;
+    align-items: center;
+}
+
+.content-guests {
+    padding: 0 40px;
+}
+
+.icon-help {
+    max-width: 180px;
+    max-height: 150px;
+    cursor: pointer;
+    padding-bottom: 4px;
 }
 
 .content-ask p {
@@ -258,4 +285,20 @@ time, mark, audio, video {
 #no-button {
     background: linear-gradient(#ea7079, #891a1a);
     box-shadow: 0px 0px 0px 4px #7e1522, 0px 2px 0px 3px #e66565;
+}
+
+.close-menu, .close-guests {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 8px 16px 0 0;
+    cursor: pointer;
+}
+
+.close-menu:hover, .close-guests:hover {
+    opacity: 0.8;
+}
+
+.content-guests .icon-help {
+    cursor: auto;
 }

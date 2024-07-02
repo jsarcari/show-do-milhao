@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import showdomilhao.model.Answer;
+import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Question;
 import showdomilhao.service.ReadApi;
@@ -24,6 +25,7 @@ public class MainController {
     private List<Integer> idsChoice;
     private int index = 0;
     private Participant user;
+    private Guests guests;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -32,6 +34,7 @@ public class MainController {
         this.questions = this.api.getData();
         this.user = new Participant(null);
         this.answer = new Answer(1000);
+        this.guests = new Guests();
         this.idsChoice = new ArrayList<Integer>();
         mv.setViewName("name.jsp");
 
@@ -39,7 +42,7 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant participant, @RequestParam int id) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
@@ -52,6 +55,9 @@ public class MainController {
             this.answer.calculatePremium(this.index);
         } else {
             this.user = participant;
+        }
+        if (guestsAvailable!=null && guestsAvailable.equals("false")) {
+            this.guests.setAvailable(false);
         }
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
@@ -68,6 +74,7 @@ public class MainController {
         mv.addObject("ANSWER_THREE", options.get(2));
         mv.addObject("ANSWER_FOUR", options.get(3));
         mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
+        mv.addObject("GUESTS", this.guests);
         mv.setViewName("question.jsp");
 
         return mv;

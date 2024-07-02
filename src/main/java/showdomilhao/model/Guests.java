@@ -52,7 +52,7 @@ public class Guests extends Help {
         }
     }
 
-    private void generateWrongAnswers() {
+    public void generateWrongAnswers() {
         Random generator = new Random();
         this.setNumber(this.correctAnswer);
         while (this.getNumber() == this.correctAnswer) {
