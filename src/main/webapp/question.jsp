@@ -84,11 +84,22 @@
     }
     .container-right {
         width: 50vw;
+        height: 100vh;
+    }
+    .people {
+        width: 50vw;
         height: 70vh;
         background-color: #d4d4d4;
     }
-    #name-user {
-        margin-top: 20px;
+    .menu-help {
+        width: 50vw;
+        height: 30vh;
+        background-color: #f0d115;
+    }
+    .name-user {
+        position: absolute;
+        top: 30px;
+        right: 20%;
         text-align: center;
     }
     .body-head {
@@ -146,7 +157,7 @@
         /* Stay in place */
         z-index: 1;
         /* Sit on top */
-        padding-top: 100px;
+        padding-top: 200px;
         /* Location of the box */
         left: 0;
         top: 0;
@@ -245,10 +256,10 @@
                 <h1>${QUESTION}</h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li" onclick="areYouRight('one')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li" onclick="areYouRight('two')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li" onclick="areYouRight('three')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li" onclick="areYouRight('four')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="areYouRight('one')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
+                <li class="question-li li-two" onclick="areYouRight('two')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
+                <li class="question-li li-three" onclick="areYouRight('three')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
+                <li class="question-li li-four" onclick="areYouRight('four')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
             </ol>
             <div class="premiums">
                 <div>
@@ -266,9 +277,21 @@
             </div>
         </div>
         <div class="container-right">
-            <h2 id="name-user">${PARTICIPANT}</h2>
-            <div class="body-head"></div>
-            <div class="body-user"></div>
+            <div class="people">
+                <h2 class="name-user">${PARTICIPANT}</h2>
+                <div class="body-head"></div>
+                <div class="body-user"></div>
+            </div>
+            <div class="menu-help">
+                <div>
+                    <div class="button-help"></div>
+                    <p>Ajuda</p>
+                </div>
+                <div>
+                    <div class="button-stop"></div>
+                    <p>Parar</p>
+                </div>
+            </div>
         </div>
         <div id="areYouSure" class="modal">
             <!-- Modal content -->
@@ -285,9 +308,9 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="content-ask">
-                <p>Certa resposta</p>
+                <p id="message">Certa resposta</p>
               </div>
-              <form class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
+              <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
             </div>
@@ -297,7 +320,6 @@
             <div class="modal-content">
               <div class="content-ask">
                 <p>Que pena. Você errou!</p>
-                <p>A resposta correta é <strong><%=correct%>.</strong></p>
                 <p>Você ganhou R$ ${VALUE_WRONG}</p>
               </div>
               <form class="buttons-confirm" method="get" action="/">
@@ -308,6 +330,7 @@
     </div>
     <script>
         function areYouRight(id) {
+            var divSelected = document.querySelector(".li-" + id);
             var value = document.getElementById(id).textContent;
             var modalSure = document.getElementById("areYouSure");
             var modalCorrect = document.getElementById("correctAnswer");
@@ -319,12 +342,26 @@
             number.style.color = "black";
             document.getElementById("yes-button").onclick = function() {
                 modalSure.style.display = "none";
-                console.log(value);
-                console.log(correctAnswer);
                 if (value === correctAnswer) {
+                    var currentId = '<%=idQuestion%>';
+                    if (currentId === '17') {
+                        document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
+                        document.formSubmit.setAttribute("method","get");
+                        document.formSubmit.action = "/";
+                    }
                     modalCorrect.style.display = "block";
+                    divSelected.style.backgroundColor = "#01b051";
                 } else {
                     modalIncorrect.style.display = "block";
+                    var options = document.querySelectorAll(".question-li");
+                    for (var i=0; i<4; i++) {
+                        var option = options[i];
+                        var answer = option.querySelector(".answer");
+                        if (answer.textContent === correctAnswer) {
+                            option.style.backgroundColor = "#01b051";
+                            break;
+                        }
+                    }
                 }
             }
             // Close modal when button with id "yes-button" is clicked
@@ -334,6 +371,7 @@
                 number.style.color = "blue";
             }
         }
+
     </script>
 </body>
 </html>

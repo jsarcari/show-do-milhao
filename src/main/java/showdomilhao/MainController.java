@@ -23,12 +23,14 @@ public class MainController {
     private int indexQuestion;
     private List<Integer> idsChoice;
     private int index = 0;
+    private Participant user;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
         ModelAndView mv = new ModelAndView();
         this.api = new ReadApi();
         this.questions = this.api.getData();
+        this.user = new Participant(null);
         this.answer = new Answer(1000);
         this.idsChoice = new ArrayList<Integer>();
         mv.setViewName("name.jsp");
@@ -37,7 +39,7 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant user, @RequestParam int id) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
@@ -48,6 +50,8 @@ public class MainController {
             this.answer.setPremiumStop(this.answer.getPremium());
             this.answer.setPremiumMiss(this.answer.getPremium()/2);
             this.answer.calculatePremium(this.index);
+        } else {
+            this.user = participant;
         }
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
