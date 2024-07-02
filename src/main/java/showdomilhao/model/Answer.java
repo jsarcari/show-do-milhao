@@ -140,16 +140,16 @@ public class Answer {
 
     public void calculatePremium(int j) {
         double premium;
-        if (j<4) {
+        if (j<5) {
             premium = getPremium()+1000;
             setPremium(premium);
-        } else if (j>4 && j<9) {
+        } else if (j>5 && j<10) {
             premium = getPremium()+10000;
             setPremium(premium);
-        } else if (j==4 || j==9 || j==14) {
+        } else if (j==5 || j==10 || j==15) {
             premium = getPremium()*2;
             setPremium(premium);
-        }else if (j>9 && j<14) {
+        }else if (j>10 && j<15) {
             premium = getPremium()+100000;
             setPremium(premium);
         }

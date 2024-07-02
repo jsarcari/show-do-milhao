@@ -44,6 +44,11 @@ public class MainController {
         this.idsChoice.add(this.indexQuestion);
         Question question = this.questions.get(this.indexQuestion);
         List options = this.answer.createArrayOptions(question);
+        if(this.index!=0) {
+            this.answer.setPremiumStop(this.answer.getPremium());
+            this.answer.setPremiumMiss(this.answer.getPremium()/2);
+            this.answer.calculatePremium(this.index);
+        }
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
         String valueWrong = String.format("%.0f", this.answer.getPremiumMiss());
@@ -58,6 +63,7 @@ public class MainController {
         mv.addObject("ANSWER_TWO", options.get(1));
         mv.addObject("ANSWER_THREE", options.get(2));
         mv.addObject("ANSWER_FOUR", options.get(3));
+        mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
         mv.setViewName("question.jsp");
 
         return mv;
