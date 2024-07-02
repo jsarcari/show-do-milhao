@@ -91,10 +91,29 @@
         height: 70vh;
         background-color: #d4d4d4;
     }
+    .button-help, .button-stop {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        background: linear-gradient(#ced869, #536d1b);
+        cursor: pointer;
+    }
+    .button-help:hover, .button-stop:hover {
+        background: #536d1b;
+    }
     .menu-help {
         width: 50vw;
         height: 30vh;
         background-color: #f0d115;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+        gap: 20%;
     }
     .name-user {
         position: absolute;
@@ -135,10 +154,11 @@
         font-weight: bold;
         font-size: 28px;
         padding: 12px;
-        width: 150px;
-        height: 30px;
+        width: 180px;
+        height: 40px;
         border-radius: 10px;
         text-align: center;
+        align-content: center;
     }
     .text {
         color: #fff;
@@ -248,6 +268,10 @@
         idQuestion = Integer.valueOf(request.getParameter("id"));
         idQuestion++;
     }
+    String valueStop = "";
+    if (request.getAttribute("VALUE_STOP") != null) {
+        valueStop = (String)request.getAttribute("VALUE_STOP");
+    }
 %>
 <body>
     <div class="container">
@@ -319,8 +343,8 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="content-ask">
-                <p>Que pena. Você errou!</p>
-                <p>Você ganhou R$ ${VALUE_WRONG}</p>
+                <p id="sad">Que pena. Você errou!</p>
+                <p>Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
               </div>
               <form class="buttons-confirm" method="get" action="/">
                 <button type="submit" id="yes-incorrect">Continuar</button>
@@ -370,6 +394,12 @@
                 number.style.backgroundColor = "#fff";
                 number.style.color = "blue";
             }
+        }
+
+        document.querySelector(".button-stop").onclick = function() {
+            document.getElementById("sad").textContent = "";
+            document.getElementById("incorrectAnswer").style.display = "block";
+            document.getElementById("value-stop").textContent = 'R$ <%=valueStop%>';
         }
 
     </script>
