@@ -73,9 +73,4 @@ public class MainController {
         return mv;
 
     }
-    
-    @GetMapping("/hello")
-    public String helloPage() {
-        return "name.jsp";
-    }
 }
