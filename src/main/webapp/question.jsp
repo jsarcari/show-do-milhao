@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="showdomilhao.model.Guests" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +17,19 @@
         idQuestion = Integer.valueOf(request.getParameter("id"));
         idQuestion++;
     }
+    String valuePremium = "";
+    if (request.getAttribute("VALUE_PREMIUM") != null) {
+        valuePremium = (String)request.getAttribute("VALUE_PREMIUM");
+    }
     String valueStop = "";
     if (request.getAttribute("VALUE_STOP") != null) {
         valueStop = (String)request.getAttribute("VALUE_STOP");
     }
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
-
+    Participant user = (Participant) request.getAttribute("PARTICIPANT");
+    String nameUser = user.getName();
+    int canSkip = user.getCanSkip();
 %>
 <body>
     <div class="container">
@@ -54,7 +60,7 @@
         </div>
         <div class="container-right">
             <div class="people">
-                <h2 class="name-user">${PARTICIPANT}</h2>
+                <h2 class="name-user"><%=nameUser%></h2>
                 <div class="body-head"></div>
                 <div class="body-user"></div>
             </div>
@@ -86,7 +92,7 @@
                 </div>
                 <div class="skip">
                     <img class="icon-help" id="select-skip" src="./img/912603-200.png">
-                    <p>Pular</p>
+                    <p id="legend-skip">Pular</p>
                 </div>
             </div>
             <div class="content-guests">
@@ -123,7 +129,10 @@
                 <p id="message">Certa resposta</p>
               </div>
               <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
-                <input type="hidden" name="guestsAvailable" id="guestsBoolean" value=""/>
+                <% if (!valuePremium.equals("1000000")) { %>
+                <input type="hidden" name="guestsAvailable" value=""/>
+                <input type="hidden" name="skipAvailable" value="" />
+                <% } %>
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
             </div>
@@ -153,12 +162,11 @@
             modalSure.style.display = "block";
             number.style.backgroundColor = "red";
             number.style.color = "black";
-            console.log(document.formSubmit.guestsAvailable.value);
             document.getElementById("yes-button").onclick = function() {
                 modalSure.style.display = "none";
                 if (value === correctAnswer) {
-                    var currentId = '<%=idQuestion%>';
-                    if (currentId === '17') {
+                    var premium = '<%=valuePremium%>';
+                    if (premium === '1000000') {
                         document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
                         document.formSubmit.setAttribute("method","get");
                         document.formSubmit.action = "/";
@@ -187,13 +195,18 @@
         }
 
         document.querySelector(".button-help").onclick = function() {
-            console.log('<%=canGuests%>');
             document.getElementById("modal-help").style.display = "block";
             if ('<%=canGuests%>' === "false") {
                 var buttonGuests = document.getElementById("select-guests");
                 buttonGuests.style.pointerEvents = "none";
                 buttonGuests.style.opacity = "0.4";
                 document.getElementById("legend-guests").style.textDecoration = "line-through";
+            }
+            if ('<%=canSkip%>' === 0) {
+                var buttonSkip = document.getElementById("select-skip");
+                buttonSkip.style.pointerEvents = "none";
+                buttonGuests.style.opacity = "0.4";
+                document.getElementById("legend-skip").style.textDecoration = "line-through";
             }
         }
 
@@ -260,6 +273,14 @@
                         document.getElementById("answer-guest-3").textContent = correctOption;
                         break;
                 }
+            }
+        }
+
+        document.getElementById("select-skip").onclick = function() {
+            var canSkip = '<%=canSkip%>';
+            if (canSkip > 0) {
+                canSkip--;
+                document.formSubmit.skipAvailable.value = canSkip.toString();
             }
         }
 
