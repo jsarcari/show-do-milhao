@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
-import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" %>
+import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +32,8 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     Boolean canGuests = guests.getAvailable();
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
     Boolean canPlaques = plaques.getAvailable();
+    Cards cards = (Cards) request.getAttribute("CARDS");
+    Boolean canCards = cards.getAvailable();
     Participant user = (Participant) request.getAttribute("PARTICIPANT");
     String nameUser = user.getName();
     int canSkip = user.getCanSkip();
@@ -93,7 +95,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 </div>
                 <div class="cards">
                     <img class="icon-help" id="select-cards" src="./img/7455803-cartas-de-baralho-numero-3-vetor.jpg">
-                    <p>Cartas</p>
+                    <p id="legend-cards">Cartas</p>
                 </div>
                 <div class="skip">
                     <form name="skipSubmit" action="/question?id=<%=currentIndex%>" method="post">
@@ -135,6 +137,13 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <div class="plaque">
                     <img class="icon-help" src="./img/1091364_placa-em-aluminio-5x8cm-numero-4-sinali_m1_636271809800088000.jpg">
                     <p id="percent-plaque-4"></p>
+                </div>
+            </div>
+            <div class="content-cards">
+                <h3>Escolha uma carta:</h3>
+                <span class="close-cards">x</span>
+                <div class="card">
+                    <img class="icon-card" id="card-1">
                 </div>
             </div>
         </div>
@@ -309,6 +318,12 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     }
                 }
                 console.log(numbers);
+            }
+        }
+
+        document.getElementById("select-cards").onclick = function() {
+            if ('<%=canCards%>'==="true") {
+                document.querySelector(".content-help").style.display = "none";
             }
         }
         

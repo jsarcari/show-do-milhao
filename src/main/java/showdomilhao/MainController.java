@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import showdomilhao.model.Answer;
+import showdomilhao.model.Cards;
 import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Plaques;
@@ -28,6 +29,7 @@ public class MainController {
     private Participant user;
     private Guests guests;
     private Plaques plaques;
+    private Cards cards;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -38,6 +40,7 @@ public class MainController {
         this.answer = new Answer(1000);
         this.guests = new Guests();
         this.plaques = new Plaques();
+        this.cards = new Cards();
         this.idsChoice = new ArrayList<Integer>();
         mv.setViewName("name.jsp");
 
@@ -45,7 +48,7 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String skipAvailable) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
@@ -67,10 +70,11 @@ public class MainController {
         if (plaquesAvailable!=null && plaquesAvailable.equals("false")) {
             this.plaques.setAvailable(false);
         }
+        if (cardsAvailable!=null && cardsAvailable.equals("false")) {
+            this.cards.setAvailable(false);
+        }
         if (skipAvailable!=null && !skipAvailable.equals("")) {
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
-        } else {
-            
         }
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
@@ -89,6 +93,7 @@ public class MainController {
         mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
         mv.addObject("GUESTS", this.guests);
         mv.addObject("PLAQUES", this.plaques);
+        mv.addObject("CARDS", this.cards);
         mv.setViewName("question.jsp");
 
         return mv;
