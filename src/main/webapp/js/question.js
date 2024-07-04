@@ -53,3 +53,14 @@ document.querySelector(".close-guests").onclick = function() {
     document.getElementById("legend-guests").style.textDecoration = "line-through";
 
 }
+
+document.querySelector(".close-plaques").onclick = function() {
+    var buttonGuests = document.getElementById("select-plaques");
+    document.getElementById("modal-help").style.display = "none";
+    document.querySelector(".content-help").style.display = "flex";
+    document.querySelector(".content-plaques").style.display = "none";
+    buttonGuests.style.pointerEvents = "none";
+    buttonGuests.style.opacity = "0.4";
+    document.getElementById("legend-plaques").style.textDecoration = "line-through";
+
+}

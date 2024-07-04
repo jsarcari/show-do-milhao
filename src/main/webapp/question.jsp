@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
+import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +30,8 @@
     }
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
+    Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
+    Boolean canPlaques = plaques.getAvailable();
     Participant user = (Participant) request.getAttribute("PARTICIPANT");
     String nameUser = user.getName();
     int canSkip = user.getCanSkip();
@@ -86,7 +89,7 @@
                 </div>
                 <div class="plaques">
                     <img class="icon-help" id="select-plaques" src="./img/PLACA-SINALIZE-DE-SINALIZACAO-NUMERAL-0-A-9-25X5CM.jpg">
-                    <p>Placas</p>
+                    <p id="legend-plaques">Placas</p>
                 </div>
                 <div class="cards">
                     <img class="icon-help" id="select-cards" src="./img/7455803-cartas-de-baralho-numero-3-vetor.jpg">
@@ -115,6 +118,25 @@
                     <p id="answer-guest-3"></p>
                 </div>
             </div>
+            <div class="content-plaques">
+                <span class="close-plaques">x</span>
+                <div class="plaque">
+                    <img class="icon-help" src="./img/5009608119_1.jpg">
+                    <p id="percent-plaque-1"></p>
+                </div>
+                <div class="plaque">
+                    <img class="icon-help" src="./img/1091352_placa-em-aluminio-5x8cm-numero-2-sinali_s1_636271809534888000.jpg">
+                    <p id="percent-plaque-2"></p>
+                </div>
+                <div class="plaque">
+                    <img class="icon-help" src="./img/images.jpeg">
+                    <p id="percent-plaque-3"></p>
+                </div>
+                <div class="plaque">
+                    <img class="icon-help" src="./img/1091364_placa-em-aluminio-5x8cm-numero-4-sinali_m1_636271809800088000.jpg">
+                    <p id="percent-plaque-4"></p>
+                </div>
+            </div>
         </div>
         <div id="areYouSure" class="modal">
             <!-- Modal content -->
@@ -136,6 +158,7 @@
               <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
                 <% if (!valuePremium.equals("1000000")) { %>
                 <input type="hidden" name="guestsAvailable" value=""/>
+                <input type="hidden" name="plaquesAvailable" value=""/>
                 <% } %>
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
@@ -163,6 +186,12 @@
                 buttonGuests.style.opacity = "0.4";
                 document.getElementById("legend-guests").style.textDecoration = "line-through";
             }
+            if ('<%=canPlaques%>' === "false") {
+                var buttonGuests = document.getElementById("select-plaques");
+                buttonGuests.style.pointerEvents = "none";
+                buttonGuests.style.opacity = "0.4";
+                document.getElementById("legend-plaques").style.textDecoration = "line-through";
+            }
             if ('<%=canSkip%>' === "0") {
                 var buttonSkip = document.getElementById("select-skip");
                 var imgSkip = document.getElementById("img-skip");
@@ -186,14 +215,14 @@
                 document.formSubmit.guestsAvailable.value = "false";
                 var correctOption = 0;
                 var options = document.querySelectorAll(".question-li");
-                    for (var i=0; i<4; i++) {
-                        var option = options[i];
-                        var answer = option.querySelector(".answer");
-                        if (answer.textContent === '<%=correct%>') {
-                            correctOption = option.querySelector(".number").textContent;
-                            break;
-                        }
+                for (var i=0; i<4; i++) {
+                    var option = options[i];
+                    var answer = option.querySelector(".answer");
+                    if (answer.textContent === '<%=correct%>') {
+                        correctOption = option.querySelector(".number").textContent;
+                        break;
                     }
+                }
                 var incorrectOption = correctOption;
                 while (incorrectOption == correctOption) {
                     incorrectOption = Math.floor(Math.random()*4);
@@ -221,6 +250,26 @@
                         document.getElementById("answer-guest-3").textContent = correctOption;
                         break;
                 }
+            }
+        }
+
+        document.getElementById("select-plaques").onclick = function() {
+            if ('<%=canPlaques%>'==="true") {
+                document.querySelector(".content-help").style.display = "none";
+                document.querySelector(".content-plaques").style.display = "flex";
+                document.formSubmit.plaquesAvailable.value = "false";
+                var correctOption = 0;
+                var options = document.querySelectorAll(".question-li");
+                for (var i=0; i<4; i++) {
+                    var option = options[i];
+                    var answer = option.querySelector(".answer");
+                    if (answer.textContent === '<%=correct%>') {
+                        correctOption = option.querySelector(".number").textContent;
+                        break;
+                    }
+                }
+                var percentCorrect = Math.floor(Math.random() * 75)+50;
+                document.getElementById("percent-plaque-"+correctOption).textContent = percentCorrect + "%";
             }
         }
         

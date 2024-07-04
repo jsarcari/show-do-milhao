@@ -230,16 +230,16 @@ time, mark, audio, video {
     display: flex;
 }
 
-.content-guests {
+.content-guests, .content-plaques {
     display: none;
 }
 
-.content-help, .content-guests {
+.content-help, .content-guests, .content-plaques {
     justify-content: space-between;
     align-items: center;
 }
 
-.content-guests {
+.content-guests, .content-plaques {
     padding: 0 40px;
 }
 
@@ -289,7 +289,7 @@ time, mark, audio, video {
     box-shadow: 0px 0px 0px 4px #7e1522, 0px 2px 0px 3px #e66565;
 }
 
-.close-menu, .close-guests {
+.close-menu, .close-guests, .close-plaques {
     position: absolute;
     right: 0;
     top: 0;
@@ -297,7 +297,7 @@ time, mark, audio, video {
     cursor: pointer;
 }
 
-.close-menu:hover, .close-guests:hover {
+.close-menu:hover, .close-guests:hover, .close-plaques:hover {
     opacity: 0.8;
 }
 

@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import showdomilhao.model.Answer;
 import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
+import showdomilhao.model.Plaques;
 import showdomilhao.model.Question;
 import showdomilhao.service.ReadApi;
 
@@ -26,6 +27,7 @@ public class MainController {
     private int index = 0;
     private Participant user;
     private Guests guests;
+    private Plaques plaques;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -35,6 +37,7 @@ public class MainController {
         this.user = new Participant(null);
         this.answer = new Answer(1000);
         this.guests = new Guests();
+        this.plaques = new Plaques();
         this.idsChoice = new ArrayList<Integer>();
         mv.setViewName("name.jsp");
 
@@ -42,7 +45,7 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String skipAvailable) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String skipAvailable) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
@@ -60,6 +63,9 @@ public class MainController {
         }
         if (guestsAvailable!=null && guestsAvailable.equals("false")) {
             this.guests.setAvailable(false);
+        }
+        if (plaquesAvailable!=null && plaquesAvailable.equals("false")) {
+            this.plaques.setAvailable(false);
         }
         if (skipAvailable!=null && !skipAvailable.equals("")) {
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
@@ -82,6 +88,7 @@ public class MainController {
         mv.addObject("ANSWER_FOUR", options.get(3));
         mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
         mv.addObject("GUESTS", this.guests);
+        mv.addObject("PLAQUES", this.plaques);
         mv.setViewName("question.jsp");
 
         return mv;
