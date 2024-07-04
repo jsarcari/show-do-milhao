@@ -13,8 +13,10 @@
         correct = (String)request.getAttribute("CORRECT_ANSWER");
     }
     Integer idQuestion = 2;
+    Integer currentIndex = 2;
     if (request.getParameter("id") != null) {
         idQuestion = Integer.valueOf(request.getParameter("id"));
+        currentIndex = idQuestion;
         idQuestion++;
     }
     String valuePremium = "";
@@ -91,8 +93,11 @@
                     <p>Cartas</p>
                 </div>
                 <div class="skip">
-                    <img class="icon-help" id="select-skip" src="./img/912603-200.png">
-                    <p id="legend-skip">Pular</p>
+                    <form name="skipSubmit" action="/question?id=<%=currentIndex%>" method="post">
+                        <input type="hidden" name="skipAvailable" value="" />
+                        <button type="submit" class="icon-help" id="select-skip"><img src="./img/912603-200.png" id="img-skip"></button>
+                        <p id="legend-skip">Pular</p>
+                    </form>
                 </div>
             </div>
             <div class="content-guests">
@@ -131,7 +136,6 @@
               <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
                 <% if (!valuePremium.equals("1000000")) { %>
                 <input type="hidden" name="guestsAvailable" value=""/>
-                <input type="hidden" name="skipAvailable" value="" />
                 <% } %>
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
@@ -202,10 +206,12 @@
                 buttonGuests.style.opacity = "0.4";
                 document.getElementById("legend-guests").style.textDecoration = "line-through";
             }
-            if ('<%=canSkip%>' === 0) {
+            if ('<%=canSkip%>' === "0") {
                 var buttonSkip = document.getElementById("select-skip");
+                var imgSkip = document.getElementById("img-skip");
                 buttonSkip.style.pointerEvents = "none";
-                buttonGuests.style.opacity = "0.4";
+                imgSkip.style.pointerEvents = "none";
+                imgSkip.style.opacity = "0.4";
                 document.getElementById("legend-skip").style.textDecoration = "line-through";
             }
         }
@@ -280,7 +286,8 @@
             var canSkip = '<%=canSkip%>';
             if (canSkip > 0) {
                 canSkip--;
-                document.formSubmit.skipAvailable.value = canSkip.toString();
+                canSkip.toString();
+                document.skipSubmit.skipAvailable.value = canSkip;
             }
         }
 

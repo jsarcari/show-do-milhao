@@ -49,7 +49,7 @@ public class MainController {
         this.idsChoice.add(this.indexQuestion);
         Question question = this.questions.get(this.indexQuestion);
         List options = this.answer.createArrayOptions(question);
-        if(this.index!=0) {
+        if(this.index!=0 && (skipAvailable==null || skipAvailable.equals(""))) {
             this.answer.setPremiumStop(this.answer.getPremium());
             this.answer.setPremiumMiss(this.answer.getPremium()/2);
             this.answer.calculatePremium(this.index);
@@ -61,6 +61,8 @@ public class MainController {
         }
         if (skipAvailable!=null && !skipAvailable.equals("")) {
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
+        } else {
+            
         }
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());

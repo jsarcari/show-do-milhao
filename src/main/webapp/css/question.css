@@ -248,6 +248,8 @@ time, mark, audio, video {
     max-height: 150px;
     cursor: pointer;
     padding-bottom: 4px;
+    background-color: transparent;
+    border: none;
 }
 
 .content-ask p {
