@@ -301,6 +301,6 @@ time, mark, audio, video {
     opacity: 0.8;
 }
 
-.content-guests .icon-help {
+.content-guests .icon-help, .content-plaques .icon-help {
     cursor: auto;
 }

@@ -260,16 +260,55 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.formSubmit.plaquesAvailable.value = "false";
                 var correctOption = 0;
                 var options = document.querySelectorAll(".question-li");
+                var numbers = [];
+                var indexCorrect = 0;
                 for (var i=0; i<4; i++) {
                     var option = options[i];
                     var answer = option.querySelector(".answer");
                     if (answer.textContent === '<%=correct%>') {
                         correctOption = option.querySelector(".number").textContent;
+                        indexCorrect = i;
                         break;
                     }
                 }
-                var percentCorrect = Math.floor(Math.random() * 75)+50;
+                var sum = 100;
+                var percentCorrect = Math.floor(Math.random() * (sum-50))+50;
+                var sum = 100-percentCorrect;
+                var result = percentCorrect;
                 document.getElementById("percent-plaque-"+correctOption).textContent = percentCorrect + "%";
+                for (var j=0; j<4; j++) {
+                    var currentPlaque = options[j].querySelector(".number").textContent;
+                    var currentAnswer = options[j].querySelector(".answer").textContent;
+                    if (!numbers.includes(currentPlaque) && (currentAnswer !== '<%=correct%>')) {
+                        percentIncorrect = Math.floor(Math.random() * (sum)) + 0;
+                        result += percentIncorrect;
+                        sum = 100-result;
+                        var lastPercent = percentIncorrect;
+                        if (result>100) {
+                            percentIncorrect = percentIncorrect-result-100;
+                            result += percentIncorrect;
+                            if ((result-lastPercent+percentIncorrect)<100) {
+                                percentIncorrect = percentIncorrect+(100-result);
+                            }
+                        }
+                        if (result<100) {
+                            if (indexCorrect !== 3){
+                                if (j==3) {
+                                    percentIncorrect = percentIncorrect+100-result;
+                                }
+                            } else {
+                                if (j==2) {
+                                    percentIncorrect = percentIncorrect+100-result;
+                                    document.getElementById("percent-plaque-"+currentPlaque).textContent = percentIncorrect + "%";
+                                    break;
+                                }
+                            }
+                        }
+                        document.getElementById("percent-plaque-"+currentPlaque).textContent = percentIncorrect + "%";
+                        numbers.push(currentPlaque);
+                    }
+                }
+                console.log(numbers);
             }
         }
         
