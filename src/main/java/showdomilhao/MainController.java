@@ -54,7 +54,9 @@ public class MainController {
             this.answer.setPremiumMiss(this.answer.getPremium()/2);
             this.answer.calculatePremium(this.index);
         } else {
-            this.user = participant;
+            if (participant != null) {
+                this.user = participant;
+            }
         }
         if (guestsAvailable!=null && guestsAvailable.equals("false")) {
             this.guests.setAvailable(false);

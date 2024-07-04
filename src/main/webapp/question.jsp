@@ -40,10 +40,10 @@
                 <h1>${QUESTION}</h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li li-one" onclick="areYouRight('one')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li li-two" onclick="areYouRight('two')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li li-three" onclick="areYouRight('three')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li li-four" onclick="areYouRight('four')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="areYouRight('one','<%=correct%>','<%=valuePremium%>')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
+                <li class="question-li li-two" onclick="areYouRight('two','<%=correct%>','<%=valuePremium%>')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
+                <li class="question-li li-three" onclick="areYouRight('three','<%=correct%>','<%=valuePremium%>')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
+                <li class="question-li li-four" onclick="areYouRight('four','<%=correct%>','<%=valuePremium%>')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
             </ol>
             <div class="premiums">
                 <div>
@@ -154,50 +154,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function areYouRight(id) {
-            var divSelected = document.querySelector(".li-" + id);
-            var value = document.getElementById(id).textContent;
-            var modalSure = document.getElementById("areYouSure");
-            var modalCorrect = document.getElementById("correctAnswer");
-            var modalIncorrect = document.getElementById("incorrectAnswer");
-            var number = document.querySelector("." + id);
-            var correctAnswer = '<%=correct%>';
-            modalSure.style.display = "block";
-            number.style.backgroundColor = "red";
-            number.style.color = "black";
-            document.getElementById("yes-button").onclick = function() {
-                modalSure.style.display = "none";
-                if (value === correctAnswer) {
-                    var premium = '<%=valuePremium%>';
-                    if (premium === '1000000') {
-                        document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
-                        document.formSubmit.setAttribute("method","get");
-                        document.formSubmit.action = "/";
-                    }
-                    modalCorrect.style.display = "block";
-                    divSelected.style.backgroundColor = "#01b051";
-                } else {
-                    modalIncorrect.style.display = "block";
-                    var options = document.querySelectorAll(".question-li");
-                    for (var i=0; i<4; i++) {
-                        var option = options[i];
-                        var answer = option.querySelector(".answer");
-                        if (answer.textContent === correctAnswer) {
-                            option.style.backgroundColor = "#01b051";
-                            break;
-                        }
-                    }
-                }
-            }
-            // Close modal when button with id "yes-button" is clicked
-            document.getElementById("no-button").onclick = function() {
-                modalSure.style.display = "none";
-                number.style.backgroundColor = "#fff";
-                number.style.color = "blue";
-            }
-        }
-
+    <script type="text/javascript">
         document.querySelector(".button-help").onclick = function() {
             document.getElementById("modal-help").style.display = "block";
             if ('<%=canGuests%>' === "false") {
@@ -220,21 +177,6 @@
             document.getElementById("sad").textContent = "";
             document.getElementById("incorrectAnswer").style.display = "block";
             document.getElementById("value-stop").textContent = 'R$ <%=valueStop%>';
-        }
-
-        document.querySelector(".close-menu").onclick = function() {
-            document.getElementById("modal-help").style.display = "none";
-        }
-
-        document.querySelector(".close-guests").onclick = function() {
-            var buttonGuests = document.getElementById("select-guests");
-            document.getElementById("modal-help").style.display = "none";
-            document.querySelector(".content-help").style.display = "flex";
-            document.querySelector(".content-guests").style.display = "none";
-            buttonGuests.style.pointerEvents = "none";
-            buttonGuests.style.opacity = "0.4";
-            document.getElementById("legend-guests").style.textDecoration = "line-through";
-
         }
 
         document.getElementById("select-guests").onclick = function() {
@@ -281,7 +223,7 @@
                 }
             }
         }
-
+        
         document.getElementById("select-skip").onclick = function() {
             var canSkip = '<%=canSkip%>';
             if (canSkip > 0) {
@@ -290,7 +232,7 @@
                 document.skipSubmit.skipAvailable.value = canSkip;
             }
         }
-
     </script>
+    <script type="text/javascript" src="./js/question.js"></script>
 </body>
 </html>
