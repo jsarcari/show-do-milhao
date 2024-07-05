@@ -72,3 +72,16 @@ document.querySelector(".close-cards").onclick = function() {
     buttonCards.style.opacity = "0.4";
     document.getElementById("legend-cards").style.textDecoration = "line-through";
 }
+
+function generateQuestionsEliminated(correctAnswer, options, num) {
+    list = [];
+    var i=0;
+    while (i<num) {
+        index = Math.floor(Math.random()*4);
+        if ((options[index].querySelector(".answer").textContent !== correctAnswer) && !list.includes(index)) {
+            list.push(index);
+            i++;
+        }
+    }
+    return list;
+}

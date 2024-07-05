@@ -361,16 +361,45 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 var cardsList = [];
                 cardsList = document.querySelectorAll(".icon-card");
                 for (var i=0; i<4; i++) {
-                    cardsList[i].onclick = function() {
+                    cardsList[i].addEventListener("click", (event) => {
                         for (var j=0; j<4; j++) {
                             var index = j+1;
                             document.getElementById("card-" + index).src = "./img/card-" + valuesGenerated[j] + ".jpg";
                             document.getElementById("card-" + index).style.pointerEvents = "none";
                         }
-                    }
-
+                        var cardSelected = event.target.getAttribute('src');
+                        var indexImg = cardSelected.split('-')[1];
+                        var emptyQuestions = indexImg.split('.')[0];
+                        var options = document.querySelectorAll(".question-li");
+                        switch (emptyQuestions) {
+                            case '0':
+                                var optionsEliminated = generateQuestionsEliminated('<%=correct%>', options, 1);
+                                options[optionsEliminated[0]].querySelector(".answer").textContent = '';
+                                options[optionsEliminated[0]].querySelector(".number").style.display = "none";
+                                options[optionsEliminated[0]].style.pointerEvents = "none";
+                                break;
+                            case '1':
+                                var optionsEliminated = generateQuestionsEliminated('<%=correct%>', options, 2);
+                                for (var i=0; i<2; i++) {
+                                    options[optionsEliminated[i]].querySelector(".answer").textContent = '';
+                                    options[optionsEliminated[i]].querySelector(".number").style.display = "none";
+                                    options[optionsEliminated[i]].style.pointerEvents = "none";
+                                }
+                                break;
+                            case '2':
+                                var optionsEliminated = generateQuestionsEliminated('<%=correct%>', options, 3);
+                                for (var i=0; i<3; i++) {
+                                    options[optionsEliminated[i]].querySelector(".answer").textContent = '';
+                                    options[optionsEliminated[i]].querySelector(".number").style.display = "none";
+                                    options[optionsEliminated[i]].style.pointerEvents = "none";
+                                }
+                                break;
+                            case '3':
+                                var optionsEliminated = generateQuestionsEliminated('<%=correct%>', options, 0);
+                                break;
+                        }
+                    });
                 }
-
             }
         }
         
