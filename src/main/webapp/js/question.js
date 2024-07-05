@@ -51,7 +51,6 @@ document.querySelector(".close-guests").onclick = function() {
     buttonGuests.style.pointerEvents = "none";
     buttonGuests.style.opacity = "0.4";
     document.getElementById("legend-guests").style.textDecoration = "line-through";
-
 }
 
 document.querySelector(".close-plaques").onclick = function() {
@@ -62,5 +61,14 @@ document.querySelector(".close-plaques").onclick = function() {
     buttonGuests.style.pointerEvents = "none";
     buttonGuests.style.opacity = "0.4";
     document.getElementById("legend-plaques").style.textDecoration = "line-through";
+}
 
+document.querySelector(".close-cards").onclick = function() {
+    var buttonCards = document.getElementById("select-cards");
+    document.getElementById("modal-help").style.display = "none";
+    document.querySelector(".content-help").style.display = "flex";
+    document.querySelector(".content-cards").style.display = "none";
+    buttonCards.style.pointerEvents = "none";
+    buttonCards.style.opacity = "0.4";
+    document.getElementById("legend-cards").style.textDecoration = "line-through";
 }

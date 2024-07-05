@@ -94,7 +94,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     <p id="legend-plaques">Placas</p>
                 </div>
                 <div class="cards">
-                    <img class="icon-help" id="select-cards" src="./img/7455803-cartas-de-baralho-numero-3-vetor.jpg">
+                    <img class="icon-help" id="select-cards" src="./img/card-2.jpg">
                     <p id="legend-cards">Cartas</p>
                 </div>
                 <div class="skip">
@@ -140,10 +140,21 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 </div>
             </div>
             <div class="content-cards">
-                <h3>Escolha uma carta:</h3>
-                <span class="close-cards">x</span>
-                <div class="card">
-                    <img class="icon-card" id="card-1">
+                <h3 class="title-help">Escolha uma carta:</h3>
+                <div class="container-cards">
+                    <span class="close-cards">x</span>
+                    <div class="card">
+                        <img class="icon-card" src="./img/101503-de-cartao-de-jogo-gratuito-gratis-vetor.png" id="card-1">
+                    </div>
+                    <div class="card">
+                        <img class="icon-card" src="./img/101503-de-cartao-de-jogo-gratuito-gratis-vetor.png" id="card-2">
+                    </div>
+                    <div class="card">
+                        <img class="icon-card" src="./img/101503-de-cartao-de-jogo-gratuito-gratis-vetor.png" id="card-3">
+                    </div>
+                    <div class="card">
+                        <img class="icon-card" src="./img/101503-de-cartao-de-jogo-gratuito-gratis-vetor.png" id="card-4">
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,6 +179,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <% if (!valuePremium.equals("1000000")) { %>
                 <input type="hidden" name="guestsAvailable" value=""/>
                 <input type="hidden" name="plaquesAvailable" value=""/>
+                <input type="hidden" name="cardsAvailable" value=""/>
                 <% } %>
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
@@ -209,6 +221,12 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 imgSkip.style.opacity = "0.4";
                 document.getElementById("legend-skip").style.textDecoration = "line-through";
             }
+            if ('<%=canCards%>' === "false") {
+                var buttonCards = document.getElementById("select-cards");
+                buttonCards.style.pointerEvents = "none";
+                buttonCards.style.opacity = "0.4";
+                document.getElementById("legend-cards").style.textDecoration = "line-through";
+            }  
         }
 
         document.querySelector(".button-stop").onclick = function() {
@@ -317,13 +335,42 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                         numbers.push(currentPlaque);
                     }
                 }
-                console.log(numbers);
             }
         }
 
         document.getElementById("select-cards").onclick = function() {
             if ('<%=canCards%>'==="true") {
                 document.querySelector(".content-help").style.display = "none";
+                document.querySelector(".content-cards").style.display = "block";
+                document.formSubmit.cardsAvailable.value = "false";
+                var n = 0;
+                var valuesGenerated = [];
+                valuesGenerated.push(Math.floor(Math.random()*4));
+                do {
+                    n = Math.floor(Math.random()*4);
+                } while (valuesGenerated.includes(n));
+                valuesGenerated.push(n);
+                do {
+                    n = Math.floor(Math.random()*4);
+                } while (valuesGenerated.includes(n));
+                valuesGenerated.push(n);
+                do {
+                    n = Math.floor(Math.random()*4);
+                } while (valuesGenerated.includes(n));
+                valuesGenerated.push(n);
+                var cardsList = [];
+                cardsList = document.querySelectorAll(".icon-card");
+                for (var i=0; i<4; i++) {
+                    cardsList[i].onclick = function() {
+                        for (var j=0; j<4; j++) {
+                            var index = j+1;
+                            document.getElementById("card-" + index).src = "./img/card-" + valuesGenerated[j] + ".jpg";
+                            document.getElementById("card-" + index).style.pointerEvents = "none";
+                        }
+                    }
+
+                }
+
             }
         }
         
