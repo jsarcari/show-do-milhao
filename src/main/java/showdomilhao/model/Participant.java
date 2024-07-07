@@ -17,6 +17,10 @@ public class Participant {
         return stop;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void setStop(Boolean stop) {
         this.stop = stop;
     }

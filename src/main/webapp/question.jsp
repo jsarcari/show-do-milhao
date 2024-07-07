@@ -98,8 +98,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     <p id="legend-cards">Cartas</p>
                 </div>
                 <div class="skip">
-                    <form name="skipSubmit" action="/question?id=<%=currentIndex%>" method="post">
+                    <form name="skipSubmit" action="question?id=<%=currentIndex%>" method="post">
                         <input type="hidden" name="skipAvailable" value="" />
+                        <input type="hidden" name="nameUser" value="<%=nameUser%>" />
                         <button type="submit" class="icon-help" id="select-skip"><img src="./img/912603-200.png" id="img-skip"></button>
                         <p id="legend-skip">Pular</p>
                     </form>
@@ -141,6 +142,10 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
             </div>
             <div class="content-cards">
                 <h3 class="title-help">Escolha uma carta:</h3>
+                <p>K - Nenhuma alternativa eliminada.</p>
+                <p>A - 1 alternativa eliminada.</p>
+                <p>2 - 2 alternativas eliminadas.</p>
+                <p>3 - 3 alternativas eliminadas.</p>
                 <div class="container-cards">
                     <span class="close-cards">x</span>
                     <div class="card">
@@ -343,21 +348,8 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.querySelector(".content-help").style.display = "none";
                 document.querySelector(".content-cards").style.display = "block";
                 document.formSubmit.cardsAvailable.value = "false";
-                var n = 0;
                 var valuesGenerated = [];
-                valuesGenerated.push(Math.floor(Math.random()*4));
-                do {
-                    n = Math.floor(Math.random()*4);
-                } while (valuesGenerated.includes(n));
-                valuesGenerated.push(n);
-                do {
-                    n = Math.floor(Math.random()*4);
-                } while (valuesGenerated.includes(n));
-                valuesGenerated.push(n);
-                do {
-                    n = Math.floor(Math.random()*4);
-                } while (valuesGenerated.includes(n));
-                valuesGenerated.push(n);
+                valuesGenerated = generateValueCards([]);
                 var cardsList = [];
                 cardsList = document.querySelectorAll(".icon-card");
                 for (var i=0; i<4; i++) {

@@ -85,3 +85,18 @@ function generateQuestionsEliminated(correctAnswer, options, num) {
     }
     return list;
 }
+
+function generateValueCards(values) {
+    var length = values.length;
+    if ((4-length) > 0) {
+        var n = 0;
+        do {
+            n = Math.floor(Math.random()*4);
+        } while (values.includes(n));
+        values.push(n);
+        return generateValueCards(values);
+    } else {
+        return values;
+    }
+
+}

@@ -48,7 +48,7 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable, String nameUser) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
@@ -74,6 +74,7 @@ public class MainController {
             this.cards.setAvailable(false);
         }
         if (skipAvailable!=null && !skipAvailable.equals("")) {
+            this.user.setName(nameUser);
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
         }
         
