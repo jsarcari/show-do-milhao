@@ -1,12 +1,21 @@
 package showdomilhao;
 
-// import java.util.ArrayList;
-// import java.util.List;
-// import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import showdomilhao.model.Answer;
+import showdomilhao.model.Cards;
+import showdomilhao.model.Guests;
+import showdomilhao.model.Option;
+import showdomilhao.model.Participant;
+import showdomilhao.model.Plaques;
+import showdomilhao.model.Question;
+import showdomilhao.service.ReadApi;
 
 // import showdomilhao.model.Answer;
 // import showdomilhao.model.Cards;
@@ -44,11 +53,11 @@ public class ShowdomilhaoApplication implements CommandLineRunner {
         while (answer.getRight() == true && person.getStop() == false && !win) {
             emptyOptions.clear();
 			answer.setEmptyOptions(emptyOptions);
-            int iWantHelp=-1;
+            String iWantHelp = "6";
             j = answer.choiceQuestion(listQuestions,ids, i);
             ids.add(j);
             Question ask = listQuestions.get(j);
-            List options = answer.createArrayOptions(ask);
+            List<String> options = answer.createArrayOptions(ask);
             do {
                 answer.printQuestion(ask);
                 answer.printOptions(options);
@@ -72,18 +81,19 @@ public class ShowdomilhaoApplication implements CommandLineRunner {
                     do {
                         action = true;
                         answer.printActions();
-                        iWantHelp = Integer.parseInt(input.nextLine());
+                        iWantHelp = input.nextLine();
 						Option option = new Option(iWantHelp, person, guests, plaques, cards, action, options, ask, answer);
 						option.validateOption();
 						action = option.getAction();
                     } while (!action);
                 }
-            } while (iWantHelp != 4 && iWantHelp != 0 && !iAmRight.equals("y"));
-            if (iWantHelp!=0) {
+            } while (iWantHelp != "4" && iWantHelp != "0" && !iAmRight.equals("y"));
+            if (iWantHelp!="0") {
                 answer.calculatePremium(i);
                 i++;
             }
-        }*/
+        }
+        input.close();*/
 	}
 
 }

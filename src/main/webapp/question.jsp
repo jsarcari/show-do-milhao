@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
-import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" %>
+import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" import="java.util.ArrayList" import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +32,15 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     Boolean canGuests = guests.getAvailable();
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
     Boolean canPlaques = plaques.getAvailable();
+    List<Integer> listPlaques = new ArrayList<Integer>();
+    if (request.getAttribute("LIST_PLAQUES") != null) {
+        listPlaques = (List<Integer>)request.getAttribute("LIST_PLAQUES");
+    } else {
+        listPlaques.add(26);
+        listPlaques.add(24);
+        listPlaques.add(25);
+        listPlaques.add(25);
+    }
     Cards cards = (Cards) request.getAttribute("CARDS");
     Boolean canCards = cards.getAvailable();
     Participant user = (Participant) request.getAttribute("PARTICIPANT");
@@ -292,7 +301,6 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.formSubmit.plaquesAvailable.value = "false";
                 var correctOption = 0;
                 var options = document.querySelectorAll(".question-li");
-                var numbers = [];
                 var indexCorrect = 0;
                 for (var i=0; i<4; i++) {
                     var option = options[i];
@@ -303,42 +311,40 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                         break;
                     }
                 }
-                var sum = 100;
-                var percentCorrect = Math.floor(Math.random() * (sum-50))+50;
-                var sum = 100-percentCorrect;
-                var result = percentCorrect;
-                document.getElementById("percent-plaque-"+correctOption).textContent = percentCorrect + "%";
-                for (var j=0; j<4; j++) {
-                    var currentPlaque = options[j].querySelector(".number").textContent;
-                    var currentAnswer = options[j].querySelector(".answer").textContent;
-                    if (!numbers.includes(currentPlaque) && (currentAnswer !== '<%=correct%>')) {
-                        percentIncorrect = Math.floor(Math.random() * (sum)) + 0;
-                        result += percentIncorrect;
-                        sum = 100-result;
-                        var lastPercent = percentIncorrect;
-                        if (result>100) {
-                            percentIncorrect = percentIncorrect-result-100;
-                            result += percentIncorrect;
-                            if ((result-lastPercent+percentIncorrect)<100) {
-                                percentIncorrect = percentIncorrect+(100-result);
-                            }
-                        }
-                        if (result<100) {
-                            if (indexCorrect !== 3){
-                                if (j==3) {
-                                    percentIncorrect = percentIncorrect+100-result;
-                                }
-                            } else {
-                                if (j==2) {
-                                    percentIncorrect = percentIncorrect+100-result;
-                                    document.getElementById("percent-plaque-"+currentPlaque).textContent = percentIncorrect + "%";
-                                    break;
-                                }
-                            }
-                        }
-                        document.getElementById("percent-plaque-"+currentPlaque).textContent = percentIncorrect + "%";
-                        numbers.push(currentPlaque);
+                var index = 1;
+                var notUsed = '3';
+                if (correctOption != '1') {
+                    document.getElementById("percent-plaque-1").textContent = '<%=listPlaques.get(1)%>' + "%";
+                } else {
+                    document.getElementById("percent-plaque-1").textContent = '<%=listPlaques.get(0)%>' + "%";
+                    notUsed = '1';
+                }
+                if (correctOption != '2') {
+                    document.getElementById("percent-plaque-2").textContent = '<%=listPlaques.get(2)%>' + "%";
+                } else {
+                    document.getElementById("percent-plaque-2").textContent = '<%=listPlaques.get(0)%>' + "%";
+                    notUsed = '2';
+                }
+                if (correctOption != '3') {
+                    document.getElementById("percent-plaque-3").textContent = '<%=listPlaques.get(3)%>' + "%";
+                } else {
+                    document.getElementById("percent-plaque-3").textContent = '<%=listPlaques.get(0)%>' + "%";
+                    notUsed = '3';
+                }
+                if (correctOption != '4') {
+                    switch (notUsed) {
+                        case '1':
+                            document.getElementById("percent-plaque-4").textContent = '<%=listPlaques.get(1)%>' + "%";
+                            break;
+                        case '2':
+                            document.getElementById("percent-plaque-4").textContent = '<%=listPlaques.get(2)%>' + "%";
+                            break;
+                        case '3':
+                            document.getElementById("percent-plaque-4").textContent = '<%=listPlaques.get(3)%>' + "%";
+                            break;
                     }
+                } else {
+                        document.getElementById("percent-plaque-4").textContent = '<%=listPlaques.get(0)%>' + "%";
                 }
             }
         }

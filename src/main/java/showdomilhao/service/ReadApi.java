@@ -29,7 +29,7 @@ public class ReadApi {
 		return response.body();
     }
 
-    public static ArrayList<Question> getData() {
+    public ArrayList<Question> getData() {
         ArrayList<Question> questions = new ArrayList<>();
         Gson gson = new Gson();
         String json = readJson();

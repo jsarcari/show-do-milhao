@@ -62,7 +62,7 @@ public class Cards extends Help {
                 """);
     }
 
-    public List<Integer> generateQuestionsEliminated(Question question, List options, int num) {
+    public List<Integer> generateQuestionsEliminated(Question question, List<String> options, int num) {
         List<Integer> list = new ArrayList<Integer>();
         Random generate = new Random();
         int i = 0, index;

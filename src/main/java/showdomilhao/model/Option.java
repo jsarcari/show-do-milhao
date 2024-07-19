@@ -4,17 +4,17 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Option {
-    private int option;
+    private String option;
     private Participant person;
     private Guests guests;
     private Plaques plaques;
     private Cards cards;
     private Boolean action;
-    private List options;
+    private List<String> options;
     private Question question;
     private Answer answer;
 
-    public Option(int num, Participant person, Guests guests, Plaques plaques, Cards cards, Boolean action, List options, Question question, Answer answer) {
+    public Option(String num, Participant person, Guests guests, Plaques plaques, Cards cards, Boolean action, List<String> options, Question question, Answer answer) {
         this.setOption(num);
         this.setPerson(person);
         this.setGuests(guests);
@@ -26,7 +26,7 @@ public class Option {
         this.setAnswer(answer);
     }
 
-    public int getOption() {
+    public String getOption() {
         return this.option;
     }
 
@@ -34,7 +34,7 @@ public class Option {
         return this.action;
     }
 
-    public void setOption(int num) {
+    public void setOption(String num) {
         this.option = num;
     }
 
@@ -58,7 +58,7 @@ public class Option {
         this.action = action;
     }
 
-    public void setOptions(List options) {
+    public void setOptions(List<String> options) {
         this.options = options;
     }
 
@@ -73,7 +73,7 @@ public class Option {
     public void validateOption() {
         Scanner input = new Scanner(System.in);
         switch (this.getOption()) {
-            case 0:
+            case "0":
                 if (this.person.getCanSkip() == 0) {
                     System.out.println("Você não pode mais pular!");
                     this.setAction(false);
@@ -82,7 +82,7 @@ public class Option {
                     this.person.setCanSkip(skip);
                 }
                 break;
-            case 1:
+            case "1":
                 if (this.guests.getAvailable()) {
                     this.guests.setCorrectAnswer(this.options.indexOf(this.question.getCorrect_answer()));
                     this.guests.printHelp();
@@ -92,7 +92,7 @@ public class Option {
                     this.setAction(false);
                 }
                 break;
-            case 2:
+            case "2":
                 if (this.plaques.getAvailable()) {
                     this.plaques.setCorrectAnswer(this.options.indexOf(this.question.getCorrect_answer()));
                     this.plaques.printHelp();
@@ -102,7 +102,7 @@ public class Option {
                     this.setAction(false);
                 }
                 break;
-            case 3:
+            case "3":
                 if (this.cards.getAvailable()) {
                     this.cards.setCorrectAnswer(options.indexOf(this.question.getCorrect_answer()));
                     this.cards.printHelp();
@@ -120,7 +120,7 @@ public class Option {
                     this.setAction(false);;
                 }
                 break;
-            case 4:
+            case "4":
                 this.person.setStop(true);
                 System.out.println("A resposta certa é " + question.getCorrect_answer());
                 System.out.println("Você ganhou R$%.2f".formatted(this.answer.getPremiumStop()));
@@ -129,6 +129,7 @@ public class Option {
                 System.out.println("Opção inválida");
                 break;
         }
+        input.close();
     }
 
 }

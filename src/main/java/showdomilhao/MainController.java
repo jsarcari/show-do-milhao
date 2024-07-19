@@ -54,7 +54,8 @@ public class MainController {
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
         this.idsChoice.add(this.indexQuestion);
         Question question = this.questions.get(this.indexQuestion);
-        List options = this.answer.createArrayOptions(question);
+        List<String> options = this.answer.createArrayOptions(question);
+        List<Integer> listPlaques = new ArrayList<Integer>();
         if(this.index!=0 && (skipAvailable==null || skipAvailable.equals(""))) {
             this.answer.setPremiumStop(this.answer.getPremium());
             this.answer.setPremiumMiss(this.answer.getPremium()/2);
@@ -69,6 +70,9 @@ public class MainController {
         }
         if (plaquesAvailable!=null && plaquesAvailable.equals("false")) {
             this.plaques.setAvailable(false);
+        } else {
+            this.plaques.printHelp();
+            listPlaques = this.plaques.getList();
         }
         if (cardsAvailable!=null && cardsAvailable.equals("false")) {
             this.cards.setAvailable(false);
@@ -94,6 +98,9 @@ public class MainController {
         mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
         mv.addObject("GUESTS", this.guests);
         mv.addObject("PLAQUES", this.plaques);
+        if (!listPlaques.isEmpty()) {
+            mv.addObject("LIST_PLAQUES", listPlaques);
+        }
         mv.addObject("CARDS", this.cards);
         mv.setViewName("question.jsp");
 

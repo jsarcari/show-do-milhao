@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Answer {
-    private Participant participant;
+    //private Participant participant;
     private double premium;
     private double premiumStop = 0;
     private double premiumMiss = 0;
@@ -57,7 +57,7 @@ public class Answer {
         this.emptyOptions = emptyOptions;
     }
 
-    public int choiceQuestion(ArrayList<Question> list, List ids, int i) {
+    public int choiceQuestion(ArrayList<Question> list, List<Integer> ids, int i) {
         Random generator = new Random();
         int id = 0;
         Boolean containsId = true;
@@ -84,7 +84,7 @@ public class Answer {
         System.out.println("%s".formatted(question.getQuestion()));
     }
     
-    public void printOptions(List options) {
+    public void printOptions(List<String> options) {
     	for (Object option : options) {
             if (!this.emptyOptions.contains(options.indexOf(option))) {
                 System.out.println(options.indexOf(option)+1 + ". " +  option);
@@ -119,7 +119,7 @@ public class Answer {
                 """);
     }
 
-    public List createArrayOptions(Question question) {
+    public List<String> createArrayOptions(Question question) {
         Random generator = new Random();
         int index = generator.nextInt(4);
         List<String> array = new ArrayList<String>(4);
