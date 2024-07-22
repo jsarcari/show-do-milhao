@@ -39,6 +39,16 @@ function areYouRight(id, correctAnswer, premium) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const premiums = document.querySelectorAll('.premium-value');
+    for (var i=0; i<3; i++) {
+        var premium = premiums[i];
+        var valuePremium = premium.textContent.split(' ');
+        premium.textContent = valuePremium[0] + ' ' + valuePremium[1].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        console.log(valuePremium[1].replace(/\B(?=(\d{3})+(?!\d))/g, "."));
+    }
+}, false);
+
 document.querySelector(".close-menu").onclick = function() {
     document.getElementById("modal-help").style.display = "none";
 }

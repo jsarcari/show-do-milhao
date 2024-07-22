@@ -241,6 +241,7 @@ time, mark, audio, video {
 
 .container-cards {
     display: flex;
+    padding-top: 15px;
 }
 
 .content-guests, .content-plaques, .content-cards {
@@ -310,7 +311,7 @@ time, mark, audio, video {
 }
 
 .title-help {
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 .content-guests .icon-help, .content-plaques .icon-help {

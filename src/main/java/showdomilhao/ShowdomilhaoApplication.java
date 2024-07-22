@@ -4,18 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-import showdomilhao.model.Answer;
-import showdomilhao.model.Cards;
-import showdomilhao.model.Guests;
-import showdomilhao.model.Option;
-import showdomilhao.model.Participant;
-import showdomilhao.model.Plaques;
-import showdomilhao.model.Question;
-import showdomilhao.service.ReadApi;
+import showdomilhao.repository.ScoresRepository;
 
 // import showdomilhao.model.Answer;
 // import showdomilhao.model.Cards;
@@ -27,7 +22,11 @@ import showdomilhao.service.ReadApi;
 // import showdomilhao.service.ReadApi;
 
 @SpringBootApplication
+@EnableMongoRepositories
 public class ShowdomilhaoApplication implements CommandLineRunner {
+
+    @Autowired
+    ScoresRepository scoresRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ShowdomilhaoApplication.class, args);
