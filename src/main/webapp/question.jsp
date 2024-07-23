@@ -28,6 +28,10 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     if (request.getAttribute("VALUE_STOP") != null) {
         valueStop = (String)request.getAttribute("VALUE_STOP");
     }
+    String valueWrong = "";
+    if (request.getAttribute("VALUE_WRONG") != null) {
+        valueWrong = (String)request.getAttribute("VALUE_WRONG");
+    }
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
@@ -206,7 +210,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <p id="sad">Que pena. Você errou!</p>
                 <p>Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
               </div>
-              <form class="buttons-confirm" method="get" action="/">
+              <form class="buttons-confirm" method="get" action="/score">
+                <input type="hidden" name="name" value="<%=nameUser%>" />
+                <input type="hidden" name="premium" value="<%=valueWrong%>" />
                 <button type="submit" id="yes-incorrect">Continuar</button>
               </form>
             </div>

@@ -3,6 +3,7 @@ package showdomilhao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,8 @@ import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Plaques;
 import showdomilhao.model.Question;
+import showdomilhao.model.Scores;
+import showdomilhao.repository.ScoresRepository;
 import showdomilhao.service.ReadApi;
 
 @Controller
@@ -30,6 +33,9 @@ public class MainController {
     private Guests guests;
     private Plaques plaques;
     private Cards cards;
+
+    @Autowired
+    ScoresRepository repository;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -103,6 +109,41 @@ public class MainController {
         }
         mv.addObject("CARDS", this.cards);
         mv.setViewName("question.jsp");
+
+        return mv;
+
+    }
+
+    @GetMapping("/score")
+    public ModelAndView createScore(String name, double premium) {
+
+        List<Scores> scores = new ArrayList<Scores>();
+        repository.save(new Scores(name, premium));
+
+        repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
+
+        ModelAndView mv = new ModelAndView();
+
+        mv.addObject("LIST_SCORES", scores);
+
+        mv.setViewName("scores.jsp");
+
+        return mv;
+
+    }
+
+    @GetMapping("/scores")
+    public ModelAndView viewScores() {
+
+        List<Scores> scores = new ArrayList<Scores>();
+
+        repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
+
+        ModelAndView mv = new ModelAndView();
+
+        mv.addObject("LIST_SCORES", scores);
+
+        mv.setViewName("scores.jsp");
 
         return mv;
 
