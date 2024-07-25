@@ -134,12 +134,19 @@ public class MainController {
     public ModelAndView viewScores() {
 
         List<Scores> scores = new ArrayList<Scores>();
+        List<Scores> topTen = new ArrayList<Scores>();
 
         repository.findAll(Sort.by(Sort.Direction.DESC, "premium")).forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
 
+        int i=0;
+        while (i<10 && i<scores.size()) {
+            topTen.add(new Scores(scores.get(i).getName(), scores.get(i).getPremium()));
+            i++;
+        }
+
         ModelAndView mv = new ModelAndView();
 
-        mv.addObject("LIST_SCORES", scores);
+        mv.addObject("LIST_SCORES", topTen);
 
         mv.setViewName("scores.jsp");
 

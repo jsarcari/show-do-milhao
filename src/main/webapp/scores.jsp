@@ -16,7 +16,7 @@ import="showdomilhao.model.Scores" import="java.util.ArrayList" import="java.uti
 %>
 <body>
     <div class="container">
-        <h1>Ranking</h1>
+        <h1>Top 10</h1>
         <table class="table">
             <thead>
                 <tr>
