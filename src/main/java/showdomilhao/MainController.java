@@ -1,14 +1,18 @@
 package showdomilhao;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 
 import showdomilhao.model.Answer;
 import showdomilhao.model.Cards;
@@ -115,20 +119,14 @@ public class MainController {
     }
 
     @GetMapping("/score")
-    public ModelAndView createScore(String name, double premium) {
+    public RedirectView createScore(String name, double premium) {
 
         List<Scores> scores = new ArrayList<Scores>();
         repository.save(new Scores(name, premium));
 
         repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
 
-        ModelAndView mv = new ModelAndView();
-
-        mv.addObject("LIST_SCORES", scores);
-
-        mv.setViewName("scores.jsp");
-
-        return mv;
+        return new RedirectView("scores");
 
     }
 
@@ -137,7 +135,7 @@ public class MainController {
 
         List<Scores> scores = new ArrayList<Scores>();
 
-        repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
+        repository.findAll(Sort.by(Sort.Direction.DESC, "premium")).forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
 
         ModelAndView mv = new ModelAndView();
 
