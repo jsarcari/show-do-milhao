@@ -101,7 +101,7 @@ time, mark, audio, video {
 .menu-help {
     width: 50vw;
     height: 30vh;
-    background-color: #ffc509;
+    background: linear-gradient(45deg, #FFFF99, #FFCC00);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +232,10 @@ time, mark, audio, video {
 
 .content-guests, .content-plaques, .content-cards {
     display: none;
+}
+
+.content-cards {
+    flex-direction: column;
 }
 
 .content-help, .content-guests, .content-plaques, .container-cards {

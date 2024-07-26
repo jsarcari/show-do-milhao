@@ -44,6 +44,13 @@ public class MainController {
     @GetMapping("/")
     public ModelAndView indexPage() {
         ModelAndView mv = new ModelAndView();
+        mv.setViewName("home.jsp");
+        return mv;
+    }
+
+    @GetMapping("/name")
+    public ModelAndView namePage() {
+        ModelAndView mv = new ModelAndView();
         this.api = new ReadApi();
         this.questions = this.api.getData();
         this.user = new Participant(null);

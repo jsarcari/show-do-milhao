@@ -114,13 +114,16 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     <form name="skipSubmit" action="question?id=<%=currentIndex%>" method="post">
                         <input type="hidden" name="skipAvailable" value="" />
                         <input type="hidden" name="nameUser" value="<%=nameUser%>" />
+                        <input type="hidden" name="guestsAvailable" value=""/>
+                        <input type="hidden" name="plaquesAvailable" value=""/>
+                        <input type="hidden" name="cardsAvailable" value=""/>
                         <button type="submit" class="icon-help" id="select-skip"><img src="./img/912603-200.png" id="img-skip"></button>
                         <p id="legend-skip">Pular</p>
                     </form>
                 </div>
             </div>
             <div class="content-guests">
-                <span class="close-guests">x</span>
+                <span class="close-guests" onclick="closeHelp('content-guests')">x</span>
                 <div class="guest">
                     <img class="icon-help" src="./img/person.svg">
                     <p id="answer-guest-1"></p>
@@ -135,7 +138,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 </div>
             </div>
             <div class="content-plaques">
-                <span class="close-plaques">x</span>
+                <span class="close-plaques" onclick="closeHelp('content-plaques')">x</span>
                 <div class="plaque">
                     <img class="icon-help" src="./img/5009608119_1.jpg">
                     <p id="percent-plaque-1"></p>
@@ -160,7 +163,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <p>2 - 2 alternativas eliminadas.</p>
                 <p>3 - 3 alternativas eliminadas.</p>
                 <div class="container-cards">
-                    <span class="close-cards">x</span>
+                    <span class="close-cards" onclick="closeHelp('content-cards')">x</span>
                     <div class="card">
                         <img class="icon-card" src="./img/101503-de-cartao-de-jogo-gratuito-gratis-vetor.png" id="card-1">
                     </div>
@@ -195,9 +198,12 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
               </div>
               <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
                 <% if (!valuePremium.equals("1000000")) { %>
-                <input type="hidden" name="guestsAvailable" value=""/>
-                <input type="hidden" name="plaquesAvailable" value=""/>
-                <input type="hidden" name="cardsAvailable" value=""/>
+                    <input type="hidden" name="guestsAvailable" value=""/>
+                    <input type="hidden" name="plaquesAvailable" value=""/>
+                    <input type="hidden" name="cardsAvailable" value=""/>
+                <% } else { %>
+                    <input type="hidden" name="name" value="<%=nameUser%>" />
+                    <input type="hidden" name="premium" value="<%=valuePremium%>" />
                 <% } %>
                 <button type="submit" id="yes-correct">Continuar</button>
               </form>
@@ -210,7 +216,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <p id="sad">Que pena. Você errou!</p>
                 <p>Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
               </div>
-              <form class="buttons-confirm" method="get" action="/score">
+              <form name="formWrongOrStop" class="buttons-confirm" method="get" action="/score">
                 <input type="hidden" name="name" value="<%=nameUser%>" />
                 <input type="hidden" name="premium" value="<%=valueWrong%>" />
                 <button type="submit" id="yes-incorrect">Continuar</button>
@@ -250,16 +256,16 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         }
 
         document.querySelector(".button-stop").onclick = function() {
+            var premiumStop = '<%=valueStop%>';
             document.getElementById("sad").textContent = "";
             document.getElementById("incorrectAnswer").style.display = "block";
-            document.getElementById("value-stop").textContent = 'R$ <%=valueStop%>';
+            document.getElementById("value-stop").textContent = 'R$ '+ premiumStop;
+            document.formWrongOrStop.premium.value = premiumStop;
         }
 
         document.getElementById("select-guests").onclick = function() {
             if ('<%=canGuests%>'==="true") {
-                document.querySelector(".content-help").style.display = "none";
-                document.querySelector(".content-guests").style.display = "flex";
-                document.formSubmit.guestsAvailable.value = "false";
+                showHelp("content-guests");
                 var correctOption = 0;
                 var options = document.querySelectorAll(".question-li");
                 for (var i=0; i<4; i++) {
@@ -302,9 +308,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
 
         document.getElementById("select-plaques").onclick = function() {
             if ('<%=canPlaques%>'==="true") {
-                document.querySelector(".content-help").style.display = "none";
-                document.querySelector(".content-plaques").style.display = "flex";
-                document.formSubmit.plaquesAvailable.value = "false";
+                showHelp("content-plaques");
                 var correctOption = 0;
                 var options = document.querySelectorAll(".question-li");
                 var indexCorrect = 0;
@@ -357,9 +361,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
 
         document.getElementById("select-cards").onclick = function() {
             if ('<%=canCards%>'==="true") {
-                document.querySelector(".content-help").style.display = "none";
-                document.querySelector(".content-cards").style.display = "block";
-                document.formSubmit.cardsAvailable.value = "false";
+                showHelp("content-cards");
                 var valuesGenerated = [];
                 valuesGenerated = generateValueCards([]);
                 var cardsList = [];

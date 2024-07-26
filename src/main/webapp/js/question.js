@@ -14,7 +14,7 @@ function areYouRight(id, correctAnswer, premium) {
             if (premium === '1000000') {
                 document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
                 document.formSubmit.setAttribute("method","get");
-                document.formSubmit.action = "/";
+                document.formSubmit.action = "/score";
             }
             modalCorrect.style.display = "block";
             divSelected.style.backgroundColor = "#01b051";
@@ -53,36 +53,6 @@ document.querySelector(".close-menu").onclick = function() {
     document.getElementById("modal-help").style.display = "none";
 }
 
-document.querySelector(".close-guests").onclick = function() {
-    var buttonGuests = document.getElementById("select-guests");
-    document.getElementById("modal-help").style.display = "none";
-    document.querySelector(".content-help").style.display = "flex";
-    document.querySelector(".content-guests").style.display = "none";
-    buttonGuests.style.pointerEvents = "none";
-    buttonGuests.style.opacity = "0.4";
-    document.getElementById("legend-guests").style.textDecoration = "line-through";
-}
-
-document.querySelector(".close-plaques").onclick = function() {
-    var buttonGuests = document.getElementById("select-plaques");
-    document.getElementById("modal-help").style.display = "none";
-    document.querySelector(".content-help").style.display = "flex";
-    document.querySelector(".content-plaques").style.display = "none";
-    buttonGuests.style.pointerEvents = "none";
-    buttonGuests.style.opacity = "0.4";
-    document.getElementById("legend-plaques").style.textDecoration = "line-through";
-}
-
-document.querySelector(".close-cards").onclick = function() {
-    var buttonCards = document.getElementById("select-cards");
-    document.getElementById("modal-help").style.display = "none";
-    document.querySelector(".content-help").style.display = "flex";
-    document.querySelector(".content-cards").style.display = "none";
-    buttonCards.style.pointerEvents = "none";
-    buttonCards.style.opacity = "0.4";
-    document.getElementById("legend-cards").style.textDecoration = "line-through";
-}
-
 function generateQuestionsEliminated(correctAnswer, options, num) {
     list = [];
     var i=0;
@@ -94,6 +64,51 @@ function generateQuestionsEliminated(correctAnswer, options, num) {
         }
     }
     return list;
+}
+
+function showHelp(classHelp) {
+    document.querySelector(".content-help").style.display = "none";
+    document.querySelector("."+classHelp).style.display = "flex";
+    switch(classHelp) {
+        case "content-guests":
+            document.formSubmit.guestsAvailable.value = "false";
+            document.skipSubmit.guestsAvailable.value = "false";
+            break;
+        case "content-plaques":
+            document.formSubmit.plaquesAvailable.value = "false";
+            document.skipSubmit.plaquesAvailable.value = "false";
+            break;
+        case "content-cards":
+            document.formSubmit.cardsAvailable.value = "false";
+            document.skipSubmit.cardsAvailable.value = "false";
+            break
+    }
+}
+
+function closeHelp(classHelp) {
+    document.getElementById("modal-help").style.display = "none";
+    document.querySelector(".content-help").style.display = "flex";
+    document.querySelector("."+classHelp).style.display = "none";
+    switch(classHelp) {
+        case "content-guests":
+            var button = document.getElementById("select-guests");
+            button.style.pointerEvents = "none";
+            button.style.opacity = "0.4";
+            document.getElementById("legend-guests").style.textDecoration = "line-through";
+            break;
+        case "content-plaques":
+            var button = document.getElementById("select-plaques");
+            button.style.pointerEvents = "none";
+            button.style.opacity = "0.4";
+            document.getElementById("legend-plaques").style.textDecoration = "line-through";
+            break;
+        case "content-cards":
+            var button = document.getElementById("select-cards");
+            button.style.pointerEvents = "none";
+            button.style.opacity = "0.4";
+            document.getElementById("legend-cards").style.textDecoration = "line-through";
+            break;
+    }
 }
 
 function generateValueCards(values) {
