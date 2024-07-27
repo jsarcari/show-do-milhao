@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var premium = premiums[i];
         var valuePremium = premium.textContent.split(' ');
         premium.textContent = valuePremium[0] + ' ' + valuePremium[1].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-        console.log(valuePremium[1].replace(/\B(?=(\d{3})+(?!\d))/g, "."));
     }
 }, false);
 
@@ -124,4 +123,11 @@ function generateValueCards(values) {
         return values;
     }
 
+}
+
+function disableButton(help) {
+    var button = document.getElementById("select-"+help);
+    button.style.pointerEvents = "none";
+    button.style.opacity = "0.4";
+    document.getElementById("legend-"+help).style.textDecoration = "line-through";
 }

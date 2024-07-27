@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 
 import showdomilhao.model.Question;
-
 public class ReadApi {
 
     private static final String ADDRESS = "http://localhost:3000/";

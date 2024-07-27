@@ -25,13 +25,14 @@ import="showdomilhao.model.Scores" import="java.util.ArrayList" import="java.uti
                 </tr>
             </thead>
             <tbody>
-            <% for (Scores score : listScores) { %>
+            <% for (int i=0; i<listScores.size(); i++) { %>
                 <tr>
-                    <td><%=score.getName()%></td><td><%=score.getPremium()%></td>
+                    <td class="namePremium"><%=listScores.get(i).getName()%> <% if (i == 0) { %><img src="./img/2355897.svg" class="icon-first" /><% } %></td><td class="valuePremium">R$ <%=listScores.get(i).getPremium()%>0</td>
                 </tr>
             <% } %>
             </tbody>
         </table>
         <button type="button" class="button"><a href="/">Jogar novamente</a></button>
     </div>
+    <script type="text/javascript" src="./js/scores.js"></script>
 </body>

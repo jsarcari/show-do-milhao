@@ -228,30 +228,16 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         document.querySelector(".button-help").onclick = function() {
             document.getElementById("modal-help").style.display = "block";
             if ('<%=canGuests%>' === "false") {
-                var buttonGuests = document.getElementById("select-guests");
-                buttonGuests.style.pointerEvents = "none";
-                buttonGuests.style.opacity = "0.4";
-                document.getElementById("legend-guests").style.textDecoration = "line-through";
+                disableButton('guests');
             }
             if ('<%=canPlaques%>' === "false") {
-                var buttonGuests = document.getElementById("select-plaques");
-                buttonGuests.style.pointerEvents = "none";
-                buttonGuests.style.opacity = "0.4";
-                document.getElementById("legend-plaques").style.textDecoration = "line-through";
+                disableButton('plaques');
             }
             if ('<%=canSkip%>' === "0") {
-                var buttonSkip = document.getElementById("select-skip");
-                var imgSkip = document.getElementById("img-skip");
-                buttonSkip.style.pointerEvents = "none";
-                imgSkip.style.pointerEvents = "none";
-                imgSkip.style.opacity = "0.4";
-                document.getElementById("legend-skip").style.textDecoration = "line-through";
+                disableButton('skip');
             }
             if ('<%=canCards%>' === "false") {
-                var buttonCards = document.getElementById("select-cards");
-                buttonCards.style.pointerEvents = "none";
-                buttonCards.style.opacity = "0.4";
-                document.getElementById("legend-cards").style.textDecoration = "line-through";
+                disableButton('cards');
             }  
         }
 

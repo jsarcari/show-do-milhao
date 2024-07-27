@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import showdomilhao.repository.ScoresRepository;
@@ -23,7 +24,8 @@ import showdomilhao.repository.ScoresRepository;
 
 @SpringBootApplication
 @EnableMongoRepositories
-public class ShowdomilhaoApplication implements CommandLineRunner {
+@EnableFeignClients
+public class ShowdomilhaoApplication implements CommandLineRunner{
 
     @Autowired
     ScoresRepository scoresRepository;

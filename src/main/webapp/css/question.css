@@ -24,7 +24,7 @@ time, mark, audio, video {
 .container-left {
     width: 50vw;
     height: 100vh;
-    background-color: #2553a3;
+    background: linear-gradient(180deg, #00297a, #003b85, #0043a5);
 }
 .question {
     top: 10px;
@@ -101,7 +101,7 @@ time, mark, audio, video {
 .menu-help {
     width: 50vw;
     height: 30vh;
-    background: linear-gradient(45deg, #FFFF99, #FFCC00);
+    background: linear-gradient(90deg, #FFFF99, #FFCC00);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,16 +113,17 @@ time, mark, audio, video {
 }
 .name-user {
     position: absolute;
-    top: 30px;
-    right: 20%;
-    text-align: center;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    margin-top: 20px;
 }
 .body-head {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     position: absolute;
-    right: 18%;
+    right: 18.5%;
     margin: 0 auto;
     background-color: #fff;
     bottom: 54%;

@@ -56,3 +56,15 @@ tr:nth-child(odd) {
     text-decoration: none;
     color: #fff;
 }
+
+.namePremium {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-first {
+    width: 24px;
+    height: 24px;
+    padding-left: 3px;
+}
