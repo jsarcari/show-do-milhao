@@ -3276,4 +3276,114 @@
     "25",
     "15"
   ]
+},{
+  "id": 298,
+  "question": "Qual desses esportes não é disputado dentro de um tempo pré-determinado?",
+  "correct_answer": "Tênis",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Handebol",
+    "Basquete",
+    "Futebol"
+  ]
+},{
+  "id": 299,
+  "question": "Qual desses esportes utiliza maior número de jogadores ao mesmo tempo?",
+  "correct_answer": "Futebol",
+  "difficulty": "hard",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Handebol",
+    "Vôlei",
+    "Basquete"
+  ]
+},{
+  "id": 300,
+  "question": "Qual destes é um esporte náutico?",
+  "correct_answer": "Iatismo",
+  "difficulty": "easy",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Futebol",
+    "Basquete",
+    "Hipismo"
+  ]
+},{
+  "id": 301,
+  "question": "Em qual esporte é utilizado o termo trivela?",
+  "correct_answer": "Futebol",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Natação",
+    "Voleibol",
+    "Basquete"
+  ]
+},{
+  "id": 302,
+  "question": "Em qual desses esportes é utilizada a bola oval?",
+  "correct_answer": "Futebol americano",
+  "difficulty": "easy",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Handebol",
+    "Voleibol",
+    "Tênis"
+  ]
+},{
+  "id": 303,
+  "question": "Qual desses esportes consagrou o atleta americano Magic Johnson?",
+  "correct_answer": "Basquete",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Futebol",
+    "Natação",
+    "Vôlei"
+  ]
+},{
+  "id": 304,
+  "question": "Qual desses esportes é fluvial?",
+  "correct_answer": "Canoagem",
+  "difficulty": "hard",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Criquete",
+    "Hipismo",
+    "Luge"
+  ]
+},{
+  "id": 305,
+  "question": "Na trigonometria seno de 1/2 equivale a:",
+  "correct_answer": "30 graus",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "0 grau",
+    "45 graus",
+    "60 graus"
+  ]
+},{
+  "id": 306,
+  "question": "Qual é o menor ângulo entre os ponteiros das horas e dos minutos quando o relógio marcar 18 horas?",
+  "correct_answer": "180 graus",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "90 graus",
+    "60 graus",
+    "30 graus"
+  ]
+},{
+  "id": 307,
+  "question": "Na trigonometria, qual é o valor de um 'pi' em graus?",
+  "correct_answer": "180 graus",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "90 graus",
+    "45 graus",
+    "60 graus"
+  ]
 }]

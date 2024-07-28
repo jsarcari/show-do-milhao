@@ -10,8 +10,8 @@
 <div>
     <img src="./img/Jogodomilhao1999.webp" class="logo-game">
     <div class="buttons-home">
-        <div><a href="/name"><div class="button-home"></div></a><span>Jogar</span></div>
-        <div><a href="/scores"><div class="button-home"></div></a><span>Placar</span></div>
+        <a href="/name" class="button-home">Jogar</a>
+        <a href="/scores" class="button-home">Placar</a>
     </div>
 </div>
 </body>
