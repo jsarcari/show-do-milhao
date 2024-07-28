@@ -61,7 +61,7 @@ public class Answer {
         this.emptyOptions = emptyOptions;
     }
 
-    public int choiceQuestion(ArrayList<Question> list, List<Integer> ids, int i) {
+    public int choiceQuestion(List<Question> list, List<Integer> ids, int i) {
         Random generator = new Random();
         int id = 0;
         Boolean containsId = true;

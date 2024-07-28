@@ -1,6 +1,7 @@
 package showdomilhao.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,24 +12,16 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Document("questions")
 public class Question {
 
-    @JsonProperty("id")
+    @Id
+    private String idDocument;
     private int id;
-
-    @JsonProperty("question")
     private String question;
-
-    @JsonProperty("correct_answer")
     private String correct_answer;
-
-    @JsonProperty("difficulty")
     private String difficulty;
-
-    @JsonProperty("category")
     private String category;
-
-    @JsonProperty("incorrect_answers")
     private String[] incorrect_answers;
 }
 

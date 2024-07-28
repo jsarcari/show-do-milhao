@@ -1,18 +1,14 @@
-package showdomilhao;
+package showdomilhao.controller;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
 import showdomilhao.model.Answer;
 import showdomilhao.model.Cards;
@@ -20,15 +16,12 @@ import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Plaques;
 import showdomilhao.model.Question;
-import showdomilhao.model.Scores;
-import showdomilhao.repository.ScoresRepository;
-import showdomilhao.service.ReadApi;
+import showdomilhao.repository.QuestionRepository;
 
 @Controller
 public class MainController {
 
-    private ReadApi api;
-    private ArrayList<Question> questions;
+    private List<Question> questions;
     private Answer answer;
     private int indexQuestion;
     private List<Integer> idsChoice;
@@ -39,7 +32,7 @@ public class MainController {
     private Cards cards;
 
     @Autowired
-    ScoresRepository repository;
+    QuestionRepository questionRepository;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -51,8 +44,7 @@ public class MainController {
     @GetMapping("/name")
     public ModelAndView namePage() {
         ModelAndView mv = new ModelAndView();
-        this.api = new ReadApi();
-        this.questions = this.api.getData();
+        this.questions = questionRepository.findAll();
         this.user = new Participant(null);
         this.answer = new Answer(1000);
         this.guests = new Guests();
@@ -125,39 +117,4 @@ public class MainController {
 
     }
 
-    @GetMapping("/score")
-    public RedirectView createScore(String name, double premium) {
-
-        List<Scores> scores = new ArrayList<Scores>();
-        repository.save(new Scores(name, premium));
-
-        repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
-
-        return new RedirectView("scores");
-
-    }
-
-    @GetMapping("/scores")
-    public ModelAndView viewScores() {
-
-        List<Scores> scores = new ArrayList<Scores>();
-        List<Scores> topTen = new ArrayList<Scores>();
-
-        repository.findAll(Sort.by(Sort.Direction.DESC, "premium")).forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
-
-        int i=0;
-        while (i<10 && i<scores.size()) {
-            topTen.add(new Scores(scores.get(i).getName(), scores.get(i).getPremium()));
-            i++;
-        }
-
-        ModelAndView mv = new ModelAndView();
-
-        mv.addObject("LIST_SCORES", topTen);
-
-        mv.setViewName("scores.jsp");
-
-        return mv;
-
-    }
 }
