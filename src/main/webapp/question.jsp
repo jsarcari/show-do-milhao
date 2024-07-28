@@ -65,7 +65,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
             </ol>
             <div class="premiums">
                 <div>
-                    <div class="premium-value">R$ ${VALUE_WRONG}</div>
+                    <div class="premium-value"><% if (!valuePremium.equals("1000000")) { out.print("R$ "+valueWrong); } else { out.print("PERDEU TUDO"); } %></div>
                     <div class="text">errar</div>
                 </div>
                 <div>
@@ -87,7 +87,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
             <div class="menu-help">
                 <div>
                     <div class="button-help"></div>
-                    <p>Ajuda</p>
+                    <p id="legend-help">Ajuda</p>
                 </div>
                 <div>
                     <div class="button-stop"></div>
@@ -214,7 +214,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
             <div class="modal-content">
               <div class="content-ask">
                 <p id="sad">Que pena. Você errou!</p>
-                <p>Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
+                <p id="premiumWrongOrStop">Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
               </div>
               <form name="formWrongOrStop" class="buttons-confirm" method="get" action="/score">
                 <input type="hidden" name="name" value="<%=nameUser%>" />
@@ -403,6 +403,16 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.skipSubmit.skipAvailable.value = canSkip;
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if('<%=valuePremium%>'==='1000000') {
+                const buttonHelp = document.querySelector(".button-help");
+                buttonHelp.title = "Você não pode solicitar ajuda";
+                buttonHelp.style.pointerEvents = "none";
+                buttonHelp.style.opacity = "0.4";
+                document.getElementById("legend-help").style.textDecoration = "line-through";
+            }
+        }, false);
     </script>
     <script type="text/javascript" src="./js/question.js"></script>
 </body>

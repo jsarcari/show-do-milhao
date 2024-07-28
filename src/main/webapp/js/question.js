@@ -29,6 +29,10 @@ function areYouRight(id, correctAnswer, premium) {
                     break;
                 }
             }
+            if (premium === '1000000') {
+                document.formWrongOrStop.premium.value = "0";
+                document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";
+            }
         }
     }
     // Close modal when button with id "yes-button" is clicked
