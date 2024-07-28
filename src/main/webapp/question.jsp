@@ -58,10 +58,10 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <h1>${QUESTION}</h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li li-one" onclick="areYouRight('one','<%=correct%>','<%=valuePremium%>')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li li-two" onclick="areYouRight('two','<%=correct%>','<%=valuePremium%>')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li li-three" onclick="areYouRight('three','<%=correct%>','<%=valuePremium%>')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li li-four" onclick="areYouRight('four','<%=correct%>','<%=valuePremium%>')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="areYouRight('one','<%=correct%>','<%=valuePremium%>', cron)"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
+                <li class="question-li li-two" onclick="areYouRight('two','<%=correct%>','<%=valuePremium%>', cron)"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
+                <li class="question-li li-three" onclick="areYouRight('three','<%=correct%>','<%=valuePremium%>', cron)"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
+                <li class="question-li li-four" onclick="areYouRight('four','<%=correct%>','<%=valuePremium%>')", cron><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
             </ol>
             <div class="premiums">
                 <div>
@@ -83,6 +83,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <h2 class="name-user"><%=nameUser%></h2>
                 <div class="body-head"></div>
                 <div class="body-user"></div>
+                <div id="timer">
+                    <div id="bar-timer"><div id="progress-timer"></div></div><div id="second-timer">40</div>
+                </div>
             </div>
             <div class="menu-help">
                 <div>
@@ -225,6 +228,13 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         </div>
     </div>
     <script type="text/javascript">
+        let second = 40;
+        let cron;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            cron = setInterval(() => { timer(); }, 1000);
+        });
+
         document.querySelector(".button-help").onclick = function() {
             document.getElementById("modal-help").style.display = "block";
             if ('<%=canGuests%>' === "false") {
@@ -401,6 +411,39 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 canSkip--;
                 canSkip.toString();
                 document.skipSubmit.skipAvailable.value = canSkip;
+            }
+        }
+
+        function timer() {
+            if (second > 0) {
+                second--;
+                document.getElementById("second-timer").innerText = second;
+                const progress = document.getElementById("progress-timer");
+                progress.style.width = second*2 + 'px';
+                if (second>=15 && second<=25) {
+                    progress.style.background = 'linear-gradient(#ffc509, #FFCC00)';
+                }
+                if (second<15) {
+                    progress.style.background = 'linear-gradient(#e20000, #B22222)';
+                }
+            } else {
+                var modalIncorrect = document.getElementById("incorrectAnswer");
+                document.getElementById("sad").textContent = "Seu tempo acabou!";
+                modalIncorrect.style.display = "block";
+                var options = document.querySelectorAll(".question-li");
+                for (var i = 0; i < 4; i++) {
+                    var option = options[i];
+                    var answer = option.querySelector(".answer");
+                    if (answer.textContent === '<%=correct%>') {
+                        option.style.backgroundColor = "#01b051";
+                        break;
+                    }
+                }
+                if ('<%=valuePremium%>' === '1000000') {
+                    document.formWrongOrStop.premium.value = "0";
+                    document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";
+                }
+                clearInterval(cron);
             }
         }
 

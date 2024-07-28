@@ -138,6 +138,29 @@ time, mark, audio, video {
     right: 12%;
     margin: 0 auto;
 }
+#timer {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    margin-top: 65vh;
+}
+#bar-timer {
+    background: linear-gradient(to right, #d3d3d3, #a9a9a9);
+    justify-content: left;
+}
+#progress-timer {
+    background: linear-gradient(#ced869, #536d1b);
+}
+#bar-timer, #progress-timer {
+    width: 80px;
+    display: flex;
+    height: 18px;
+}
+#second-timer {
+    text-align: center;
+    padding-left: 4px;
+}
 .premiums {
     display: flex;
     position: absolute;
