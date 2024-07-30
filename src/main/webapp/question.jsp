@@ -49,6 +49,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     Boolean canCards = cards.getAvailable();
     Participant user = (Participant) request.getAttribute("PARTICIPANT");
     String nameUser = user.getName();
+    String category = user.getCategory();
     int canSkip = user.getCanSkip();
 %>
 <body>
@@ -117,6 +118,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     <form name="skipSubmit" action="question?id=<%=currentIndex%>" method="post">
                         <input type="hidden" name="skipAvailable" value="" />
                         <input type="hidden" name="nameUser" value="<%=nameUser%>" />
+                        <input type="hidden" name="categoryUser" value="<%=category%>" />
                         <input type="hidden" name="guestsAvailable" value=""/>
                         <input type="hidden" name="plaquesAvailable" value=""/>
                         <input type="hidden" name="cardsAvailable" value=""/>
@@ -419,13 +421,8 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 second--;
                 document.getElementById("second-timer").innerText = second;
                 const progress = document.getElementById("progress-timer");
-                progress.style.width = second*2 + 'px';
-                if (second>=15 && second<=25) {
-                    progress.style.background = 'linear-gradient(#ffc509, #FFCC00)';
-                }
-                if (second<15) {
-                    progress.style.background = 'linear-gradient(#e20000, #B22222)';
-                }
+                progress.style.width = second*2.5 + 'px';
+                progress.style.background = 'hsl(calc('+second*2.5*1.2+'), 80%, 50%)';
             } else {
                 var modalIncorrect = document.getElementById("incorrectAnswer");
                 document.getElementById("sad").textContent = "Seu tempo acabou!";

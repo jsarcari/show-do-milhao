@@ -4,9 +4,11 @@ public class Participant {
     private String name;
     private Boolean stop = false;
     private int canSkip = 3;
+    private String category;
 
-    public Participant(String name) {
-        this.name = name;
+    public Participant(String category, String name) {
+        this.setName(name);
+        this.setCategory(category);
     }
 
     public String getName() {
@@ -31,5 +33,13 @@ public class Participant {
 
     public void setCanSkip(int canSkip) {
         this.canSkip = canSkip;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

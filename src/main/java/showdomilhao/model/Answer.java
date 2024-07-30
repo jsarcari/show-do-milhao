@@ -61,13 +61,13 @@ public class Answer {
         this.emptyOptions = emptyOptions;
     }
 
-    public int choiceQuestion(List<Question> list, List<Integer> ids, int i) {
+    public int choiceQuestion(List<Question> list, List<Integer> ids, int i, String category) {
         Random generator = new Random();
         int id = 0;
         Boolean containsId = true;
         while (containsId) {
             id = generator.nextInt(list.size());
-            if (!ids.contains(id)) {
+            if (!ids.contains(id) && (list.get(id).getCategory().equals(category) || category.equals("Todos"))) {
                 if (i<5 && list.get(id).getDifficulty().equals("easy")) {
                     containsId = false;
                 }

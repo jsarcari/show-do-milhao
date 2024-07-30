@@ -17,7 +17,7 @@ import showdomilhao.repository.ScoresRepository;
 public class ScoresController {
 
     @Autowired
-    ScoresRepository repository;
+    private ScoresRepository repository;
 
     @GetMapping("/score")
     public RedirectView createScore(String name, double premium) {

@@ -32,7 +32,7 @@ public class MainController {
     private Cards cards;
 
     @Autowired
-    QuestionRepository questionRepository;
+    private QuestionRepository questionRepository;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -45,7 +45,7 @@ public class MainController {
     public ModelAndView namePage() {
         ModelAndView mv = new ModelAndView();
         this.questions = questionRepository.findAll();
-        this.user = new Participant(null);
+        this.user = new Participant(null, null);
         this.answer = new Answer(1000);
         this.guests = new Guests();
         this.plaques = new Plaques();
@@ -57,13 +57,9 @@ public class MainController {
     }
 
     @PostMapping("/question")
-    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable, String nameUser) {
+    public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable, String nameUser, String categoryUser) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
-        this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index);
-        this.idsChoice.add(this.indexQuestion);
-        Question question = this.questions.get(this.indexQuestion);
-        List<String> options = this.answer.createArrayOptions(question);
         List<Integer> listPlaques = new ArrayList<Integer>();
         if(this.index!=0 && (skipAvailable==null || skipAvailable.equals(""))) {
             this.answer.setPremiumStop(this.answer.getPremium());
@@ -88,8 +84,14 @@ public class MainController {
         }
         if (skipAvailable!=null && !skipAvailable.equals("")) {
             this.user.setName(nameUser);
+            this.user.setCategory(categoryUser);
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
         }
+
+        this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index, this.user.getCategory());
+        this.idsChoice.add(this.indexQuestion);
+        Question question = this.questions.get(this.indexQuestion);
+        List<String> options = this.answer.createArrayOptions(question);
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
         String valueWrong = String.format("%.0f", this.answer.getPremiumMiss());

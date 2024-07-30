@@ -24,7 +24,7 @@ time, mark, audio, video {
 .container-left {
     width: 50vw;
     height: 100vh;
-    background: linear-gradient(180deg, #00297a, #003b85, #0043a5);
+    background: linear-gradient(#0A2C4D, #0F4D75);
 }
 .question {
     top: 10px;
@@ -150,15 +150,18 @@ time, mark, audio, video {
     justify-content: left;
 }
 #progress-timer {
-    background: linear-gradient(#ced869, #536d1b);
+    background: hsl(calc(40*2.5*1.2), 80%, 50%);
+    transition: all 0.2s ease;
 }
 #bar-timer, #progress-timer {
-    width: 80px;
+    width: 100px;
     display: flex;
     height: 18px;
 }
 #second-timer {
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
     padding-left: 4px;
 }
 .premiums {

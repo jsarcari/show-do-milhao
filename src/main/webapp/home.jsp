@@ -3,6 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" href="img/Show_do_milhao.webp" />
 <title>Show do Milhão</title>
 <link rel="stylesheet" href="css/home.css" type="text/css" />
 </head>

@@ -3,13 +3,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" href="img/Show_do_milhao.webp" />
 <title>Show do Milhão</title>
+<link rel="stylesheet" href="css/name.css" type="text/css" />
 </head>
 <body>
-<h1>Qual é o seu nome?</h1>
+<div class="container">
 <form method="post" action="question?id=1">
+    <div class="category-select" style="width:200px;">
+        <h1>Escolha a categoria</h1>
+        <select name="category">
+          <option value="Todos">Todos</option>
+          <option value="Ciências">Ciências</option>
+          <option value="Conhecimentos gerais">Conhecimentos gerais</option>
+          <option value="Esportes">Esportes</option>
+          <option value="Filmes, desenhos e televisão">Filmes, desenhos e televisão</option>
+          <option value="Geografia">Geografia</option>
+          <option value="Matemática">Matemática</option>
+          <option value="Português e literatura">Português e literatura</option>
+        </select>
+      </div>
     <input type="text" name="name" />
     <button type="submit">Iniciar</button>
 </form>
+</div>
 </body>
 </html>
