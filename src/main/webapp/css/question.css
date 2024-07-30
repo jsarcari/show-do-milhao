@@ -181,7 +181,9 @@ time, mark, audio, video {
     height: 40px;
     border-radius: 10px;
     text-align: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .text {
     color: #fff;

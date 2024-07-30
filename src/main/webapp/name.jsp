@@ -9,10 +9,10 @@
 </head>
 <body>
 <div class="container">
-<form method="post" action="question?id=1">
-    <div class="category-select" style="width:200px;">
-        <h1>Escolha a categoria</h1>
-        <select name="category">
+<form method="post" action="question?id=1" class="formUser">
+    <div class="category-select">
+        <label for="category" class="label-category">Escolha a categoria</label>
+        <select name="category" class="select">
           <option value="Todos">Todos</option>
           <option value="Ciências">Ciências</option>
           <option value="Conhecimentos gerais">Conhecimentos gerais</option>
@@ -23,8 +23,8 @@
           <option value="Português e literatura">Português e literatura</option>
         </select>
       </div>
-    <input type="text" name="name" />
-    <button type="submit">Iniciar</button>
+    <input type="text" name="name" placeholder="Digite o seu nome" class="input-name" />
+    <button class="button-play" type="submit">Iniciar</button>
 </form>
 </div>
 </body>
