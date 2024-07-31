@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/home.css" type="text/css" />
 </head>
 <body>
+    <audio src="audio/silvio-santos-abertura-show-do-milhao.mp3" autoplay></audio>
 <div>
     <img src="./img/Jogodomilhao1999.webp" class="logo-game">
     <div class="buttons-home">

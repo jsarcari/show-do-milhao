@@ -19,11 +19,12 @@
           <option value="Esportes">Esportes</option>
           <option value="Filmes, desenhos e televisão">Filmes, desenhos e televisão</option>
           <option value="Geografia">Geografia</option>
+          <option value="História e política">História e política</option>
           <option value="Matemática">Matemática</option>
           <option value="Português e literatura">Português e literatura</option>
         </select>
       </div>
-    <input type="text" name="name" placeholder="Digite o seu nome" class="input-name" />
+    <input type="text" name="name" placeholder="Digite o seu nome" class="input-name" required />
     <button class="button-play" type="submit">Iniciar</button>
 </form>
 </div>

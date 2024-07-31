@@ -53,16 +53,18 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     int canSkip = user.getCanSkip();
 %>
 <body>
+    <audio src="audio/perguntashowdomilhao.mp3" autoplay></audio>
+    <audio src="audio/suspense-show-do-milhao.mp3" autoplay></audio>
     <div class="container">
         <div class="container-left">
             <div class="question">
                 <h1>${QUESTION}</h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li li-one" onclick="areYouRight('one','<%=correct%>','<%=valuePremium%>', cron)"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li li-two" onclick="areYouRight('two','<%=correct%>','<%=valuePremium%>', cron)"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li li-three" onclick="areYouRight('three','<%=correct%>','<%=valuePremium%>', cron)"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li li-four" onclick="areYouRight('four','<%=correct%>','<%=valuePremium%>')", cron><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="document.getElementById('audio-are-you-right').play();areYouRight('one','<%=correct%>','<%=valuePremium%>', cron)"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
+                <li class="question-li li-two" onclick="document.getElementById('audio-are-you-right').play();areYouRight('two','<%=correct%>','<%=valuePremium%>', cron)"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
+                <li class="question-li li-three" onclick="document.getElementById('audio-are-you-right').play();areYouRight('three','<%=correct%>','<%=valuePremium%>', cron)"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
+                <li class="question-li li-four" onclick="document.getElementById('audio-are-you-right').play();areYouRight('four','<%=correct%>','<%=valuePremium%>', cron)"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
             </ol>
             <div class="premiums">
                 <div>
@@ -186,18 +188,20 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         </div>
         <div id="areYouSure" class="modal">
             <!-- Modal content -->
+            <audio src="audio/silvio-santos-esta-certo-disso.mp3" id="audio-are-you-right"></audio>
             <div class="modal-content">
               <div class="content-ask">
                 <p>Você está certo disso?</p>
               </div>
               <div class="buttons-confirm">
-                <button id="yes-button">Sim</button><button id="no-button">Não</button>
+                <button onclick="document.getElementById('audio-result').play();" id="yes-button">Sim</button><button id="no-button">Não</button>
               </div>
             </div>
         </div>
         <div id="correctAnswer" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
+              <audio src="audio/silvio-santos-certa-resposta.mp3" id="audio-correct"></audio>
               <div class="content-ask">
                 <p id="message">Certa resposta</p>
               </div>
@@ -217,6 +221,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         <div id="incorrectAnswer" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
+                <audio src="audio/silvio-santos-que-pena-voce-errou.mp3" id="audio-incorrect"></audio>
               <div class="content-ask">
                 <p id="sad">Que pena. Você errou!</p>
                 <p id="premiumWrongOrStop">Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
@@ -453,6 +458,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.getElementById("legend-help").style.textDecoration = "line-through";
             }
         }, false);
+
     </script>
     <script type="text/javascript" src="./js/question.js"></script>
 </body>

@@ -7,9 +7,10 @@ function areYouRight(id, correctAnswer, premium, cron) {
     modalSure.style.display = "block";
     number.style.backgroundColor = "red";
     number.style.color = "black";
-    document.getElementById("yes-button").onclick = function () {
+    document.getElementById("yes-button").addEventListener('click', () => {
         clearInterval(cron);
         modalSure.style.display = "none";
+        var isCorrect = true;
         if (value === correctAnswer) {
             if (premium === '1000000') {
                 document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
@@ -20,13 +21,26 @@ function areYouRight(id, correctAnswer, premium, cron) {
             divSelected.style.backgroundColor = "#01b051";
         } else {
             showModalIncorrect(correctAnswer, premium);
+            isCorrect = false;
         }
-    }
-    // Close modal when button with id "yes-button" is clicked
+        playVoice(isCorrect);
+    })
+
+    // Close modal when button with id "no-button" is clicked
     document.getElementById("no-button").onclick = function () {
         modalSure.style.display = "none";
         number.style.backgroundColor = "#fff";
         number.style.color = "blue";
+    }
+}
+
+function playVoice(valueAnswer) {
+    if (valueAnswer===true) {
+        const audioTrue = document.getElementById("audio-correct");
+        audioTrue.play();
+    } else {
+        const audioFalse = document.getElementById("audio-incorrect");
+        audioFalse.play();
     }
 }
 
