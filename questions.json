@@ -1,7 +1,4 @@
 [{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c2"
-  },
   "id": 0,
   "question": "Qual é a capital dos Estados Unidos?",
   "correct_answer": "Washington",
@@ -12,11 +9,7 @@
     "Miami",
     "Chicago"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c3"
-  },
+},{
   "id": 1,
   "question": "Qual réptil que muda de cor conforme o ambiente e o meio onde vive?",
   "correct_answer": "Camaleão",
@@ -27,11 +20,7 @@
     "Lagarto",
     "Jacaré"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c4"
-  },
+},{
   "id": 2,
   "question": "Em um ano bissexto que mês tem um dia a mais?",
   "correct_answer": "Fevereiro",
@@ -42,11 +31,7 @@
     "Abril",
     "Outubro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c5"
-  },
+},{
   "id": 3,
   "question": "Qual alimento não é derivado do leite?",
   "correct_answer": "Mostarda",
@@ -57,11 +42,7 @@
     "Iogurte",
     "Coalhada"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c6"
-  },
+},{
   "id": 4,
   "question": "Como é conhecida a campanha que alerta a sociedade sobre a prevenção do câncer de mama?",
   "correct_answer": "Outubro rosa",
@@ -72,11 +53,7 @@
     "Setembro amarelo",
     "Novembro azul"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c7"
-  },
+},{
   "id": 5,
   "question": "Qual desses órgãos faz parte do aparelho digestivo?",
   "correct_answer": "Intestino",
@@ -87,11 +64,7 @@
     "Pulmão",
     "Rim"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c8"
-  },
+},{
   "id": 6,
   "question": "Quem é o homem de aço das histórias em quadrinhos?",
   "correct_answer": "Superman",
@@ -102,11 +75,7 @@
     "Hulk",
     "He-man"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823c9"
-  },
+},{
   "id": 7,
   "question": "Qual dessas palavras não é um palíndromo?",
   "correct_answer": "Uva",
@@ -117,11 +86,7 @@
     "Reviver",
     "Osso"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ca"
-  },
+},{
   "id": 8,
   "question": "Qual é a moeda oficial dos Estados Unidos?",
   "correct_answer": "Dólar",
@@ -132,11 +97,7 @@
     "Coroa",
     "Libra"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823cb"
-  },
+},{
   "id": 9,
   "question": "O saquê é uma bebida originária de qual país?",
   "correct_answer": "Japão",
@@ -147,11 +108,7 @@
     "Coréia do Sul",
     "China"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823cc"
-  },
+},{
   "id": 10,
   "question": "Quem libertou os escravos em 1888?",
   "correct_answer": "Princesa Isabel",
@@ -162,11 +119,7 @@
     "Anita Garibaldi",
     "Imperatriz Leopoldina"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823cd"
-  },
+},{
   "id": 11,
   "question": "Que criatura mitológica é metade mulher e metade peixe?",
   "correct_answer": "Sereia",
@@ -177,11 +130,7 @@
     "Cleópatra",
     "Iemanjá"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ce"
-  },
+},{
   "id": 12,
   "question": "Qual atriz protagonizou ao lado de Leonardo Da Vinci o filme Titanic?",
   "correct_answer": "Kate Winslet",
@@ -192,11 +141,7 @@
     "Bridget Fonda",
     "C. Zetta Jones"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823cf"
-  },
+},{
   "id": 13,
   "question": "Onde é mais usado o sismógrafo?",
   "correct_answer": "Terremotos",
@@ -207,11 +152,7 @@
     "Maremotos",
     "Tempestades"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d0"
-  },
+},{
   "id": 14,
   "question": "Qual orixá é conhecida como a Rainha do Mar?",
   "correct_answer": "Iemanjá",
@@ -222,11 +163,7 @@
     "Pomba-gira",
     "Iansã"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d1"
-  },
+},{
   "id": 15,
   "question": "Qual o recipiente utilizado para conservar quente os liquidos que contém?",
   "correct_answer": "Garrafa térmica",
@@ -237,11 +174,7 @@
     "Bacia",
     "Taça"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d2"
-  },
+},{
   "id": 16,
   "question": "A compensação por perda é chamada de:",
   "correct_answer": "Indenização",
@@ -252,11 +185,7 @@
     "Indexação",
     "Indébito"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d3"
-  },
+},{
   "id": 17,
   "question": "Qual é o nome dado aos segmentos ósseos dos dedos das mãos e dos pés?",
   "correct_answer": "Falange",
@@ -267,11 +196,7 @@
     "Temporal",
     "Esterno"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d4"
-  },
+},{
   "id": 18,
   "question": "Qual destes itens tem numerador e denominador?",
   "correct_answer": "Fração",
@@ -282,11 +207,7 @@
     "Multiplicação",
     "Potência"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d5"
-  },
+},{
   "id": 19,
   "question": "Qual autor escreveu 'Primeiras Estórias'?",
   "correct_answer": "Guimarães Rosa",
@@ -297,11 +218,7 @@
     "Euclides da Cunha",
     "José de Alencar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d6"
-  },
+},{
   "id": 20,
   "question": "Quem foi eleito presidente da África do Sul em 1994?",
   "correct_answer": "Nelson Mandela",
@@ -312,11 +229,7 @@
     "Nelson Eddy",
     "John Nelson"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d7"
-  },
+},{
   "id": 21,
   "question": "Qual história Francis Ford Coppola dirigiu em três partes",
   "correct_answer": "O Poderoso Chefão",
@@ -327,11 +240,7 @@
     "Sexta-feira treze",
     "Guerra nas estrelas"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d8"
-  },
+},{
   "id": 22,
   "question": "Com quantos graus centígrados a água ferve?",
   "correct_answer": "100",
@@ -342,11 +251,7 @@
     "170",
     "220"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823d9"
-  },
+},{
   "id": 23,
   "question": "Quantos signos astrológicos formam o zoodíaco?",
   "correct_answer": "12",
@@ -357,11 +262,7 @@
     "10",
     "11"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823da"
-  },
+},{
   "id": 24,
   "question": "Como se chama o alimento extraído pelas plantas do solo?",
   "correct_answer": "Seiva",
@@ -372,11 +273,7 @@
     "Mitose",
     "Clorofila"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823db"
-  },
+},{
   "id": 25,
   "question": "Qual jogador brasileiro de futebol recebeu o apelido de Imperador duarante sua passagem pela Itália?",
   "correct_answer": "Adriano",
@@ -387,11 +284,7 @@
     "Marcelinho Carioca",
     "Dunga"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823dc"
-  },
+},{
   "id": 26,
   "question": "Qual órgão do nosso corpo produz a urina",
   "correct_answer": "Rim",
@@ -402,11 +295,7 @@
     "Coração",
     "Boca"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823dd"
-  },
+},{
   "id": 27,
   "question": "Qual é o metal encontrado no interior de um termômetro?",
   "correct_answer": "Mercúrio",
@@ -417,11 +306,7 @@
     "Alumínio",
     "Ferro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823de"
-  },
+},{
   "id": 28,
   "question": "Qual composto químico representa a fórmula Pb(NO3)2?",
   "correct_answer": "Nitrato de Chumbo",
@@ -432,11 +317,7 @@
     "Cloreto de Cromilo",
     "Nitrato de Amônio"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823df"
-  },
+},{
   "id": 29,
   "question": "Linha que estabelece a mais curta distância entre dois pontos é a:",
   "correct_answer": "Reta",
@@ -447,11 +328,7 @@
     "Ângulo",
     "Zig-zague"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e0"
-  },
+},{
   "id": 30,
   "question": "Quem é o primeiro substituto do presidente?",
   "correct_answer": "Vice-presidente",
@@ -462,11 +339,7 @@
     "Senador",
     "Deputado"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e1"
-  },
+},{
   "id": 31,
   "question": "Quem dirigiu o filme 'Central do Brasil' indicado para o Oscar como o melhor filme estrangeiro em 1999?",
   "correct_answer": "Walter Salles Jr.",
@@ -477,11 +350,7 @@
     "Hector Babenco",
     "Arnaldo Jabor"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e2"
-  },
+},{
   "id": 32,
   "question": "Qual a fórmula química da água?",
   "correct_answer": "H2O",
@@ -492,11 +361,7 @@
     "H20",
     "H"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e3"
-  },
+},{
   "id": 33,
   "question": "De quantos em quantos dias a lua muda de fase?",
   "correct_answer": "7",
@@ -507,11 +372,7 @@
     "8",
     "15"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e4"
-  },
+},{
   "id": 34,
   "question": "Como é o nome do riacho em cujas margens foi proclamada a independência do Brasil?",
   "correct_answer": "Ipiranga",
@@ -522,11 +383,7 @@
     "Sacomâ",
     "Independente"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e5"
-  },
+},{
   "id": 35,
   "question": "Quantos centavos tem 1 real?",
   "correct_answer": "Cem",
@@ -537,11 +394,7 @@
     "Mil",
     "Cinquenta"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e6"
-  },
+},{
   "id": 36,
   "question": "Quantas dentições tem o ser humano durante a vida?",
   "correct_answer": "Duas",
@@ -552,11 +405,7 @@
     "Três",
     "Quatro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e7"
-  },
+},{
   "id": 37,
   "question": "Qual é a pedra preciosa mais dura encontrada na natureza?",
   "correct_answer": "Diamante",
@@ -567,11 +416,7 @@
     "Rubi",
     "Pérola"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e8"
-  },
+},{
   "id": 38,
   "question": "Qual a cantora que tinha o apelido de Ternurinha na época da jovem guarda?",
   "correct_answer": "Wanderléia",
@@ -582,11 +427,7 @@
     "Gretchen",
     "Martinha"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823e9"
-  },
+},{
   "id": 39,
   "question": "Qual era o código da identidade secreta do James Bond?",
   "correct_answer": "007",
@@ -597,11 +438,7 @@
     "907",
     "008"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ea"
-  },
+},{
   "id": 40,
   "question": "A que continente pertence o Rio Amazonas?",
   "correct_answer": "Americano",
@@ -612,11 +449,7 @@
     "Europeu",
     "Asiático"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823eb"
-  },
+},{
   "id": 41,
   "question": "Qual estação é conhecida como a que caem as folhas das árvores?",
   "correct_answer": "Outono",
@@ -627,11 +460,7 @@
     "Inverno",
     "Primavera"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ec"
-  },
+},{
   "id": 42,
   "question": "Qual a profissão dos sete anões?",
   "correct_answer": "Mineradores",
@@ -642,11 +471,7 @@
     "Agricultores",
     "Pastores"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ed"
-  },
+},{
   "id": 43,
   "question": "Qual é considerado o mês das noivas?",
   "correct_answer": "Maio",
@@ -657,11 +482,7 @@
     "Junho",
     "Novembro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ee"
-  },
+},{
   "id": 44,
   "question": "Qual é a teoria unificada desenvolvida para explicar a relação entre a eletricidade e o magnetismo?",
   "correct_answer": "Eletromagnetismo",
@@ -672,11 +493,7 @@
     "Movimento Browniano",
     "Mecanismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ef"
-  },
+},{
   "id": 45,
   "question": "O salto em distância é uma modalidade de qual desses esportes?",
   "correct_answer": "Atletismo",
@@ -687,11 +504,7 @@
     "Automobilismo",
     "Natação"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f0"
-  },
+},{
   "id": 46,
   "question": "O que é uma partitura?",
   "correct_answer": "Representação escrita da música",
@@ -702,11 +515,7 @@
     "Método de corte de carne",
     "Equipamento utilizado no futebol americano"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f1"
-  },
+},{
   "id": 47,
   "question": "Titubear é o mesmo que:",
   "correct_answer": "Hesitar",
@@ -717,11 +526,7 @@
     "Concordar",
     "Aceitar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f2"
-  },
+},{
   "id": 48,
   "question": "Em qual cidade italiana está localizado o Coliseu?",
   "correct_answer": "Roma",
@@ -732,11 +537,7 @@
     "Veneza",
     "Florença"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f3"
-  },
+},{
   "id": 49,
   "question": "Qual é o coletivo de borboletas?",
   "correct_answer": "Panapaná",
@@ -747,11 +548,7 @@
     "Enxame",
     "Cáfila"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f4"
-  },
+},{
   "id": 50,
   "question": "Em um prédio, quem é o responsável pela administração do condomínio?",
   "correct_answer": "Síndico",
@@ -762,11 +559,7 @@
     "Locador",
     "Porteiro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f5"
-  },
+},{
   "id": 51,
   "question": "A qual família pertence o tigre?",
   "correct_answer": "Felídeos",
@@ -777,11 +570,7 @@
     "Suídeos",
     "Bovídeos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f6"
-  },
+},{
   "id": 52,
   "question": "Qual desses sentimentos é simbolizado por uma pomba branca?",
   "correct_answer": "Paz",
@@ -792,11 +581,7 @@
     "Coragem",
     "Esperança"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f7"
-  },
+},{
   "id": 53,
   "question": "No futebol, após quantos cartões amarelos o jogador recebe um cartão vermelho?",
   "correct_answer": "Dois",
@@ -807,11 +592,7 @@
     "Cinco",
     "Quatro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f8"
-  },
+},{
   "id": 54,
   "question": "Qual era o verdadeiro nome do cantor Tim Maia?",
   "correct_answer": "Sebastião",
@@ -822,11 +603,7 @@
     "João",
     "Joaquim"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823f9"
-  },
+},{
   "id": 55,
   "question": "Como é chamado cada capítulo do alcorão?",
   "correct_answer": "Surata",
@@ -837,11 +614,7 @@
     "Sefardim",
     "Torá"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823fa"
-  },
+},{
   "id": 56,
   "question": "Quem proclamou a república do Brasil em 1889?",
   "correct_answer": "Marechal Deodoro",
@@ -852,11 +625,7 @@
     "Dom Pedro II",
     "Marechal Rondon"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823fb"
-  },
+},{
   "id": 57,
   "question": "Por quanto se deve multiplicar o número romano coberto com traço horizontal?",
   "correct_answer": "1000",
@@ -867,11 +636,7 @@
     "200",
     "500"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823fc"
-  },
+},{
   "id": 58,
   "question": "Mike Tyson se destacou mundialmente em qual esporte?",
   "correct_answer": "Boxe",
@@ -882,11 +647,7 @@
     "Basquete",
     "Tênis"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823fd"
-  },
+},{
   "id": 59,
   "question": "Qual é o estabelecimento que vende especificamente materiais de costura?",
   "correct_answer": "Armarinho",
@@ -897,11 +658,7 @@
     "Sebo",
     "Quitanda"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823fe"
-  },
+},{
   "id": 60,
   "question": "Qual é a sigla do Movimento dos Trabalhadores Rurais Sem-Terra?",
   "correct_answer": "MST",
@@ -912,11 +669,7 @@
     "MTRS",
     "MTRST"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f823ff"
-  },
+},{
   "id": 61,
   "question": "Qual é o local de trabalho de um presbítero?",
   "correct_answer": "Igreja",
@@ -927,11 +680,7 @@
     "Delegacia",
     "Museu"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82400"
-  },
+},{
   "id": 62,
   "question": "O que é fagote?",
   "correct_answer": "Instrumento de sopro",
@@ -942,11 +691,7 @@
     "Foguete pequeno",
     "Frango pequeno"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82401"
-  },
+},{
   "id": 63,
   "question": "Uma hora e quarenta minutos corresponde a:",
   "correct_answer": "100 minutos",
@@ -957,11 +702,7 @@
     "80 minutos",
     "110 minutos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82402"
-  },
+},{
   "id": 64,
   "question": "As variações da luz refletida pela lua são chamadas de:",
   "correct_answer": "Fases",
@@ -972,11 +713,7 @@
     "Cores",
     "Marés"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82403"
-  },
+},{
   "id": 65,
   "question": "Uma equipe de vôlei começa uma partida com quantos titulares em quadra?",
   "correct_answer": "Seis",
@@ -987,11 +724,7 @@
     "Sete",
     "Oito"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82404"
-  },
+},{
   "id": 66,
   "question": "Qual é a capital do Iraque?",
   "correct_answer": "Bagdá",
@@ -1002,11 +735,7 @@
     "Beirute",
     "Budapeste"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82405"
-  },
+},{
   "id": 67,
   "question": "Que presidente dos Estados Unidos foi ator de cinema?",
   "correct_answer": "Ronald Reagan",
@@ -1017,11 +746,7 @@
     "Richard Nixon",
     "Bill Clinton"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82406"
-  },
+},{
   "id": 68,
   "question": "Como é chamado o lugar sagrado dos judeus?",
   "correct_answer": "Sinagoga",
@@ -1032,11 +757,7 @@
     "Capela",
     "Altar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82407"
-  },
+},{
   "id": 69,
   "question": "Qual é o país que participou de todas as copas do mundo de futebol?",
   "correct_answer": "Brasil",
@@ -1047,11 +768,7 @@
     "Uruguai",
     "Argentina"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82408"
-  },
+},{
   "id": 70,
   "question": "Qual a parte da física estuda os fenômenos visuais?",
   "correct_answer": "Óptica",
@@ -1062,11 +779,7 @@
     "Eletromagnetismo",
     "Termodinâmica"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82409"
-  },
+},{
   "id": 71,
   "question": "Em qual desses estados está localizado o Pantanal brasileiro?",
   "correct_answer": "Mato Grosso",
@@ -1077,11 +790,7 @@
     "Amazonas",
     "Goiás"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240a"
-  },
+},{
   "id": 72,
   "question": "Quais são os naipes vermelhos do baralho?",
   "correct_answer": "Ouros e copas",
@@ -1092,11 +801,7 @@
     "Paus e ouros",
     "Espadas e paus"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240b"
-  },
+},{
   "id": 73,
   "question": "A patente de brigadeiro é concedida a um membro:",
   "correct_answer": "Da aeronáutica",
@@ -1107,11 +812,7 @@
     "Do exército",
     "Do FBI"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240c"
-  },
+},{
   "id": 74,
   "question": "Qual é o menor número divisível por 6?",
   "correct_answer": "6",
@@ -1122,11 +823,7 @@
     "36",
     "24"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240d"
-  },
+},{
   "id": 75,
   "question": "Em que dia é iniciado o verão no Brasil?",
   "correct_answer": "21 de dezembro",
@@ -1137,11 +834,7 @@
     "23 de dezembro",
     "25 de dezembro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240e"
-  },
+},{
   "id": 76,
   "question": "Qual a área médica que estuda o sistema endócrino?",
   "correct_answer": "Endocrinologia",
@@ -1152,11 +845,7 @@
     "Endocrinolobia",
     "Biocrinologia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8240f"
-  },
+},{
   "id": 77,
   "question": "Quem eram os primeiros habitantes do Brasil?",
   "correct_answer": "Índios",
@@ -1167,11 +856,7 @@
     "Não havia ninguém",
     "Portugueses"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82410"
-  },
+},{
   "id": 78,
   "question": "Harry Potter é selecionado para qual casa em A Pedra Filosofal?",
   "correct_answer": "Grifinória",
@@ -1182,11 +867,7 @@
     "Lufa-lufa",
     "Cornival"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82411"
-  },
+},{
   "id": 79,
   "question": "A sigla 'Cl' representa qual elemento da tabela periódica?",
   "correct_answer": "Cloro",
@@ -1197,11 +878,7 @@
     "Césio",
     "Cobre"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82412"
-  },
+},{
   "id": 80,
   "question": "Qual dessas substâncias é um sedativo?",
   "correct_answer": "Morfina",
@@ -1212,11 +889,7 @@
     "Anfetamina",
     "Acetona"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82413"
-  },
+},{
   "id": 81,
   "question": "Qual é a praça em São Paulo que leva o nome da pessoa que trouxe o futebol para o Brasil?",
   "correct_answer": "Praça Charles Miller",
@@ -1227,11 +900,7 @@
     "Praça Stewart Kildon",
     "Praça Joseph Smith"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82414"
-  },
+},{
   "id": 82,
   "question": "Raí Souza Vieira de Oliveira é o nome de batismo de qual famoso ex-jogador de futebol?",
   "correct_answer": "Raí",
@@ -1242,11 +911,7 @@
     "Capitão",
     "Sócrates"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82415"
-  },
+},{
   "id": 83,
   "question": "Quem foi o herói lendário que tirava sua força dos cabelos?",
   "correct_answer": "Sansão",
@@ -1257,11 +922,7 @@
     "João Batista",
     "Golias"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82416"
-  },
+},{
   "id": 84,
   "question": "Como eram chamados os navios que traziam os escravos para o Brasil?",
   "correct_answer": "Negreiros",
@@ -1272,11 +933,7 @@
     "Pesqueiros",
     "Petroleiros"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82417"
-  },
+},{
   "id": 85,
   "question": "Quando começou e terminou a primeira guerra mundial?",
   "correct_answer": "1914-1918",
@@ -1287,11 +944,7 @@
     "1920-1930",
     "1912-1915"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82418"
-  },
+},{
   "id": 86,
   "question": "Qual planta era usada pelos egípcios para escrever desde a antiguidade?",
   "correct_answer": "Papiro",
@@ -1302,11 +955,7 @@
     "Oliveira",
     "Milho"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82419"
-  },
+},{
   "id": 87,
   "question": "Qual metal avermelhado que cria uma camada esverdeada quando em contato com a umidade?",
   "correct_answer": "Cobre",
@@ -1317,11 +966,7 @@
     "Mercúrio",
     "Aço"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241a"
-  },
+},{
   "id": 88,
   "question": "Qual letra do alfabeto simboliza o número dez em algarismos romanos?",
   "correct_answer": "X",
@@ -1332,11 +977,7 @@
     "D",
     "L"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241b"
-  },
+},{
   "id": 89,
   "question": "Quem é o autor do manifesto comunista?",
   "correct_answer": "Karl Marx",
@@ -1347,11 +988,7 @@
     "Gorbatchov",
     "Allan Kardec"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241c"
-  },
+},{
   "id": 90,
   "question": "Em que estado americano fica a cidade de Miami?",
   "correct_answer": "Flórida",
@@ -1362,11 +999,7 @@
     "Nova York",
     "Califórnia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241d"
-  },
+},{
   "id": 91,
   "question": "Labareda é uma língua de:",
   "correct_answer": "Fogo",
@@ -1377,11 +1010,7 @@
     "Fumaça",
     "Gelo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241e"
-  },
+},{
   "id": 92,
   "question": "Qual o nome do mago da corte do Rei Arthur?",
   "correct_answer": "Merlin",
@@ -1392,11 +1021,7 @@
     "Mandrake",
     "Excalibur"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8241f"
-  },
+},{
   "id": 93,
   "question": "Qual dessas plantas não tem espinho?",
   "correct_answer": "Samambaia",
@@ -1407,11 +1032,7 @@
     "Babosa",
     "Roseira"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82420"
-  },
+},{
   "id": 94,
   "question": "Quem é Courtney Love?",
   "correct_answer": "Cantora",
@@ -1422,11 +1043,7 @@
     "Jornalista",
     "Cartunista"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82421"
-  },
+},{
   "id": 95,
   "question": "Quantos minutos tem 8 horas?",
   "correct_answer": "480",
@@ -1437,11 +1054,7 @@
     "430",
     "410"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82422"
-  },
+},{
   "id": 96,
   "question": "O que estuda a zoologia?",
   "correct_answer": "Animais",
@@ -1452,11 +1065,7 @@
     "Minerais",
     "Natureza"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82423"
-  },
+},{
   "id": 97,
   "question": "Quem foi o último rei da Macedônia?",
   "correct_answer": "Perseu",
@@ -1467,11 +1076,7 @@
     "Hércules",
     "Dioniso"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82424"
-  },
+},{
   "id": 98,
   "question": "Qual é o número que multiplicado por ele mesmo resulta 49?",
   "correct_answer": "Sete",
@@ -1482,11 +1087,7 @@
     "Oito",
     "Seis"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82425"
-  },
+},{
   "id": 99,
   "question": "Como é chamada a criação de coelhos?",
   "correct_answer": "Cunicultura",
@@ -1497,11 +1098,7 @@
     "Ranicultura",
     "Sericicultura"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82426"
-  },
+},{
   "id": 100,
   "question": "O que não falha é:",
   "correct_answer": "Infalível",
@@ -1512,11 +1109,7 @@
     "Enfalhível",
     "Infalhível"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82427"
-  },
+},{
   "id": 101,
   "question": "O que é Tem-tem?",
   "correct_answer": "Ave",
@@ -1527,11 +1120,7 @@
     "Mamífero",
     "Ilha"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82428"
-  },
+},{
   "id": 102,
   "question": "Segundo a mitologia, qual é o nome da serpente morta por Hércules?",
   "correct_answer": "Hidra",
@@ -1542,11 +1131,7 @@
     "Anaconda",
     "Naja"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82429"
-  },
+},{
   "id": 103,
   "question": "Um número natural é divisível por 10 quando termina em:",
   "correct_answer": "0",
@@ -1557,11 +1142,7 @@
     "5",
     "13"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242a"
-  },
+},{
   "id": 104,
   "question": "Qual desses esportes se pratica descalço?",
   "correct_answer": "Karatê",
@@ -1572,11 +1153,7 @@
     "Futebol de salão",
     "Boxe"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242b"
-  },
+},{
   "id": 105,
   "question": "Tomé de Sousa fundou qual cidade, capital do Brasil até 1763?",
   "correct_answer": "Salvador",
@@ -1587,11 +1164,7 @@
     "Rio de Janeiro",
     "São Paulo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242c"
-  },
+},{
   "id": 106,
   "question": "O que é sarampo?",
   "correct_answer": "Uma doença",
@@ -1602,11 +1175,7 @@
     "Uma dança",
     "Um peixe"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242d"
-  },
+},{
   "id": 107,
   "question": "O que é ejetar?",
   "correct_answer": "Expelir",
@@ -1617,11 +1186,7 @@
     "Rejeitar",
     "Aplicar injeção"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242e"
-  },
+},{
   "id": 108,
   "question": "O estudo da origem e distribuição das plantas na terra se chama:",
   "correct_answer": "Fitogeografia",
@@ -1632,11 +1197,7 @@
     "Geografia política",
     "Antropologia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8242f"
-  },
+},{
   "id": 109,
   "question": "O que é gastronomia?",
   "correct_answer": "Arte de cozinhar",
@@ -1647,11 +1208,7 @@
     "Infecção estomacal",
     "Mania de gastar dinheiro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82430"
-  },
+},{
   "id": 110,
   "question": "Que termo podemos dar ao Pré-modernismo?",
   "correct_answer": "Vasta produção literária",
@@ -1662,11 +1219,7 @@
     "Produção literária reduzida",
     "Algo moderno"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82431"
-  },
+},{
   "id": 111,
   "question": "Qual é a capital de Honduras?",
   "correct_answer": "Tegucigalpa",
@@ -1677,11 +1230,7 @@
     "Bogotá",
     "Lima"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82432"
-  },
+},{
   "id": 112,
   "question": "As aranhas pertencem a qual classe?",
   "correct_answer": "Artrópodes",
@@ -1692,11 +1241,7 @@
     "Crustáceos",
     "Moluscos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82433"
-  },
+},{
   "id": 113,
   "question": "O míssil V-2 era uma arma de qual país?",
   "correct_answer": "Alemanha",
@@ -1707,11 +1252,7 @@
     "Inglaterra",
     "Itália"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82434"
-  },
+},{
   "id": 114,
   "question": "Qual é o movimento estético baseado na quebra dos padrões racionais?",
   "correct_answer": "Surrealismo",
@@ -1722,11 +1263,7 @@
     "Futurismo",
     "Arcadismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82435"
-  },
+},{
   "id": 115,
   "question": "O que é corta-jaca?",
   "correct_answer": "Espécie de dança",
@@ -1737,11 +1274,7 @@
     "Tipo de facão",
     "Cutelo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82436"
-  },
+},{
   "id": 116,
   "question": "Onde fica Marrocos?",
   "correct_answer": "Na África",
@@ -1752,11 +1285,7 @@
     "Na Austrália",
     "Na Índia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82437"
-  },
+},{
   "id": 117,
   "question": "De qual flor é extraído óleo para uso culinário?",
   "correct_answer": "Girassol",
@@ -1767,11 +1296,7 @@
     "Cravo",
     "Margarida"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82438"
-  },
+},{
   "id": 118,
   "question": "Quantas décadas tem um século?",
   "correct_answer": "Dez",
@@ -1782,11 +1307,7 @@
     "Mil",
     "Cento e dez"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82439"
-  },
+},{
   "id": 119,
   "question": "Qual é o significado da expressão desembolsar?",
   "correct_answer": "Gastar",
@@ -1797,11 +1318,7 @@
     "Receber",
     "Lucrar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243a"
-  },
+},{
   "id": 120,
   "question": "Como é chamado o olfato dos animais?",
   "correct_answer": "Faro",
@@ -1812,11 +1329,7 @@
     "Gosto",
     "Tato"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243b"
-  },
+},{
   "id": 121,
   "question": "Como é chamada a discussão criada sobre um determinado assunto?",
   "correct_answer": "Polêmica",
@@ -1827,11 +1340,7 @@
     "Anúncio",
     "Fábula"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243c"
-  },
+},{
   "id": 122,
   "question": "Onde está a incapacidade do daltônico?",
   "correct_answer": "Nos olhos",
@@ -1842,11 +1351,7 @@
     "No nariz",
     "No ouvido"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243d"
-  },
+},{
   "id": 123,
   "question": "Qual é o resultado da oxidação do ferro?",
   "correct_answer": "Ferrugem",
@@ -1857,11 +1362,7 @@
     "Ferroada",
     "Ferreiro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243e"
-  },
+},{
   "id": 124,
   "question": "Qual é o estreito que une o golfo de São Lourenço ao Atlântico?",
   "correct_answer": "Cabot",
@@ -1872,11 +1373,7 @@
     "De Canso",
     "De Dampier"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8243f"
-  },
+},{
   "id": 125,
   "question": "Qual é o estreito conhecido como Passo de Calais?",
   "correct_answer": "De Dover",
@@ -1887,11 +1384,7 @@
     "De Lombok",
     "De Malaca"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82440"
-  },
+},{
   "id": 126,
   "question": "Qual é a divisa natural entre Piauí e Maranhão?",
   "correct_answer": "Rio Parnaíba",
@@ -1902,11 +1395,7 @@
     "Rio Itapecuru",
     "Rio São Francisco"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82441"
-  },
+},{
   "id": 127,
   "question": "El Salvador fica as margens de qual oceano?",
   "correct_answer": "Pacífico",
@@ -1917,11 +1406,7 @@
     "Atlântico",
     "Glacial Ártico"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82442"
-  },
+},{
   "id": 128,
   "question": "Em que país está situada a região de Antofagasta?",
   "correct_answer": "Chile",
@@ -1932,11 +1417,7 @@
     "Nigéria",
     "Afeganistão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82443"
-  },
+},{
   "id": 129,
   "question": "Qual é a capital das Filipinas?",
   "correct_answer": "Manila",
@@ -1947,11 +1428,7 @@
     "Jacarta",
     "Budapeste"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82444"
-  },
+},{
   "id": 130,
   "question": "Águas pluviais são provenientes...",
   "correct_answer": "Chuva",
@@ -1962,11 +1439,7 @@
     "Córrego",
     "Lago"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82445"
-  },
+},{
   "id": 131,
   "question": "Em 1953, o guerrilheiro Che Guevara formou-se em:",
   "correct_answer": "Medicina",
@@ -1977,11 +1450,7 @@
     "Direito",
     "Jornalismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82446"
-  },
+},{
   "id": 132,
   "question": "Qual desses elementos químicos não é um metal?",
   "correct_answer": "Iodo",
@@ -1992,11 +1461,7 @@
     "Ouro",
     "Mercúrio"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82447"
-  },
+},{
   "id": 133,
   "question": "No início de qual década foi construído o Muro de Berlim?",
   "correct_answer": "Década de 60",
@@ -2007,11 +1472,7 @@
     "Década de 50",
     "Década de 80"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82448"
-  },
+},{
   "id": 134,
   "question": "Qual é o horário em que os ponteiros do relógio fazem um ângulo de 180° graus?",
   "correct_answer": "09:15",
@@ -2022,11 +1483,7 @@
     "12:20",
     "12:00"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82449"
-  },
+},{
   "id": 135,
   "question": "Qual dessas aves perdeu a capacidade de voar ao longo da sua evolução?",
   "correct_answer": "Avestruz",
@@ -2037,11 +1494,7 @@
     "Pombo",
     "Águia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244a"
-  },
+},{
   "id": 136,
   "question": "Qual nome se dá ao grupo de alimentos que inclui o leite, o queijo e manteiga?",
   "correct_answer": "Laticínios",
@@ -2052,11 +1505,7 @@
     "Farináceos",
     "Cereais"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244b"
-  },
+},{
   "id": 137,
   "question": "Qual desses países faz fronteira com a Colômbia?",
   "correct_answer": "Panamá",
@@ -2067,11 +1516,7 @@
     "Costa Rica",
     "Bolívia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244c"
-  },
+},{
   "id": 138,
   "question": "Qual era uma das principais características dos maias?",
   "correct_answer": "Astronomia",
@@ -2082,11 +1527,7 @@
     "Homem",
     "Flores"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244d"
-  },
+},{
   "id": 139,
   "question": "Quem protagoniza o filme Momentos Decisivos?",
   "correct_answer": "Gene Hackman",
@@ -2097,11 +1538,7 @@
     "Dustin Hoffman",
     "Robert Duvall"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244e"
-  },
+},{
   "id": 140,
   "question": "Qual destas frutas é associada ao Natal?",
   "correct_answer": "Noz",
@@ -2112,11 +1549,7 @@
     "Tangerina",
     "Jabuticaba"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8244f"
-  },
+},{
   "id": 141,
   "question": "Em que ano foi realizada a primeira transmissão via rádio?",
   "correct_answer": "1899",
@@ -2127,11 +1560,7 @@
     "1896",
     "1900"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82450"
-  },
+},{
   "id": 142,
   "question": "Qual desses cantores não foi integrante do grupo Os Novos Baianos?",
   "correct_answer": "Elba Ramalho",
@@ -2142,11 +1571,7 @@
     "Baby Consuelo",
     "Moraes Moreira"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82451"
-  },
+},{
   "id": 143,
   "question": "Qual é o antônimo de superfluo?",
   "correct_answer": "Necessário",
@@ -2157,11 +1582,7 @@
     "Superior",
     "Aquecido"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82452"
-  },
+},{
   "id": 144,
   "question": "Qual raça de cães foi treinada para resgate nos alpes suíços?",
   "correct_answer": "São Bernardo",
@@ -2172,11 +1593,7 @@
     "Rottweiler",
     "Pastor alemão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82453"
-  },
+},{
   "id": 145,
   "question": "Qual cantor era chamado Rei do Baião?",
   "correct_answer": "Luiz Gonzaga",
@@ -2187,11 +1604,7 @@
     "Sivuca",
     "Gonzaguinha"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82454"
-  },
+},{
   "id": 146,
   "question": "O que é um brioche?",
   "correct_answer": "Pão",
@@ -2202,11 +1615,7 @@
     "Escultura",
     "Broche"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82455"
-  },
+},{
   "id": 147,
   "question": "Qual nome é dado a ausência congênita dos dentes?",
   "correct_answer": "Anodontia",
@@ -2217,11 +1626,7 @@
     "Dentologia",
     "Anododontia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82456"
-  },
+},{
   "id": 148,
   "question": "Qual é o triângulo que tem todos os lados diferentes?",
   "correct_answer": "Escaleno",
@@ -2232,11 +1637,7 @@
     "Isósceles",
     "Trapézio"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82457"
-  },
+},{
   "id": 149,
   "question": "Qual é o nome da sede do poder executivo e residência oficial do Presidente da República dos EUA?",
   "correct_answer": "Casa Branca",
@@ -2247,11 +1648,7 @@
     "Pentágono",
     "Nasa"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82458"
-  },
+},{
   "id": 150,
   "question": "Qual dessas unidades podemos usar para o espaço?",
   "correct_answer": "Metro",
@@ -2262,11 +1659,7 @@
     "Centímetros",
     "Milímetros"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82459"
-  },
+},{
   "id": 151,
   "question": "Nehru foi primeiro ministro de qual país?",
   "correct_answer": "Índia",
@@ -2277,11 +1670,7 @@
     "Líbia",
     "Marrocos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245a"
-  },
+},{
   "id": 152,
   "question": "O tratato de Tordesilhas foi assinado em qual ano?",
   "correct_answer": "1494",
@@ -2292,11 +1681,7 @@
     "1500",
     "1493"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245b"
-  },
+},{
   "id": 153,
   "question": "Em qual ano foi fundada a OMS?",
   "correct_answer": "1948",
@@ -2307,11 +1692,7 @@
     "1952",
     "1980"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245c"
-  },
+},{
   "id": 154,
   "question": "Como se chama a substância utilizada para acabar com pragas em plantações?",
   "correct_answer": "Agrotóxicos",
@@ -2322,11 +1703,7 @@
     "Eliminatórias",
     "Cândida"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245d"
-  },
+},{
   "id": 155,
   "question": "Qual é o nome de sais do ácido hipocloroso?",
   "correct_answer": "Hipoclorito",
@@ -2337,11 +1714,7 @@
     "Nitrato",
     "Metaborato"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245e"
-  },
+},{
   "id": 156,
   "question": "A carta descrevendo a chegada de Pedro Alvarez Cabral ao Brasil foi enviada ao rei de Portugal, D. Manuel, por:",
   "correct_answer": "Pero Vaz de Caminha",
@@ -2352,11 +1725,7 @@
     "Francisco Adolfo",
     "Bento Teixeira"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8245f"
-  },
+},{
   "id": 157,
   "question": "Tecido epitelial é o mesmo que:",
   "correct_answer": "Pele",
@@ -2367,11 +1736,7 @@
     "Músculos",
     "Cabelo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82460"
-  },
+},{
   "id": 158,
   "question": "Qual seleção venceu a copa do mundo de 1998?",
   "correct_answer": "França",
@@ -2382,11 +1747,7 @@
     "Itália",
     "Uruguai"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82461"
-  },
+},{
   "id": 159,
   "question": "Qual é o nome da água não-poluída e livre de agentes contaminantes ideal para ser consumida?",
   "correct_answer": "Água potável",
@@ -2397,11 +1758,7 @@
     "Água doce",
     "Água oxigenada"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82462"
-  },
+},{
   "id": 160,
   "question": "Qual é a unidade de medida da corrente elétrica?",
   "correct_answer": "Ampere",
@@ -2412,11 +1769,7 @@
     "Quilograma",
     "Segundo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82463"
-  },
+},{
   "id": 161,
   "question": "Qual é a identidade secreta do Batman?",
   "correct_answer": "Bruce Wayne",
@@ -2427,11 +1780,7 @@
     "Clark Kent",
     "Lex Lutor"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82464"
-  },
+},{
   "id": 162,
   "question": "Quem foi Cora Coralina?",
   "correct_answer": "Escritora e poetisa",
@@ -2442,11 +1791,7 @@
     "Cantora",
     "Médica"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82465"
-  },
+},{
   "id": 163,
   "question": "A botânica consite em:",
   "correct_answer": "Estudar as plantas",
@@ -2457,11 +1802,7 @@
     "Estudar os fungos",
     "Estudar os animais"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82466"
-  },
+},{
   "id": 164,
   "question": "O princípio da inércia foi desenvolvido por quem?",
   "correct_answer": "Newton",
@@ -2472,11 +1813,7 @@
     "Pitágoras",
     "Mendel"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82467"
-  },
+},{
   "id": 165,
   "question": "Qual é o nome da maior premiação do cinema mundial?",
   "correct_answer": "Oscar",
@@ -2487,11 +1824,7 @@
     "Globo de Ouro",
     "Festival de Cannes"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82468"
-  },
+},{
   "id": 166,
   "question": "A aquarela é feita com:",
   "correct_answer": "Pigmento e água",
@@ -2502,11 +1835,7 @@
     "Água raz",
     "Carvão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82469"
-  },
+},{
   "id": 167,
   "question": "Qual desses jogadores estrangeiros teve passagem por clube brasileiro em 2005?",
   "correct_answer": "Tevez",
@@ -2517,11 +1846,7 @@
     "Maradona",
     "Cristiano Ronaldo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246a"
-  },
+},{
   "id": 168,
   "question": "Como é chamado o encontro de católicos para discussão de assuntos religiosos?",
   "correct_answer": "Concílio",
@@ -2532,11 +1857,7 @@
     "Multirão",
     "Quermesse"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246b"
-  },
+},{
   "id": 169,
   "question": "Segundo a bíblia, Abel foi um:",
   "correct_answer": "Pastor de ovelhas",
@@ -2547,11 +1868,7 @@
     "Lavrador de terra",
     "Rei"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246c"
-  },
+},{
   "id": 170,
   "question": "Como é chamado o favorecimento de parentes praticado pelos que detém o poder?",
   "correct_answer": "Nepotismo",
@@ -2562,11 +1879,7 @@
     "Socialismo",
     "Despotismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246d"
-  },
+},{
   "id": 171,
   "question": "Qual é o nome da primeira cosmonauta a realizar um vôo espacial?",
   "correct_answer": "Valentina",
@@ -2577,11 +1890,7 @@
     "Josefina",
     "Terezinha"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246e"
-  },
+},{
   "id": 172,
   "question": "Oryza Sativa é o nome científico de qual desses cereais?",
   "correct_answer": "Arroz",
@@ -2592,11 +1901,7 @@
     "Milho",
     "Aveia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8246f"
-  },
+},{
   "id": 173,
   "question": "No Brasil, a Semana de Arte Moderna deu origem a qual movimento?",
   "correct_answer": "Modernismo",
@@ -2607,11 +1912,7 @@
     "Barroco",
     "Arcadismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82470"
-  },
+},{
   "id": 174,
   "question": "Descritiva, narrativa e dissertativa são tipos de:",
   "correct_answer": "Redação",
@@ -2622,11 +1923,7 @@
     "Antônimos",
     "Suplementares"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82471"
-  },
+},{
   "id": 175,
   "question": "Qual é o principal ingrediente da mariola?",
   "correct_answer": "Banana",
@@ -2637,11 +1934,7 @@
     "Mandioca",
     "Gengibre"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82472"
-  },
+},{
   "id": 176,
   "question": "A palavra destinto significa:",
   "correct_answer": "Descorado",
@@ -2652,11 +1945,7 @@
     "Formidável",
     "Inconfundível"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82473"
-  },
+},{
   "id": 177,
   "question": "A respiração tegumentar é semelhante a qual respiração?",
   "correct_answer": "Cutânea",
@@ -2667,11 +1956,7 @@
     "Pulmonar",
     "Branquial"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82474"
-  },
+},{
   "id": 178,
   "question": "Entrada franca em um espetáculo significa...",
   "correct_answer": "Entrada gratuíta",
@@ -2682,11 +1967,7 @@
     "Entrada para menores",
     "Entrada para maiores"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82475"
-  },
+},{
   "id": 179,
   "question": "Qual é a bebida originada da pigmentação do suco de uva?",
   "correct_answer": "Vinho",
@@ -2697,11 +1978,7 @@
     "Uísque",
     "Saquê"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82476"
-  },
+},{
   "id": 180,
   "question": "O que foi contruído por Noé?",
   "correct_answer": "Uma arca",
@@ -2712,11 +1989,7 @@
     "Uma esfinge",
     "Uma pirâmide"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82477"
-  },
+},{
   "id": 181,
   "question": "Qual desses elementos atrai o ferro e outros metais?",
   "correct_answer": "Imã",
@@ -2727,11 +2000,7 @@
     "Pátina",
     "Broche"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82478"
-  },
+},{
   "id": 182,
   "question": "Qual dessas palavras não se refere a aluno?",
   "correct_answer": "Catedrático",
@@ -2742,11 +2011,7 @@
     "Discente",
     "Discípulo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82479"
-  },
+},{
   "id": 183,
   "question": "Em qual destes esportes não é necessário um goleiro?",
   "correct_answer": "Basquete",
@@ -2757,11 +2022,7 @@
     "Pólo aquático",
     "Handebol"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247a"
-  },
+},{
   "id": 184,
   "question": "A palavra sol é:",
   "correct_answer": "Monossílaba",
@@ -2772,11 +2033,7 @@
     "Polissílaba",
     "Dissílaba"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247b"
-  },
+},{
   "id": 185,
   "question": "Qual o oceano que banha o litoral brasileiro?",
   "correct_answer": "Atlântico",
@@ -2787,11 +2044,7 @@
     "Pacífico",
     "Índico"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247c"
-  },
+},{
   "id": 186,
   "question": "O que é Via Láctea?",
   "correct_answer": "Galáxia",
@@ -2802,11 +2055,7 @@
     "Civilização antiga",
     "Marca de carro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247d"
-  },
+},{
   "id": 187,
   "question": "Qual dessas cartas não pertence a um baralho comum?",
   "correct_answer": "Barão",
@@ -2817,11 +2066,7 @@
     "Valete",
     "Rei"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247e"
-  },
+},{
   "id": 188,
   "question": "Como é chamado o andamento natural dos cavalos?",
   "correct_answer": "Trote",
@@ -2832,11 +2077,7 @@
     "Partida",
     "Capote"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8247f"
-  },
+},{
   "id": 189,
   "question": "Qual cineasta dirigiu o filme Lawrence da Arábia?",
   "correct_answer": "David Lean",
@@ -2847,11 +2088,7 @@
     "Michael Anderson",
     "Orson Welles"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82480"
-  },
+},{
   "id": 190,
   "question": "Como é chamada a bebida dos deuses da mitologia?",
   "correct_answer": "Néctar",
@@ -2862,11 +2099,7 @@
     "Soro",
     "Xarope"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82481"
-  },
+},{
   "id": 191,
   "question": "Qual palavra é usada para fazer referência a algo que ocorreu de imprevisto?",
   "correct_answer": "Contratempo",
@@ -2877,11 +2110,7 @@
     "Contratrilho",
     "Contraste"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82482"
-  },
+},{
   "id": 192,
   "question": "Qual o plural da palavra fácil?",
   "correct_answer": "Fáceis",
@@ -2892,11 +2121,7 @@
     "Fácils",
     "Fácius"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82483"
-  },
+},{
   "id": 193,
   "question": "Qual dessas palavras está relacionada ao futebol?",
   "correct_answer": "Embaixada",
@@ -2907,11 +2132,7 @@
     "Prefeitura",
     "Convento"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82484"
-  },
+},{
   "id": 194,
   "question": "O poema 'O Navio Negreiro' foi escrito por qual poeta brasileiro?",
   "correct_answer": "Castro Alves",
@@ -2922,11 +2143,7 @@
     "Manuel Bandeira",
     "Augusto dos Anjos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82485"
-  },
+},{
   "id": 195,
   "question": "Carlos Magno foi monarca de qual dinastia?",
   "correct_answer": "Carolíngia",
@@ -2937,11 +2154,7 @@
     "Windsor",
     "Cassita"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82486"
-  },
+},{
   "id": 196,
   "question": "Além da ema, qual dessas outras aves não voa?",
   "correct_answer": "Pinguim",
@@ -2952,11 +2165,7 @@
     "Beija-flor",
     "Papagaio"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82487"
-  },
+},{
   "id": 197,
   "question": "Qual é o nome do primeiro cachorro a ir para o espaço?",
   "correct_answer": "Laika",
@@ -2967,11 +2176,7 @@
     "Shake",
     "Dolly"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82488"
-  },
+},{
   "id": 198,
   "question": "Qual é o satélite natural da Terra?",
   "correct_answer": "Lua",
@@ -2982,11 +2187,7 @@
     "Marte",
     "Júpiter"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82489"
-  },
+},{
   "id": 199,
   "question": "Qual desses esportes envolve touros?",
   "correct_answer": "Rodeio",
@@ -2997,11 +2198,7 @@
     "Tênis",
     "Boliche"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248a"
-  },
+},{
   "id": 200,
   "question": "O que queria o leão de O Mágico de Oz?",
   "correct_answer": "Coragem",
@@ -3012,11 +2209,7 @@
     "Coração",
     "Cérebro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248b"
-  },
+},{
   "id": 201,
   "question": "Açores é um arquipélago que pertence a qual país?",
   "correct_answer": "Portugal",
@@ -3027,11 +2220,7 @@
     "França",
     "Inglaterra"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248c"
-  },
+},{
   "id": 202,
   "question": "Que esporte pratica a equipe do Chicago Bulls?",
   "correct_answer": "Basquete",
@@ -3042,11 +2231,7 @@
     "Natação",
     "Futebol"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248d"
-  },
+},{
   "id": 203,
   "question": "Como é chamado o distintivo de uma pessoa ou família nobre?",
   "correct_answer": "Brasão",
@@ -3057,11 +2242,7 @@
     "Medalhão",
     "Broche"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248e"
-  },
+},{
   "id": 204,
   "question": "Quais são os naipes pretos das cartas de baralho?",
   "correct_answer": "Espada e paus",
@@ -3072,11 +2253,7 @@
     "Ouro e paus",
     "Copas e espada"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8248f"
-  },
+},{
   "id": 205,
   "question": "A energia do núcleo do átomo é:",
   "correct_answer": "Uma energia nuclear",
@@ -3087,11 +2264,7 @@
     "Uma energia térmica",
     "Uma energia cinética"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82490"
-  },
+},{
   "id": 206,
   "question": "Um ponto elevado de onde se aprecia vistas panorâmicas é chamado de:",
   "correct_answer": "Mirante",
@@ -3102,11 +2275,7 @@
     "Encosta",
     "Orla"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82491"
-  },
+},{
   "id": 207,
   "question": "O que é uma epístola?",
   "correct_answer": "Carta",
@@ -3117,11 +2286,7 @@
     "Filme",
     "Desenho"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82492"
-  },
+},{
   "id": 208,
   "question": "Onde podemos encontrar estalactites?",
   "correct_answer": "Em cavernas",
@@ -3132,11 +2297,7 @@
     "Em escolas",
     "Em hospitais"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82493"
-  },
+},{
   "id": 209,
   "question": "O que faz um lapidário?",
   "correct_answer": "Lapida pedras preciosas",
@@ -3147,11 +2308,7 @@
     "Aponta lápis",
     "Faz lâmpadas"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82494"
-  },
+},{
   "id": 210,
   "question": "Hermeto Pascoal é um:",
   "correct_answer": "Músico",
@@ -3162,11 +2319,7 @@
     "Técnico de futebol",
     "Culinarista"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82495"
-  },
+},{
   "id": 211,
   "question": "Qual é o planeta mais próximo da Terra?",
   "correct_answer": "Vênus",
@@ -3177,11 +2330,7 @@
     "Marte",
     "Urano"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82496"
-  },
+},{
   "id": 212,
   "question": "Qual é o profissional relacionado à extração do látex?",
   "correct_answer": "Seringueiro",
@@ -3192,11 +2341,7 @@
     "Carpinteiro",
     "Serralheiro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82497"
-  },
+},{
   "id": 213,
   "question": "Qual desses esportes não utiliza taco?",
   "correct_answer": "Futebol",
@@ -3207,11 +2352,7 @@
     "Hóquei",
     "GOlfe"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82498"
-  },
+},{
   "id": 214,
   "question": "Qual pigmento presente no sangue é responsável pela fixação do oxigênio?",
   "correct_answer": "Hemoglobina",
@@ -3222,11 +2363,7 @@
     "Glóbulos brancos",
     "Glóbulos vermelhos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f82499"
-  },
+},{
   "id": 215,
   "question": "Silvicultura é o estudo de:",
   "correct_answer": "Florestas",
@@ -3237,11 +2374,7 @@
     "Raposas",
     "Sereias"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249a"
-  },
+},{
   "id": 216,
   "question": "A pleura é uma membrana responsável por facilitar os movimentos de qual órgão?",
   "correct_answer": "Pulmão",
@@ -3252,11 +2385,7 @@
     "Estômago",
     "Coração"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249b"
-  },
+},{
   "id": 217,
   "question": "Qual foi o primeiro país das Américas a tornar-se socialista em 1959?",
   "correct_answer": "Cuba",
@@ -3267,11 +2396,7 @@
     "Estados Unidos",
     "Canadá"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249c"
-  },
+},{
   "id": 218,
   "question": "Qual é o molusco que lança uma tinta escura quando ameaçado?",
   "correct_answer": "Polvo",
@@ -3282,11 +2407,7 @@
     "Orca",
     "Salmão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249d"
-  },
+},{
   "id": 219,
   "question": "A cidade de Jacarta é a capital de qual desses países?",
   "correct_answer": "Indonésia",
@@ -3297,11 +2418,7 @@
     "Moçambique",
     "Malásia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249e"
-  },
+},{
   "id": 220,
   "question": "Qual é o exame laboratorial que se destina à detecção de anticorpos anti-HIV?",
   "correct_answer": "Elisa",
@@ -3312,11 +2429,7 @@
     "Papanicolau",
     "Ultra-som"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f8249f"
-  },
+},{
   "id": 221,
   "question": "Qual é a moeda do Peru?",
   "correct_answer": "Sol novo",
@@ -3327,11 +2440,7 @@
     "Guarani",
     "Sucre"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a0"
-  },
+},{
   "id": 222,
   "question": "A dendrologia é o estudo científico de:",
   "correct_answer": "Árvores",
@@ -3342,11 +2451,7 @@
     "Satélites",
     "Caracóis"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a1"
-  },
+},{
   "id": 223,
   "question": "Em qual desses filmes Antonio Fagundes é protagonista?",
   "correct_answer": "Deus é brasileiro",
@@ -3357,11 +2462,7 @@
     "Cidade de Deus",
     "Central do Brasil"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a2"
-  },
+},{
   "id": 224,
   "question": "Em qual continente está Papua-Nova Guiné?",
   "correct_answer": "Oceania",
@@ -3372,11 +2473,7 @@
     "Europa",
     "Ásia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a3"
-  },
+},{
   "id": 225,
   "question": "No Brasil, qual é o significado da sigla RG dos documentos de identidade?",
   "correct_answer": "Registro Geral",
@@ -3387,11 +2484,7 @@
     "Relação Geral",
     "Relação Genérica"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a4"
-  },
+},{
   "id": 226,
   "question": "O Basset é uma raça de qual animal?",
   "correct_answer": "Cachorro",
@@ -3402,11 +2495,7 @@
     "Gato",
     "Peixe"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a5"
-  },
+},{
   "id": 227,
   "question": "Qual das opções não é uma crença do catolicismo?",
   "correct_answer": "Reencarnação",
@@ -3417,11 +2506,7 @@
     "Purgatório",
     "Inferno"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a6"
-  },
+},{
   "id": 228,
   "question": "Na saga Residente Evil, que atriz interpreta a personagem Alice?",
   "correct_answer": "Mila Jovovich",
@@ -3432,11 +2517,7 @@
     "Mila Kunis",
     "Siena Guillory"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a7"
-  },
+},{
   "id": 229,
   "question": "Cipó é:",
   "correct_answer": "Uma planta",
@@ -3447,11 +2528,7 @@
     "Um mineral",
     "Um animal"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a8"
-  },
+},{
   "id": 230,
   "question": "O que significa iminência?",
   "correct_answer": "Próximo de acontecer",
@@ -3462,11 +2539,7 @@
     "Excelente",
     "Pronome de tratamento"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824a9"
-  },
+},{
   "id": 231,
   "question": "Qual o nome do primeiro carneiro produzido por clonagem?",
   "correct_answer": "Dolly",
@@ -3477,11 +2550,7 @@
     "Billie",
     "Crystal"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824aa"
-  },
+},{
   "id": 232,
   "question": "Qual é o único numeral que é primo e par ao mesmo tempo?",
   "correct_answer": "Dois",
@@ -3492,11 +2561,7 @@
     "Cinco",
     "Seis"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ab"
-  },
+},{
   "id": 233,
   "question": "Como é escrito o número 1.000 em algarismos romanos?",
   "correct_answer": "M",
@@ -3507,11 +2572,7 @@
     "X",
     "L"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ac"
-  },
+},{
   "id": 234,
   "question": "De qual planta é extraído o óleo de rícino?",
   "correct_answer": "Mamona",
@@ -3522,11 +2583,7 @@
     "Ipê",
     "Babosa"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ad"
-  },
+},{
   "id": 235,
   "question": "Qual era o nome de solteira da atriz e líder da Argentina Eva Peron?",
   "correct_answer": "Duarte",
@@ -3537,11 +2594,7 @@
     "Castillo",
     "Navarro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ae"
-  },
+},{
   "id": 236,
   "question": "Cioppino é que tipo de comida?",
   "correct_answer": "Frutos do mar",
@@ -3552,11 +2605,7 @@
     "Legumes",
     "Frango"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824af"
-  },
+},{
   "id": 237,
   "question": "Qual desses organismos não possui organização celular?",
   "correct_answer": "Vírus",
@@ -3567,11 +2616,7 @@
     "Metazoários",
     "Celenterados"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b0"
-  },
+},{
   "id": 238,
   "question": "Qual era o nome do plano elaborado pelo governo Dutra?",
   "correct_answer": "Plano Salte",
@@ -3582,11 +2627,7 @@
     "Plano Verão",
     "Plano Cohen"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b1"
-  },
+},{
   "id": 239,
   "question": "O que causa a doença da raiva?",
   "correct_answer": "Um vírus",
@@ -3597,11 +2638,7 @@
     "Um fungo",
     "Uma bactéria"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b2"
-  },
+},{
   "id": 240,
   "question": "Quem cortou a cabeça da Medusa?",
   "correct_answer": "Perseu",
@@ -3612,11 +2649,7 @@
     "Narciso",
     "Zeus"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b3"
-  },
+},{
   "id": 241,
   "question": "Qual desses animais não é um anfíbio?",
   "correct_answer": "Cachorro",
@@ -3627,11 +2660,7 @@
     "Rã",
     "Sapo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b4"
-  },
+},{
   "id": 242,
   "question": "Elefantíase é considerada uma doença de que tipo?",
   "correct_answer": "Parasitária",
@@ -3642,11 +2671,7 @@
     "Bacteriana",
     "Fungicida"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b5"
-  },
+},{
   "id": 243,
   "question": "Qual a terra prometida considerada pelos hebreus?",
   "correct_answer": "Palestina",
@@ -3657,11 +2682,7 @@
     "Irã",
     "Síria"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b6"
-  },
+},{
   "id": 244,
   "question": "No filme 'Homem de Ferro 3' (2013), qual o nome do ator que interpreta o Homem de Ferro?",
   "correct_answer": "Robert Downey Jr",
@@ -3672,11 +2693,7 @@
     "Ansel Elgort",
     "Ray Stevenson"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b7"
-  },
+},{
   "id": 245,
   "question": "Em qual raça de cachorro Charles Schulz se inspirou para criar o Snoopy?",
   "correct_answer": "Beagle",
@@ -3687,11 +2704,7 @@
     "Cocker",
     "Poodle"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b8"
-  },
+},{
   "id": 246,
   "question": "Há 5 bandejas com 33 cocadas cada uma. Quantas cocadas tem ao todo?",
   "correct_answer": "165",
@@ -3702,11 +2715,7 @@
     "162",
     "161"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824b9"
-  },
+},{
   "id": 247,
   "question": "Qual o nome da família mafiosa retratada no filme 'O Poderoso Chefão'?",
   "correct_answer": "Corleone",
@@ -3717,11 +2726,7 @@
     "Lannister",
     "Lisbon"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ba"
-  },
+},{
   "id": 248,
   "question": "Em 1958, quem gravou o LP 'Vamos falar de Brasil'?",
   "correct_answer": "Inezita Barroso",
@@ -3732,11 +2737,7 @@
     "João Gilberto",
     "Noel Rosa"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824bb"
-  },
+},{
   "id": 249,
   "question": "A sigla 'C' representa qual elemento da tabela periódica?",
   "correct_answer": "Carbono",
@@ -3747,11 +2748,7 @@
     "Chumbo",
     "Cloro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824bc"
-  },
+},{
   "id": 250,
   "question": "Qual o ano da morte de Ayrton Senna?",
   "correct_answer": "1994",
@@ -3762,11 +2759,7 @@
     "1998",
     "2000"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824bd"
-  },
+},{
   "id": 251,
   "question": "Qual jogador venceu o prêmio de melhor jogador do mundo pela FIFA em 2004?",
   "correct_answer": "Ronaldinho",
@@ -3777,11 +2770,7 @@
     "Thierry Henry",
     "Andriy Shevchenko"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824be"
-  },
+},{
   "id": 252,
   "question": "Qual seleção ganhou a Copa do Mundo em 2010?",
   "correct_answer": "Espanha",
@@ -3792,11 +2781,7 @@
     "Itália",
     "Holanda"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824bf"
-  },
+},{
   "id": 253,
   "question": "Qual é o nome do hormônio que regula o sono?",
   "correct_answer": "Melatonina",
@@ -3807,11 +2792,7 @@
     "Dopamina",
     "Serotonina"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c0"
-  },
+},{
   "id": 254,
   "question": "Qual órgão é responsável por filtrar o sangue?",
   "correct_answer": "Rim",
@@ -3822,11 +2803,7 @@
     "Fígado",
     "Pulmão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c1"
-  },
+},{
   "id": 255,
   "question": "Quem recebia uma capitania hereditária no Brasil era chamado de...",
   "correct_answer": "Donatário",
@@ -3837,11 +2814,7 @@
     "Senhor feudal",
     "Senhor da capitania"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c2"
-  },
+},{
   "id": 256,
   "question": "Quantas vezes Fernando Henrique Cardoso foi eleito presidente?",
   "correct_answer": "2",
@@ -3852,26 +2825,18 @@
     "3",
     "Nenhuma"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c3"
-  },
+},{
   "id": 257,
   "question": "X não é elemento do conjunto A. Isso é o mesmo que:",
-  "correct_answer": "X não pertence a 'A'",
+  "correct_answer": "X não pertence a A",
   "difficulty": "easy",
   "category": "Matemática",
   "incorrect_answers": [
-    "X pertence a 'A'",
+    "X pertence a A",
     "X não contém A",
     "X contém A"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c4"
-  },
+},{
   "id": 258,
   "question": "Como é chamado o aparelho usado para medir a força?",
   "correct_answer": "Dinamômetro",
@@ -3882,11 +2847,7 @@
     "Bafômetro",
     "Anemômetro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c5"
-  },
+},{
   "id": 259,
   "question": "Que número multiplicado por ele mesmo é igual a 121?",
   "correct_answer": "11",
@@ -3897,11 +2858,7 @@
     "12",
     "14"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c6"
-  },
+},{
   "id": 260,
   "question": "Setentrional é o mesmo que:",
   "correct_answer": "Norte",
@@ -3912,11 +2869,7 @@
     "Sul",
     "Leste"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c7"
-  },
+},{
   "id": 261,
   "question": "Sais orgânicos obtidos a partir de ácidos sulfônicos de cadeia longa, tratados com soda cáustica:",
   "correct_answer": "Detergentes",
@@ -3927,11 +2880,7 @@
     "Gorduras",
     "Vinagre"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c8"
-  },
+},{
   "id": 262,
   "question": "Que segmento de reta liga dois vértices não-consecutivos de um polígono?",
   "correct_answer": "Diagonal",
@@ -3942,11 +2891,7 @@
     "Diâmetro",
     "Aresta"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824c9"
-  },
+},{
   "id": 263,
   "question": "A extração de látex da Amazônia permite a produção de:",
   "correct_answer": "Borracha",
@@ -3957,11 +2902,7 @@
     "Cacau",
     "Chocolate"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ca"
-  },
+},{
   "id": 264,
   "question": "Quantos anos há em dois séculos?",
   "correct_answer": "200",
@@ -3972,11 +2913,7 @@
     "100",
     "400"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824cb"
-  },
+},{
   "id": 265,
   "question": "Quem foi o último presidente da era militar?",
   "correct_answer": "Figueiredo",
@@ -3987,11 +2924,7 @@
     "Medici",
     "Sarney"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824cc"
-  },
+},{
   "id": 266,
   "question": "Quais as características da 'plantation'?",
   "correct_answer": "Latifúndio e monocultura",
@@ -4002,11 +2935,7 @@
     "Mão-de-obra assalariada",
     "Latifúndio e policultura"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824cd"
-  },
+},{
   "id": 267,
   "question": "Quem conquistou o Peru?",
   "correct_answer": "Pizarro",
@@ -4017,11 +2946,7 @@
     "Colombo",
     "Cabral"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ce"
-  },
+},{
   "id": 268,
   "question": "A que país pertence as Ilhas Sicília e Sardenha?",
   "correct_answer": "Itália",
@@ -4032,11 +2957,7 @@
     "França",
     "Inglaterra"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824cf"
-  },
+},{
   "id": 269,
   "question": "Na Idade Média, qual dessas atividades foi precursora da química?",
   "correct_answer": "Alquimia",
@@ -4047,11 +2968,7 @@
     "Música",
     "Advocacia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d0"
-  },
+},{
   "id": 270,
   "question": "Os números 5, 10, 15, 20, 25... são múltiplos de:",
   "correct_answer": "5",
@@ -4062,11 +2979,7 @@
     "6",
     "10"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d1"
-  },
+},{
   "id": 271,
   "question": "Como são chamados os sítios arqueológicos situados no litoral brasileiro?",
   "correct_answer": "Sambaquis",
@@ -4077,11 +2990,7 @@
     "Líticos",
     "Cerâmicos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d2"
-  },
+},{
   "id": 272,
   "question": "Qual destes números é múltiplo de 10?",
   "correct_answer": "1020",
@@ -4092,11 +3001,7 @@
     "1005",
     "1025"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d3"
-  },
+},{
   "id": 273,
   "question": "República Democrática do Congo foi o nome oficial de qual país entre 1964 e 1971?",
   "correct_answer": "Zaire",
@@ -4107,11 +3012,7 @@
     "Camarão",
     "Tunísia"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d4"
-  },
+},{
   "id": 274,
   "question": "No século XVI, qual capitania foi doada a Martim Afonso de Sousa?",
   "correct_answer": "São Vicente",
@@ -4122,11 +3023,7 @@
     "Ceará",
     "Peroaçu"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d5"
-  },
+},{
   "id": 275,
   "question": "Qual o nome do ator que interpretou o Seu Madruga no seriado Chaves?",
   "correct_answer": "Ramon Valdés",
@@ -4137,11 +3034,7 @@
     "Carlos Villagrán",
     "Rubén Aguirre"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d6"
-  },
+},{
   "id": 276,
   "question": "Qual é o menor valor possível para o cosseno de um ângulo?",
   "correct_answer": "-1",
@@ -4152,11 +3045,7 @@
     "0",
     "2"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d7"
-  },
+},{
   "id": 277,
   "question": "Qual destas palavras está escrita da forma correta?",
   "correct_answer": "Pechincha",
@@ -4167,11 +3056,7 @@
     "Pexinxa",
     "Pechinxa"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d8"
-  },
+},{
   "id": 278,
   "question": "O camelo tem quantas córcovas?",
   "correct_answer": "Duas",
@@ -4182,11 +3067,7 @@
     "Três",
     "Quatro"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824d9"
-  },
+},{
   "id": 279,
   "question": "Em que cidade é realizada a corrida de São Silvestre?",
   "correct_answer": "São Paulo",
@@ -4197,11 +3078,7 @@
     "Belo Horizonte",
     "Salvador"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824da"
-  },
+},{
   "id": 280,
   "question": "Cavalo, rainha e torre são peças de qual jogo?",
   "correct_answer": "Xadrez",
@@ -4212,11 +3089,7 @@
     "Dominó",
     "Gamão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824db"
-  },
+},{
   "id": 281,
   "question": "A bruxa envenenou a Branca de Neve com que fruta?",
   "correct_answer": "Maçã",
@@ -4227,11 +3100,7 @@
     "Laranja",
     "Pêssego"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824dc"
-  },
+},{
   "id": 282,
   "question": "Talharim é um tipo de:",
   "correct_answer": "Massa",
@@ -4242,11 +3111,7 @@
     "Carne",
     "Vinho"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824dd"
-  },
+},{
   "id": 283,
   "question": "Quando a velocidade de um veículo não se altera, dizemos que ela é:",
   "correct_answer": "Constante",
@@ -4257,11 +3122,7 @@
     "Consciente",
     "Convincente"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824de"
-  },
+},{
   "id": 284,
   "question": "Qual dessas não é um tipo de ginástica?",
   "correct_answer": "Bocha",
@@ -4272,11 +3133,7 @@
     "Alongamento",
     "Halterofilismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824df"
-  },
+},{
   "id": 285,
   "question": "O violino é um instrumento de corda que deve ser tocado com:",
   "correct_answer": "Arco",
@@ -4287,11 +3144,7 @@
     "Palheta",
     "Pedal"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e0"
-  },
+},{
   "id": 286,
   "question": "Popularmente, o que significa cambalacho?",
   "correct_answer": "Tramóia",
@@ -4302,11 +3155,7 @@
     "Calmaria",
     "Ingenuidade"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e1"
-  },
+},{
   "id": 287,
   "question": "Para fazer um iglu, qual material é usado?",
   "correct_answer": "Neve",
@@ -4317,11 +3166,7 @@
     "Farinha",
     "Cimento"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e2"
-  },
+},{
   "id": 288,
   "question": "A pessoa a quem se confiam segredos é chamada de:",
   "correct_answer": "Confidente",
@@ -4332,11 +3177,7 @@
     "Coincidente",
     "Colidente"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e3"
-  },
+},{
   "id": 289,
   "question": "O personagem histórico 'Tio Sam' é um símbolo da cultura:",
   "correct_answer": "Americana",
@@ -4347,11 +3188,7 @@
     "Mexicana",
     "Inglesa"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e4"
-  },
+},{
   "id": 290,
   "question": "No judô, qual é o golpe que vale a maior pontuação?",
   "correct_answer": "Ippon",
@@ -4362,11 +3199,7 @@
     "Yuko",
     "Wazari"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e5"
-  },
+},{
   "id": 291,
   "question": "Quantos anos durou o reinado de D. Pedro II no Brasil?",
   "correct_answer": "49 anos",
@@ -4377,11 +3210,7 @@
     "18 anos",
     "58 anos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e6"
-  },
+},{
   "id": 292,
   "question": "Qual desses animais é considerado um animal pecilotérmico?",
   "correct_answer": "Sapo",
@@ -4392,11 +3221,7 @@
     "Baleia",
     "Homem"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e7"
-  },
+},{
   "id": 293,
   "question": "Quando alguém está de prontidão significa que está:",
   "correct_answer": "Prestes a agir",
@@ -4407,11 +3232,7 @@
     "Sem ação",
     "Derrotado"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e8"
-  },
+},{
   "id": 294,
   "question": "Quantas vogais existem na palavra consoante?",
   "correct_answer": "Quatro",
@@ -4422,11 +3243,7 @@
     "Três",
     "Cinco"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824e9"
-  },
+},{
   "id": 295,
   "question": "O botulismo em sua fase avançada pode causar:",
   "correct_answer": "Paralisia muscular",
@@ -4437,11 +3254,7 @@
     "Icterícia",
     "Hipertensão"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ea"
-  },
+},{
   "id": 296,
   "question": "Qual dessas palavras não está escrita de forma correta?",
   "correct_answer": "Opitar",
@@ -4452,11 +3265,7 @@
     "Recepção",
     "Enxaguar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824eb"
-  },
+},{
   "id": 297,
   "question": "Qual é o número cujo triplo é 30 e dividido por 2 é igual a 5?",
   "correct_answer": "10",
@@ -4467,11 +3276,7 @@
     "25",
     "15"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ec"
-  },
+},{
   "id": 298,
   "question": "Qual desses esportes não é disputado dentro de um tempo pré-determinado?",
   "correct_answer": "Tênis",
@@ -4482,11 +3287,7 @@
     "Basquete",
     "Futebol"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ed"
-  },
+},{
   "id": 299,
   "question": "Qual desses esportes utiliza maior número de jogadores ao mesmo tempo?",
   "correct_answer": "Futebol",
@@ -4497,11 +3298,7 @@
     "Vôlei",
     "Basquete"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ee"
-  },
+},{
   "id": 300,
   "question": "Qual destes é um esporte náutico?",
   "correct_answer": "Iatismo",
@@ -4512,11 +3309,7 @@
     "Basquete",
     "Hipismo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824ef"
-  },
+},{
   "id": 301,
   "question": "Em qual esporte é utilizado o termo trivela?",
   "correct_answer": "Futebol",
@@ -4527,11 +3320,7 @@
     "Voleibol",
     "Basquete"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f0"
-  },
+},{
   "id": 302,
   "question": "Em qual desses esportes é utilizada a bola oval?",
   "correct_answer": "Futebol americano",
@@ -4542,11 +3331,7 @@
     "Voleibol",
     "Tênis"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f1"
-  },
+},{
   "id": 303,
   "question": "Qual desses esportes consagrou o atleta americano Magic Johnson?",
   "correct_answer": "Basquete",
@@ -4557,11 +3342,7 @@
     "Natação",
     "Vôlei"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f2"
-  },
+},{
   "id": 304,
   "question": "Qual desses esportes é fluvial?",
   "correct_answer": "Canoagem",
@@ -4572,11 +3353,7 @@
     "Hipismo",
     "Luge"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f3"
-  },
+},{
   "id": 305,
   "question": "Na trigonometria seno de 1/2 equivale a:",
   "correct_answer": "30 graus",
@@ -4587,11 +3364,7 @@
     "45 graus",
     "60 graus"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f4"
-  },
+},{
   "id": 306,
   "question": "Qual é o menor ângulo entre os ponteiros das horas e dos minutos quando o relógio marcar 18 horas?",
   "correct_answer": "180 graus",
@@ -4602,11 +3375,7 @@
     "60 graus",
     "30 graus"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a93c331f937fd514f824f5"
-  },
+},{
   "id": 307,
   "question": "Na trigonometria, qual é o valor de um 'pi' em graus?",
   "correct_answer": "180 graus",
@@ -4617,11 +3386,7 @@
     "45 graus",
     "60 graus"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95cb21f937fd514f824fa"
-  },
+},{
   "id": 308,
   "question": "Em que parte do corpo se encontra a epiglote?",
   "correct_answer": "Boca",
@@ -4632,11 +3397,7 @@
     "Pâncreas",
     "Rim"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95ce91f937fd514f824fc"
-  },
+},{
   "id": 309,
   "question": "Em que país nasceu Carmem Miranda?",
   "correct_answer": "Portugal",
@@ -4647,11 +3408,7 @@
     "Espanha",
     "Argentina"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95d931f937fd514f824fe"
-  },
+},{
   "id": 310,
   "question": "Em uma sequência de baralho comum, de 'Ás' a Rei, qual carta vem depois do dez?",
   "correct_answer": "Valete",
@@ -4662,11 +3419,7 @@
     "Rainha",
     "ÁS"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95ddd1f937fd514f82500"
-  },
+},{
   "id": 311,
   "question": "Qual é o antônimo de malograr?",
   "correct_answer": "Conseguir",
@@ -4677,11 +3430,7 @@
     "Fracassar",
     "Desprezar"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95e9c1f937fd514f82502"
-  },
+},{
   "id": 312,
   "question": "Quem compôs a música do Hino da Independência?",
   "correct_answer": "D. Pedro I",
@@ -4692,11 +3441,7 @@
     "Castro Alves",
     "Carlos Gomes"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95ed91f937fd514f82504"
-  },
+},{
   "id": 313,
   "question": "Qual bicho transmite a doença de Chagas?",
   "correct_answer": "Barbeiro",
@@ -4707,11 +3452,7 @@
     "Barata",
     "Pulga"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95f191f937fd514f82506"
-  },
+},{
   "id": 314,
   "question": "O que é ageusia?",
   "correct_answer": "Ausência do paladar",
@@ -4722,11 +3463,7 @@
     "Excesso de suor",
     "Ausência da audição"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a95f7e1f937fd514f82508"
-  },
+},{
   "id": 315,
   "question": "A palavra tupi-guarani 'Caeté' significa:",
   "correct_answer": "Mata virgem",
@@ -4737,11 +3474,7 @@
     "Homem feio",
     "Papagaio manso"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a960021f937fd514f8250a"
-  },
+},{
   "id": 316,
   "question": "Segundo o ditado popular: 'Deus ajuda...'",
   "correct_answer": "A quem cedo madruga",
@@ -4752,11 +3485,7 @@
     "A quem reza muito",
     "A quem ajuda o próximo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a9603f1f937fd514f8250c"
-  },
+},{
   "id": 317,
   "question": "A pessoa que sofre de bruxismo costuma fazer o quê?",
   "correct_answer": "Ranger os dentes",
@@ -4767,11 +3496,7 @@
     "Feitiçaria",
     "Roncar muito"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a960ed1f937fd514f8250e"
-  },
+},{
   "id": 318,
   "question": "Qual é a montanha que se localiza na fronteira entre o Tibet e o Nepal?",
   "correct_answer": "Monte Everest",
@@ -4782,11 +3507,7 @@
     "Monte Fuji",
     "Monte Sinai"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a9616a1f937fd514f82510"
-  },
+},{
   "id": 319,
   "question": "Cento e cinco minutos equivale a uma hora e:",
   "correct_answer": "45 minutos",
@@ -4797,11 +3518,7 @@
     "25 minutos",
     "35 minutos"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a961c11f937fd514f82512"
-  },
+},{
   "id": 320,
   "question": "A apresentadora Xuxa já teve um romance com qual jogador de futebol?",
   "correct_answer": "Pelé",
@@ -4812,11 +3529,7 @@
     "Evair",
     "Edmundo"
   ]
-},
-{
-  "_id": {
-    "$oid": "66a962831f937fd514f82514"
-  },
+},{
   "id": 321,
   "question": "No futebol americano, qual o nome do time de Pittsburgh?",
   "correct_answer": "Steelers",
@@ -4826,5 +3539,126 @@
     "Giants",
     "Jets",
     "Broncos"
+  ]
+},{
+  "id": 322,
+  "question": "Um livro ou caderno com muitas páginas é chamado de:",
+  "correct_answer": "Calhamaço",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Folhinha",
+    "Cardume",
+    "Ramalhete"
+  ]
+},{
+  "id": 323,
+  "question": "Qual é a sinalização utilizada nos veículos em caso de acidente ou falha mecânica?",
+  "correct_answer": "Pisca-alerta",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Freio de mão",
+    "Calota",
+    "Pára-choque"
+  ]
+},{
+  "id": 324,
+  "question": "Qual desses escritores destacou-se no teatro português?",
+  "correct_answer": "Gil Vicente",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Nelson Rodrigues",
+    "Martins Pena",
+    "Abílio de Almeida"
+  ]
+},{
+  "id": 325,
+  "question": "O animal que se nutre de ovos é chamado de:",
+  "correct_answer": "Ovívoro",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Óvulo",
+    "Oval",
+    "Ovulado"
+  ]
+},{
+  "id": 326,
+  "question": "Qual desses órgãos faz parte do aparelho digestivo?",
+  "correct_answer": "Esôfago",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Cerebelo",
+    "Medula",
+    "Rim"
+  ]
+},{
+  "id": 327,
+  "question": "O adjetivo venoso está relacionado a:",
+  "correct_answer": "Veia",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Vela",
+    "Vento",
+    "Vênia"
+  ]
+},{
+  "id": 328,
+  "question": "Qual dessas doenças causa manchas na pele?",
+  "correct_answer": "Sarampo",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Dengue",
+    "Meningite",
+    "Coqueluche"
+  ]
+},{
+  "id": 329,
+  "question": "Qual desses estados americanos não está localizado dentro dos Estados Unidos?",
+  "correct_answer": "Alasca",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Texas",
+    "Arizona",
+    "Alabama"
+  ]
+},{
+  "id": 330,
+  "question": "Que nome se dá à purificação por meio da água?",
+  "correct_answer": "Ablução",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Abolição",
+    "Abnegação",
+    "Abrupção"
+  ]
+},{
+  "id": 331,
+  "question": "O estilo musical 'Rap' tem como significado ritmo e...",
+  "correct_answer": "Poesia",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Potência",
+    "Percussão",
+    "Paz"
+  ]
+},{
+  "id": 332,
+  "question": "Quantos noves tem de 0 a 100?",
+  "correct_answer": "20",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "10",
+    "11",
+    "21"
   ]
 }]
