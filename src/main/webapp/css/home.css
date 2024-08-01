@@ -43,3 +43,24 @@ body {
 .logo-game {
     max-width: 500px;
 }
+
+#button-audio {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.boolean-audio {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+    cursor: pointer;
+    transform: rotate(135deg);
+}

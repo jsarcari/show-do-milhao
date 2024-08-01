@@ -1,46 +1,22 @@
-function areYouRight(id, correctAnswer, premium, cron) {
-    var divSelected = document.querySelector(".li-" + id);
+function areYouRight(id, correctAnswer) {
+    document.getElementById("id-selected").value = id;
     var value = document.getElementById(id).textContent;
     var modalSure = document.getElementById("areYouSure");
-    var modalCorrect = document.getElementById("correctAnswer");
     var number = document.querySelector("." + id);
     modalSure.style.display = "block";
     number.style.backgroundColor = "red";
     number.style.color = "black";
-    document.getElementById("yes-button").addEventListener('click', () => {
-        clearInterval(cron);
-        modalSure.style.display = "none";
-        var isCorrect = true;
-        if (value === correctAnswer) {
-            if (premium === '1000000') {
-                document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
-                document.formSubmit.setAttribute("method", "get");
-                document.formSubmit.action = "/score";
-            }
-            modalCorrect.style.display = "block";
-            divSelected.style.backgroundColor = "#01b051";
-        } else {
-            showModalIncorrect(correctAnswer, premium);
-            isCorrect = false;
-        }
-        playVoice(isCorrect);
-    })
+    if (value === correctAnswer) {
+        document.getElementById("audio-result").src = 'audio/silvio-santos-certa-resposta.mp3';
+    } else {
+        document.getElementById("audio-result").src = 'audio/silvio-santos-que-pena-voce-errou.mp3';
+    }
 
     // Close modal when button with id "no-button" is clicked
     document.getElementById("no-button").onclick = function () {
         modalSure.style.display = "none";
         number.style.backgroundColor = "#fff";
         number.style.color = "blue";
-    }
-}
-
-function playVoice(valueAnswer) {
-    if (valueAnswer===true) {
-        const audioTrue = document.getElementById("audio-correct");
-        audioTrue.play();
-    } else {
-        const audioFalse = document.getElementById("audio-incorrect");
-        audioFalse.play();
     }
 }
 

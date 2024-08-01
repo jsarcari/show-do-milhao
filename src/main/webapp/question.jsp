@@ -54,17 +54,17 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
 %>
 <body>
     <audio src="audio/perguntashowdomilhao.mp3" autoplay></audio>
-    <audio src="audio/suspense-show-do-milhao.mp3" autoplay></audio>
+    <audio src="audio/suspense-show-do-milhao.mp3" autoplay id="thriller-audio"></audio>
     <div class="container">
         <div class="container-left">
             <div class="question">
                 <h1>${QUESTION}</h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li li-one" onclick="document.getElementById('audio-are-you-right').play();areYouRight('one','<%=correct%>','<%=valuePremium%>', cron)"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li li-two" onclick="document.getElementById('audio-are-you-right').play();areYouRight('two','<%=correct%>','<%=valuePremium%>', cron)"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li li-three" onclick="document.getElementById('audio-are-you-right').play();areYouRight('three','<%=correct%>','<%=valuePremium%>', cron)"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li li-four" onclick="document.getElementById('audio-are-you-right').play();areYouRight('four','<%=correct%>','<%=valuePremium%>', cron)"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="document.getElementById('audio-are-you-right').play();areYouRight('one','<%=correct%>')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
+                <li class="question-li li-two" onclick="document.getElementById('audio-are-you-right').play();areYouRight('two','<%=correct%>')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
+                <li class="question-li li-three" onclick="document.getElementById('audio-are-you-right').play();areYouRight('three','<%=correct%>')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
+                <li class="question-li li-four" onclick="document.getElementById('audio-are-you-right').play();areYouRight('four','<%=correct%>')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
             </ol>
             <div class="premiums">
                 <div>
@@ -101,6 +101,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 </div>
             </div>
         </div>
+        <input type="hidden" id="id-selected" name="idSelected" value="" />
         <div id="modal-help" class="modal">
             <div class="content-help">
                 <span class="close-menu">x</span>
@@ -194,14 +195,16 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 <p>Você está certo disso?</p>
               </div>
               <div class="buttons-confirm">
-                <button onclick="document.getElementById('audio-result').play();" id="yes-button">Sim</button><button id="no-button">Não</button>
+                <button onclick="document.getElementById('audio-are-you-right').muted=true;document.getElementById('audio-result').play();document.getElementById('thriller-audio').volume=0.3;validateAnswer()" id="yes-button">Sim</button><button id="no-button">Não</button>
               </div>
             </div>
         </div>
+        <audio id="audio-result"></audio>
+        <audio src="audio/silvio-santos-o-seu-tempo-acabou.mp3" id="time-out"></audio>
+        <audio src="audio/silvio-santos-voce-entendeu-a-pergunta.mp3" id="do-you-understand"></audio>
         <div id="correctAnswer" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <audio src="audio/silvio-santos-certa-resposta.mp3" id="audio-correct"></audio>
               <div class="content-ask">
                 <p id="message">Certa resposta</p>
               </div>
@@ -221,7 +224,6 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
         <div id="incorrectAnswer" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-                <audio src="audio/silvio-santos-que-pena-voce-errou.mp3" id="audio-incorrect"></audio>
               <div class="content-ask">
                 <p id="sad">Que pena. Você errou!</p>
                 <p id="premiumWrongOrStop">Você ganhou <strong id="value-stop">R$ ${VALUE_WRONG}</strong></p>
@@ -428,11 +430,15 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 const progress = document.getElementById("progress-timer");
                 progress.style.width = second*2.5 + 'px';
                 progress.style.background = 'hsl(calc('+second*2.5*1.2+'), 80%, 50%)';
+                if (second===20) {
+                    document.getElementById("do-you-understand").play();
+                }
             } else {
                 var modalIncorrect = document.getElementById("incorrectAnswer");
                 document.getElementById("sad").textContent = "Seu tempo acabou!";
                 modalIncorrect.style.display = "block";
                 var options = document.querySelectorAll(".question-li");
+                document.getElementById("time-out").play();
                 for (var i = 0; i < 4; i++) {
                     var option = options[i];
                     var answer = option.querySelector(".answer");
@@ -458,6 +464,27 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                 document.getElementById("legend-help").style.textDecoration = "line-through";
             }
         }, false);
+
+        function validateAnswer() {
+            var id = document.getElementById("id-selected").value;
+            var divSelected = document.querySelector(".li-" + id);
+            var value = document.getElementById(id).textContent;
+            var modalSure = document.getElementById("areYouSure");
+            var modalCorrect = document.getElementById("correctAnswer");
+            clearInterval(cron);
+            modalSure.style.display = "none";
+            if (value === '<%=correct%>') {
+                if ('<%=valuePremium%>' === '1000000') {
+                    document.getElementById("message").textContent = "Parabéns! Você ganhou 1 milhão";
+                    document.formSubmit.setAttribute("method", "get");
+                    document.formSubmit.action = "/score";
+                }
+                modalCorrect.style.display = "block";
+                divSelected.style.backgroundColor = "#01b051";
+            } else {
+                showModalIncorrect('<%=correct%>', '<%=valuePremium%>');
+            }
+        }
 
     </script>
     <script type="text/javascript" src="./js/question.js"></script>
