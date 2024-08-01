@@ -905,7 +905,7 @@
   "question": "Qual a cantora que tinha o apelido de Ternurinha na época da jovem guarda?",
   "correct_answer": "Wanderléia",
   "difficulty": "hard",
-  "category": "História e política",
+  "category": "Conhecimentos gerais",
   "incorrect_answers": [
     "Silvinha",
     "Gretchen",
@@ -3858,5 +3858,214 @@
     "Violão",
     "Piano",
     "Guitarra"
+  ]
+},{
+  "id": 351,
+  "question": "Como é chamado o boneco que é movimentado por meio de cordões?",
+  "correct_answer": "Marionete",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Pierró",
+    "Bibeló",
+    "Pinóquio"
+  ]
+},{
+  "id": 352,
+  "question": "Qual desses não é um voto religioso?",
+  "correct_answer": "Riqueza",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Castidade",
+    "Obediência",
+    "Pobreza"
+  ]
+},{
+  "id": 353,
+  "question": "Sanar é o mesmo que:",
+  "correct_answer": "Curar",
+  "difficulty": "easy",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Brincar",
+    "Dormir",
+    "Driblar"
+  ]
+},{
+  "id": 354,
+  "question": "O sapo é um tipo de:",
+  "correct_answer": "Anfíbio",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Mamífero",
+    "Réptil",
+    "Anelídeos"
+  ]
+},{
+  "id": 355,
+  "question": "O cifrão é um símbolo usado para expressar que tipo de unidade:",
+  "correct_answer": "Monetária",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Agrária",
+    "Elétrica",
+    "Biológica"
+  ]
+},{
+  "id": 356,
+  "question": "O navio Titanic foi contruído por qual país?",
+  "correct_answer": "Inglaterra",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Holanda",
+    "Alemanha",
+    "França"
+  ]
+},{
+  "id": 357,
+  "question": "O ritual suicida tradicional do Japão feudal é conhecido como:",
+  "correct_answer": "Haraquiri",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Saruê",
+    "Hashi",
+    "Sassarés"
+  ]
+},{
+  "id": 358,
+  "question": "Como é chamado o trecho sem árvores no meio de uma floresta?",
+  "correct_answer": "Clareira",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Igarapé",
+    "Mangue",
+    "Selva"
+  ]
+},{
+  "id": 359,
+  "question": "Que palavra é usada para descrever um edíficio muito alto?",
+  "correct_answer": "Arranha-céu",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Topo",
+    "Torre",
+    "Prédio"
+  ]
+},{
+  "id": 360,
+  "question": "Que tipo de embarcação Cabral utilizava ao descobrir o Brasil?",
+  "correct_answer": "Caravelas",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Zíngaras",
+    "Tri-remos",
+    "Bujarronas"
+  ]
+},{
+  "id": 361,
+  "question": "Qual o maior mamífero do mundo?",
+  "correct_answer": "Baleia azul",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Elefante",
+    "Leão",
+    "Girafa"
+  ]
+},{
+  "id": 362,
+  "question": "Como se chama o profissional que entrega os serviços postais via terrestre?",
+  "correct_answer": "Carteiro",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Cartomante",
+    "Cartunista",
+    "Cartola"
+  ]
+},{
+  "id": 363,
+  "question": "Na superfície do planeta Terra há uma maior quantidade de:",
+  "correct_answer": "Água",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Vegetação",
+    "Lama",
+    "Gelo"
+  ]
+},{
+  "id": 364,
+  "question": "Qual o nome da companheira do Tarzan?",
+  "correct_answer": "Jane",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Paquita",
+    "Chita",
+    "Xena"
+  ]
+},{
+  "id": 365,
+  "question": "Como é chamada a passagem do estado líquido para o estado gasoso?",
+  "correct_answer": "Evaporação",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Evolução",
+    "Solidificação",
+    "Liquefação"
+  ]
+},{
+  "id": 366,
+  "question": "Bruxelas é a capital de qual país europeu?",
+  "correct_answer": "Bélgica",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Suíça",
+    "Holanda",
+    "Suécia"
+  ]
+},{
+  "id": 367,
+  "question": "Que parte do corpo a cobra usa para sentir o cheiro?",
+  "correct_answer": "Língua",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Cauda",
+    "Dentes",
+    "Narina"
+  ]
+},{
+  "id": 368,
+  "question": "Qual santo não faz parte das comemorações da festa junina?",
+  "correct_answer": "São Marcos",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Santo Antônio",
+    "São João",
+    "São Pedro"
+  ]
+},{
+  "id": 369,
+  "question": "Qual é o nome da estrutura contruída à beira mar para orientar embarcações?",
+  "correct_answer": "Farol",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Semáforo",
+    "Guarita",
+    "Bote"
   ]
 }]
