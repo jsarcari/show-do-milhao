@@ -143,20 +143,23 @@ public class Answer {
     }
 
     public void calculatePremium(int j) {
-        double premium;
+        double premium, currentlyPremium;
+        currentlyPremium = getPremium();
         if (j<5) {
-            premium = getPremium()+1000;
+            premium = currentlyPremium+1000;
             setPremium(premium);
         } else if (j>5 && j<10) {
-            premium = getPremium()+10000;
+            premium = currentlyPremium+10000;
             setPremium(premium);
         } else if (j==5 || j==10 || j==15) {
-            premium = getPremium()*2;
+            premium = currentlyPremium*2;
             setPremium(premium);
         }else if (j>10 && j<15) {
-            premium = getPremium()+100000;
+            premium = currentlyPremium+100000;
             setPremium(premium);
         }
+        setPremiumStop(currentlyPremium);
+        setPremiumMiss(currentlyPremium/2);
     }
 
 }

@@ -12,9 +12,13 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import showdomilhao.model.Scores;
 import showdomilhao.repository.ScoresRepository;
+import showdomilhao.service.ScoresService;
 
 @Controller
 public class ScoresController {
+
+    @Autowired
+    private ScoresService service;
 
     @Autowired
     private ScoresRepository repository;
@@ -22,10 +26,7 @@ public class ScoresController {
     @GetMapping("/score")
     public RedirectView createScore(String name, double premium) {
 
-        List<Scores> scores = new ArrayList<Scores>();
-        repository.save(new Scores(name, premium));
-
-        repository.findAll().forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
+        this.service.create(new Scores(name, premium));
 
         return new RedirectView("scores");
 

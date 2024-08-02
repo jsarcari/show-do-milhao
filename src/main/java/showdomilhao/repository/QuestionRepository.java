@@ -9,4 +9,6 @@ import showdomilhao.model.Question;
 public interface QuestionRepository extends MongoRepository<Question, String> {
     
     List <Question> findAll();
+
+    Question findById(int id);
 }

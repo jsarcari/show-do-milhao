@@ -35,11 +35,13 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
-    Boolean canPlaques = plaques.getAvailable();
     List<Integer> listPlaques = new ArrayList<Integer>();
-    if (request.getAttribute("LIST_PLAQUES") != null) {
-        listPlaques = (List<Integer>)request.getAttribute("LIST_PLAQUES");
-    } else {
+    Boolean canPlaques = plaques.getAvailable();
+    if (canPlaques==true) {
+        plaques.printHelp();
+        listPlaques = plaques.getList();
+    }
+    if (listPlaques.size()==0) {
         listPlaques.add(26);
         listPlaques.add(24);
         listPlaques.add(25);
@@ -80,6 +82,7 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                     <div class="text">acertar</div>
                 </div>
             </div>
+            Guests:<%=canGuests%>,Plaques:<%=canPlaques%>,Cards:<%=canCards%>
         </div>
         <div class="container-right">
             <div class="people">
@@ -122,9 +125,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
                         <input type="hidden" name="skipAvailable" value="" />
                         <input type="hidden" name="nameUser" value="<%=nameUser%>" />
                         <input type="hidden" name="categoryUser" value="<%=category%>" />
-                        <input type="hidden" name="guestsAvailable" value=""/>
-                        <input type="hidden" name="plaquesAvailable" value=""/>
-                        <input type="hidden" name="cardsAvailable" value=""/>
+                        <input type="hidden" name="guestsAvailable" value="<%=canGuests%>"/>
+                        <input type="hidden" name="plaquesAvailable" value="<%=canPlaques%>"/>
+                        <input type="hidden" name="cardsAvailable" value="<%=canCards%>"/>
                         <button type="submit" class="icon-help" id="select-skip"><img src="./img/912603-200.png" id="img-skip"></button>
                         <p id="legend-skip">Pular</p>
                     </form>
@@ -210,9 +213,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
               </div>
               <form name="formSubmit" class="buttons-confirm" method="post" action="question?id=<%=idQuestion%>">
                 <% if (!valuePremium.equals("1000000")) { %>
-                    <input type="hidden" name="guestsAvailable" value=""/>
-                    <input type="hidden" name="plaquesAvailable" value=""/>
-                    <input type="hidden" name="cardsAvailable" value=""/>
+                    <input type="hidden" name="guestsAvailable" value="<%=canGuests%>"/>
+                    <input type="hidden" name="plaquesAvailable" value="<%=canPlaques%>"/>
+                    <input type="hidden" name="cardsAvailable" value="<%=canCards%>"/>
                 <% } else { %>
                     <input type="hidden" name="name" value="<%=nameUser%>" />
                     <input type="hidden" name="premium" value="<%=valuePremium%>" />

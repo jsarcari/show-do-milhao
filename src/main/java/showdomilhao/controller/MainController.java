@@ -60,28 +60,23 @@ public class MainController {
     public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable, String nameUser, String categoryUser) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
-        List<Integer> listPlaques = new ArrayList<Integer>();
-        if(this.index!=0 && (skipAvailable==null || skipAvailable.equals(""))) {
-            this.answer.setPremiumStop(this.answer.getPremium());
-            this.answer.setPremiumMiss(this.answer.getPremium()/2);
-            this.answer.calculatePremium(this.index);
+        List<Boolean> listHelp = new ArrayList<Boolean>();
+        listHelp.add(Boolean.parseBoolean(guestsAvailable));
+        listHelp.add(Boolean.parseBoolean(plaquesAvailable));
+        listHelp.add(Boolean.parseBoolean(cardsAvailable));
+        if(this.index!=0) {
+            if (skipAvailable==null || skipAvailable.equals("")) {
+                this.answer.calculatePremium(this.index);
+            }
         } else {
+            listHelp.replaceAll(element -> element = true);
             if (participant != null) {
                 this.user = participant;
             }
         }
-        if (guestsAvailable!=null && guestsAvailable.equals("false")) {
-            this.guests.setAvailable(false);
-        }
-        if (plaquesAvailable!=null && plaquesAvailable.equals("false")) {
-            this.plaques.setAvailable(false);
-        } else {
-            this.plaques.printHelp();
-            listPlaques = this.plaques.getList();
-        }
-        if (cardsAvailable!=null && cardsAvailable.equals("false")) {
-            this.cards.setAvailable(false);
-        }
+        this.guests.setAvailable(listHelp.get(0));
+        this.plaques.setAvailable(listHelp.get(1));
+        this.cards.setAvailable(listHelp.get(2));
         if (skipAvailable!=null && !skipAvailable.equals("")) {
             this.user.setName(nameUser);
             this.user.setCategory(categoryUser);
@@ -109,9 +104,6 @@ public class MainController {
         mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
         mv.addObject("GUESTS", this.guests);
         mv.addObject("PLAQUES", this.plaques);
-        if (!listPlaques.isEmpty()) {
-            mv.addObject("LIST_PLAQUES", listPlaques);
-        }
         mv.addObject("CARDS", this.cards);
         mv.setViewName("question.jsp");
 
