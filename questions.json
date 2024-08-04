@@ -3038,7 +3038,7 @@
   "id": 275,
   "question": "Qual o nome do ator que interpretou o Seu Madruga no seriado Chaves?",
   "correct_answer": "Ramon Valdés",
-  "difficulty": "easy",
+  "difficulty": "medium",
   "category": "Filmes, desenhos e televisão",
   "incorrect_answers": [
     "Roberto Bolaños",
@@ -4067,5 +4067,346 @@
     "Semáforo",
     "Guarita",
     "Bote"
+  ]
+},{
+  "id": 370,
+  "question": "O fígado é responsável pela produção da:",
+  "correct_answer": "Bílis",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Insulina",
+    "Saliva",
+    "Urina"
+  ]
+},{
+  "id": 371,
+  "question": "Como se chama a pessoa que fala vários idiomas?",
+  "correct_answer": "Poliglota",
+  "difficulty": "easy",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Faladeira",
+    "Politeísta",
+    "Troglodita"
+  ]
+},{
+  "id": 372,
+  "question": "Na Bíblia, qual é o livro das origens?",
+  "correct_answer": "Gênesis",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Salmos",
+    "Provérbios",
+    "Apocalipse"
+  ]
+},{
+  "id": 373,
+  "question": "Quem foi o autor do livro modernista Memórias Sentimentais de João Miramar?",
+  "correct_answer": "Oswald de Andrade",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Manuel Escudo",
+    "Luigi de Andrade",
+    "Machado de Assis"
+  ]
+},{
+  "id": 374,
+  "question": "Que nome se dá a um conjunto de montanhas?",
+  "correct_answer": "Cordilheiras",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Montanheiro",
+    "Planalto",
+    "Depressão"
+  ]
+},{
+  "id": 375,
+  "question": "O pinguim é um tipo de:",
+  "correct_answer": "Ave",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Mamífero",
+    "Peixe",
+    "Anfíbio"
+  ]
+},{
+  "id": 376,
+  "question": "Como é chamado o vício de linguagem que consiste em dizer a mesma coisa de maneiras diferentes?",
+  "correct_answer": "Tautologia",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Morfologia",
+    "Antropofagia",
+    "Heliofilia"
+  ]
+},{
+  "id": 377,
+  "question": "O estado de Mato Grosso do Sul faz divisa com quantos estados?",
+  "correct_answer": "5",
+  "difficulty": "hard",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "6",
+    "4",
+    "3"
+  ]
+},{
+  "id": 378,
+  "question": "Qual desses animais não faz ninho para chocar seus ovos?",
+  "correct_answer": "Tamanduá",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Galinha",
+    "Ganso",
+    "Cobra"
+  ]
+},{
+  "id": 379,
+  "question": "Desde que século é comemorado o carnaval da Bahia?",
+  "correct_answer": "XVIII",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "XV",
+    "XVII",
+    "X"
+  ]
+},{
+  "id": 380,
+  "question": "Qual a nacionalidade de Ticiano, um dos principais representantes da escola veneziana no Renascimento?",
+  "correct_answer": "Italiano",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Polonês",
+    "Irlandês",
+    "Francês"
+  ]
+},{
+  "id": 381,
+  "question": "O que é um monólogo?",
+  "correct_answer": "Texto interpretado por apenas uma pessoa",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Texto interpretado por duas pessoas",
+    "Texto interpretado por um grupo de pessoas",
+    "Texto interpretado apenas por músicos"
+  ]
+},{
+  "id": 382,
+  "question": "Como é chamado o gigante verde das histórias em quadrinhos?",
+  "correct_answer": "Hulk",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Zorro",
+    "Homem-aranha",
+    "Super-homem"
+  ]
+},{
+  "id": 383,
+  "question": "Qual destas palavras não é sinônimo de conceito?",
+  "correct_answer": "Alegria",
+  "difficulty": "easy",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Concepção",
+    "Definição",
+    "Noção"
+  ]
+},{
+  "id": 384,
+  "question": "Estamos no ano de 2016, daqui 4 anos será:",
+  "correct_answer": "2020",
+  "difficulty": "easy",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "2021",
+    "2025",
+    "2019"
+  ]
+},{
+  "id": 385,
+  "question": "O que Cruela queria fazer com os filhotes de Dálmatas no filme 'Os 101 Dálmatas' (1996)?",
+  "correct_answer": "Casacos",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Bolsas",
+    "Cobertores",
+    "Calça"
+  ]
+},{
+  "id": 386,
+  "question": "Quantas rodas tem uma scooter?",
+  "correct_answer": "2",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "1",
+    "3",
+    "4"
+  ]
+},{
+  "id": 387,
+  "question": "Quantos títulos mundiais de Fórmula 1 o brasileiro Nelson Piquet conquistou na carreira?",
+  "correct_answer": "Três",
+  "difficulty": "hard",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Um",
+    "Cinco",
+    "Dois"
+  ]
+},{
+  "id": 388,
+  "question": "A obra Monalisa também é conhecida por outro nome, por ser o retrato da esposa de um influente comerciante de Florença. Este nome é:",
+  "correct_answer": "La Gioconda",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Maria do Bairro",
+    "Ana Teresa",
+    "Abaporu"
+  ]
+},{
+  "id": 389,
+  "question": "O jogador de futebol Lionel Messi fez sua estreia como profissional pelo Barcelona em qual ano?",
+  "correct_answer": "2003",
+  "difficulty": "hard",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "2000",
+    "2001",
+    "2005"
+  ]
+},{
+  "id": 390,
+  "question": "Qual é o cátion que não pertence ao grupo II?",
+  "correct_answer": "Fe2+",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Cd2+",
+    "Bi3+",
+    "Cu2+"
+  ]
+},{
+  "id": 391,
+  "question": "Ícone do voleibol brasileiro, Líbero Escadinha conquistou uma medalha de ouro nos Jogos Olímpicos de 2004. Qual era a cidade-sede?",
+  "correct_answer": "Atenas",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Barcelona",
+    "Roma",
+    "Londres"
+  ]
+},{
+  "id": 392,
+  "question": "Em que ano o Banco Central do Brasil criou o COPOM (Comitê de Política Monetária)?",
+  "correct_answer": "1996",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "1986",
+    "2016",
+    "2006"
+  ]
+},{
+  "id": 393,
+  "question": "Por quantos anos Fernando Collor ficou inelegível após sofrer impeachment em 1992?",
+  "correct_answer": "8",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "5",
+    "10",
+    "15"
+  ]
+},{
+  "id": 394,
+  "question": "Quantas estrelas possui a bandeira do Brasil?",
+  "correct_answer": "27",
+  "difficulty": "medium",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "24",
+    "25",
+    "30"
+  ]
+},{
+  "id": 395,
+  "question": "Que filósofo é autor da frase 'Penso, logo existo'?",
+  "correct_answer": "René Descartes",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Platão",
+    "Aristóteles",
+    "Sócrates"
+  ]
+},{
+  "id": 396,
+  "question": "Qual nome damos ao órgão onde se gera o feto dos mamíferos?",
+  "correct_answer": "Útero",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Jejuno",
+    "Baço",
+    "Delgado"
+  ]
+},{
+  "id": 397,
+  "question": "Qual desses times de futebol não é um time espanhol?",
+  "correct_answer": "Manchester",
+  "difficulty": "easy",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Barcelona",
+    "Real Madrid",
+    "La Coruña"
+  ]
+},{
+  "id": 398,
+  "question": "Qual cidade brasileira é conhecida como cidade imperial?",
+  "correct_answer": "Petrópolis",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Teresópolis",
+    "Divinópolis",
+    "Nilópolis"
+  ]
+},{
+  "id": 399,
+  "question": "Onde se localizava a cidade de Tróia?",
+  "correct_answer": "Turquia",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Egito",
+    "Grécia",
+    "Líbia"
+  ]
+},{
+  "id": 400,
+  "question": "Qual desses territórios foi invadido pelo Iraque em 1990?",
+  "correct_answer": "Kuwait",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Damasco",
+    "Beirute",
+    "Jerusalém"
   ]
 }]

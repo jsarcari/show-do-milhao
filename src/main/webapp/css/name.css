@@ -21,6 +21,10 @@ body {
     padding-top: 25px;
 }
 
+.logo-game {
+    max-width: 400px;
+}
+
 .formUser {
     display: flex;
     flex-direction: column;

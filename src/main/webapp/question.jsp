@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
-import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" import="java.util.ArrayList" import="java.util.List" %>
+import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" import="java.util.ArrayList" import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +9,9 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
 <link rel="stylesheet" href="css/question.css" type="text/css" />
 </head>
 <%
-    String correct = "";
-    if (request.getAttribute("CORRECT_ANSWER") != null) {
-        correct = (String)request.getAttribute("CORRECT_ANSWER");
-    }
+    Question currentQuestion = (Question) request.getAttribute("QUESTION");
+    String question = currentQuestion.getQuestion();
+    String correct = currentQuestion.getCorrect_answer();
     Integer idQuestion = 2;
     Integer currentIndex = 2;
     if (request.getParameter("id") != null) {
@@ -32,6 +31,8 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     if (request.getAttribute("VALUE_WRONG") != null) {
         valueWrong = (String)request.getAttribute("VALUE_WRONG");
     }
+    List<String> options = new ArrayList<String>();
+    options = (List<String>) request.getAttribute("OPTIONS");
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
@@ -60,13 +61,13 @@ import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" impor
     <div class="container">
         <div class="container-left">
             <div class="question">
-                <h1>${QUESTION}</h1>
+                <h1><%=question%></h1>
             </div>
             <ol class="listQuestions">
-                <li class="question-li li-one" onclick="document.getElementById('audio-are-you-right').play();areYouRight('one','<%=correct%>')"><div class="number one">1</div><div class="answer" id="one">${ANSWER_ONE}</div></li>
-                <li class="question-li li-two" onclick="document.getElementById('audio-are-you-right').play();areYouRight('two','<%=correct%>')"><div class="number two">2</div><div class="answer" id="two">${ANSWER_TWO}</div></li>
-                <li class="question-li li-three" onclick="document.getElementById('audio-are-you-right').play();areYouRight('three','<%=correct%>')"><div class="number three">3</div><div class="answer" id="three">${ANSWER_THREE}</div></li>
-                <li class="question-li li-four" onclick="document.getElementById('audio-are-you-right').play();areYouRight('four','<%=correct%>')"><div class="number four">4</div><div class="answer" id="four">${ANSWER_FOUR}</div></li>
+                <li class="question-li li-one" onclick="document.getElementById('audio-are-you-right').play();areYouRight('one','<%=correct%>')"><div class="number one">1</div><div class="answer" id="one"><%=options.get(0)%></div></li>
+                <li class="question-li li-two" onclick="document.getElementById('audio-are-you-right').play();areYouRight('two','<%=correct%>')"><div class="number two">2</div><div class="answer" id="two"><%=options.get(1)%></div></li>
+                <li class="question-li li-three" onclick="document.getElementById('audio-are-you-right').play();areYouRight('three','<%=correct%>')"><div class="number three">3</div><div class="answer" id="three"><%=options.get(2)%></div></li>
+                <li class="question-li li-four" onclick="document.getElementById('audio-are-you-right').play();areYouRight('four','<%=correct%>')"><div class="number four">4</div><div class="answer" id="four"><%=options.get(3)%></div></li>
             </ol>
             <div class="premiums">
                 <div>

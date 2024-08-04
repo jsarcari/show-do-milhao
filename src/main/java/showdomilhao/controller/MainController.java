@@ -96,12 +96,8 @@ public class MainController {
         mv.addObject("VALUE_WRONG", valueWrong);
         mv.addObject("VALUE_STOP", valueStop);
         mv.addObject("PARTICIPANT", this.user);
-        mv.addObject("QUESTION", question.getQuestion());
-        mv.addObject("ANSWER_ONE", options.get(0));
-        mv.addObject("ANSWER_TWO", options.get(1));
-        mv.addObject("ANSWER_THREE", options.get(2));
-        mv.addObject("ANSWER_FOUR", options.get(3));
-        mv.addObject("CORRECT_ANSWER", question.getCorrect_answer());
+        mv.addObject("QUESTION", question);
+        mv.addObject("OPTIONS", options);
         mv.addObject("GUESTS", this.guests);
         mv.addObject("PLAQUES", this.plaques);
         mv.addObject("CARDS", this.cards);

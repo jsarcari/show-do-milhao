@@ -9,7 +9,8 @@
 </head>
 <body>
 <div class="container">
-<form method="post" action="question?id=1" class="formUser">
+  <img src="./img/Jogodomilhao1999.webp" class="logo-game">
+  <form method="post" action="question?id=1" class="formUser">
     <div class="category-select">
         <label for="category" class="label-category">Escolha a categoria</label>
         <select name="category" class="select">
