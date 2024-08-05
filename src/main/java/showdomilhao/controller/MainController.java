@@ -16,6 +16,7 @@ import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Plaques;
 import showdomilhao.model.Question;
+import showdomilhao.service.HelpService;
 import showdomilhao.service.QuestionService;
 
 @Controller
@@ -33,6 +34,9 @@ public class MainController {
 
     @Autowired
     private QuestionService questionService;
+
+    @Autowired
+    private HelpService helpService;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -60,15 +64,9 @@ public class MainController {
     public ModelAndView questionPage(Participant participant, @RequestParam int id, String guestsAvailable, String plaquesAvailable, String cardsAvailable, String skipAvailable, String nameUser, String categoryUser) {
         ModelAndView mv = new ModelAndView();
         this.index = id-1;
-        List<Boolean> listHelp = new ArrayList<Boolean>();
-        listHelp.add(Boolean.parseBoolean(guestsAvailable));
-        listHelp.add(Boolean.parseBoolean(plaquesAvailable));
-        listHelp.add(Boolean.parseBoolean(cardsAvailable));
-        if(this.index==0) {
-            listHelp.replaceAll(element -> element = true);
-            if (participant != null) {
-                this.user = participant;
-            }
+        List<Boolean> listHelp = helpService.listAvailabilities(guestsAvailable, plaquesAvailable, cardsAvailable, this.index);
+        if (this.index==0 && participant != null) {
+            this.user = participant;
         }
         this.guests.setAvailable(listHelp.get(0));
         this.plaques.setAvailable(listHelp.get(1));

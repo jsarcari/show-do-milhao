@@ -52,16 +52,6 @@ public class Cards extends Help {
         this.available = available;
     }
 
-    public void printHelp() {
-        System.out.println("""
-                Escolha uma carta:
-                1 - Carta Um
-                2 - Carta Dois
-                3 - Carta Três
-                4 - Carta Quatro
-                """);
-    }
-
     public List<Integer> generateQuestionsEliminated(Question question, List<String> options, int num) {
         List<Integer> list = new ArrayList<Integer>();
         Random generate = new Random();
