@@ -13,7 +13,7 @@ public class Answer {
     private double premium;
     private double premiumStop = 0;
     private double premiumLose = 0;
-    private Boolean right = true;
+    private int indexCorrect;
     private List<Integer> emptyOptions = new ArrayList<Integer>();
 
     public Answer(double premium) {
@@ -49,12 +49,12 @@ public class Answer {
         this.premiumLose = premiumLose;
     }
 
-    public Boolean getRight() {
-        return right;
+    public int getIndexCorrect() {
+        return indexCorrect;
     }
 
-    public void setRight(Boolean right) {
-        this.right = right;
+    public void setIndexCorrect(int index) {
+        this.indexCorrect = index;
     }
 
     public void setEmptyOptions(List<Integer> emptyOptions) {
@@ -90,6 +90,7 @@ public class Answer {
             array.add(option);
         }
         array.add(index, question.getCorrect_answer());
+        setIndexCorrect(index);
         return array;
     }
 

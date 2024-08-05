@@ -31,31 +31,10 @@ public class Guests extends Help {
         this.guest = guest;
     }
 
-    public void printHelp() {
-        generateWrongAnswers();
-        int num = getNumber()+1;
-        int correct = getCorrectAnswer()+1;
-        if(this.getGuest() == 0) {
-            System.out.println("Universitário 1: " + num);
-        } else {
-            System.out.println("Universitário 1: " + correct);
-        }
-        if(this.getGuest() == 1) {
-            System.out.println("Universitário 2: " + num);
-        } else {
-            System.out.println("Universitário 2: " + correct);
-        }
-        if(this.getGuest() == 2) {
-            System.out.println("Universitário 3: " + num);
-        } else {
-            System.out.println("Universitário 3: " + correct);
-        }
-    }
-
-    public void generateWrongAnswers() {
+    public void generateWrongAnswers(int indexCorrect) {
         Random generator = new Random();
-        this.setNumber(this.correctAnswer);
-        while (this.getNumber() == this.correctAnswer) {
+        this.setNumber(indexCorrect);
+        while (this.getNumber() == indexCorrect) {
             this.setNumber(generator.nextInt(4));
         }
         this.setGuest(generator.nextInt(4));

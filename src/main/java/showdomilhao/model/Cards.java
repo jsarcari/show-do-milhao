@@ -77,29 +77,6 @@ public class Cards extends Help {
         return list;
     }
 
-    public void printCards() {
-        if (getValueUm() != 4) {
-            System.out.println("Carta 1: " + getValueUm());
-        } else {
-            System.out.println("Carta 1: K");
-        }
-        if (getValueDois() != 4) {
-            System.out.println("Carta 2: " + getValueDois());
-        } else {
-            System.out.println("Carta 2: K");
-        }
-        if (getValueTres() != 4) {
-            System.out.println("Carta 3: " + getValueTres());
-        } else {
-            System.out.println("Carta 3: K");
-        }
-        if (getValueQuatro() != 4) {
-            System.out.println("Carta 4: " + getValueQuatro());
-        } else {
-            System.out.println("Carta 4: K");
-        }
-    }
-
     public void generateValueCards() {
         int n = 0;
         Random generator = new Random();
@@ -125,27 +102,5 @@ public class Cards extends Help {
         setValueDois(values.get(1)+1);
         setValueTres(values.get(2)+1);
         setValueQuatro(values.get(3)+1);
-    }
-
-    public int readCard(int card) {
-        int num = 0;
-        switch(card) {
-            case 1:
-                num = getValueUm();
-                break;
-            case 2:
-                num = getValueDois();
-                break;
-            case 3:
-                num = getValueTres();
-                break;
-            case 4:
-                num = getValueQuatro();
-                break;
-            default:
-                System.out.println("Número de cartas inválido");
-        }
-
-        return num;
     }
 }

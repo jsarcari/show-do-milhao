@@ -93,6 +93,7 @@ public class MainController {
         mv.addObject("VALUE_PREMIUM", valuePremium);
         mv.addObject("VALUE_WRONG", valueWrong);
         mv.addObject("VALUE_STOP", valueStop);
+        mv.addObject("ANSWER", this.answer);
         mv.addObject("PARTICIPANT", this.user);
         mv.addObject("QUESTION", question);
         mv.addObject("OPTIONS", options);

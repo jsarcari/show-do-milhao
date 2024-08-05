@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
-import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" import="java.util.ArrayList" import="java.util.List" %>
+import="showdomilhao.model.Question" import="showdomilhao.model.Answer" import="showdomilhao.model.Guests" import="showdomilhao.model.Participant" import="showdomilhao.model.Plaques" import="showdomilhao.model.Cards" import="java.util.ArrayList" import="java.util.List" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +19,8 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="
         currentIndex = idQuestion;
         idQuestion++;
     }
+    Answer currentAnswer = (Answer) request.getAttribute("ANSWER");
+    int iCorrect = currentAnswer.getIndexCorrect();
     String valuePremium = "";
     if (request.getAttribute("VALUE_PREMIUM") != null) {
         valuePremium = (String)request.getAttribute("VALUE_PREMIUM");
@@ -35,6 +37,13 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="
     options = (List<String>) request.getAttribute("OPTIONS");
     Guests guests = (Guests) request.getAttribute("GUESTS");
     Boolean canGuests = guests.getAvailable();
+    int incorrectGuest = 0, incorrectNumber = 0;
+    if (canGuests==true) {
+        guests.generateWrongAnswers(iCorrect);
+        incorrectGuest = guests.getGuest();
+        incorrectNumber = guests.getNumber();
+        incorrectNumber++;
+    }
     Plaques plaques = (Plaques) request.getAttribute("PLAQUES");
     List<Integer> listPlaques = new ArrayList<Integer>();
     Boolean canPlaques = plaques.getAvailable();
@@ -275,37 +284,23 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="
         document.getElementById("select-guests").onclick = function() {
             if ('<%=canGuests%>'==="true") {
                 showHelp("content-guests");
-                var correctOption = 0;
-                var options = document.querySelectorAll(".question-li");
-                for (var i=0; i<4; i++) {
-                    var option = options[i];
-                    var answer = option.querySelector(".answer");
-                    if (answer.textContent === '<%=correct%>') {
-                        correctOption = option.querySelector(".number").textContent;
-                        break;
-                    }
-                }
-                var incorrectOption = correctOption;
-                while (incorrectOption == correctOption) {
-                    incorrectOption = Math.floor(Math.random()*4);
-                }
-                var incorrectGuest = Math.floor(Math.random()*4);
-                incorrectOption++;
-                switch(incorrectGuest) {
-                    case 0:
-                        document.getElementById("answer-guest-1").textContent = incorrectOption;
+                var correctOption = '<%=iCorrect%>';
+                correctOption++;
+                switch('<%=incorrectGuest%>') {
+                    case "0":
+                        document.getElementById("answer-guest-1").textContent = '<%=incorrectNumber%>';
                         document.getElementById("answer-guest-2").textContent = correctOption;
                         document.getElementById("answer-guest-3").textContent = correctOption;
                         break;
-                    case 1:
+                    case "1":
                         document.getElementById("answer-guest-1").textContent = correctOption;
-                        document.getElementById("answer-guest-2").textContent = incorrectOption;
+                        document.getElementById("answer-guest-2").textContent = '<%=incorrectNumber%>';
                         document.getElementById("answer-guest-3").textContent = correctOption;
                         break;
-                    case 2:
+                    case "2":
                         document.getElementById("answer-guest-1").textContent = correctOption;
                         document.getElementById("answer-guest-2").textContent = correctOption;
-                        document.getElementById("answer-guest-3").textContent = incorrectOption;
+                        document.getElementById("answer-guest-3").textContent = '<%=incorrectNumber%>';
                     default:
                         document.getElementById("answer-guest-1").textContent = correctOption;
                         document.getElementById("answer-guest-2").textContent = correctOption;
@@ -443,14 +438,8 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Guests" import="
                 modalIncorrect.style.display = "block";
                 var options = document.querySelectorAll(".question-li");
                 document.getElementById("time-out").play();
-                for (var i = 0; i < 4; i++) {
-                    var option = options[i];
-                    var answer = option.querySelector(".answer");
-                    if (answer.textContent === '<%=correct%>') {
-                        option.style.backgroundColor = "#01b051";
-                        break;
-                    }
-                }
+                var option = options['<%=iCorrect%>'];
+                option.style.backgroundColor = "#01b051";
                 if ('<%=valuePremium%>' === '1000000') {
                     document.formWrongOrStop.premium.value = "0";
                     document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";

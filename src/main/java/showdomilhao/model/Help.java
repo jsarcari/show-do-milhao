@@ -11,6 +11,4 @@ public abstract class Help {
         return correctAnswer;
     }
 
-    protected abstract void printHelp();
-
 }
