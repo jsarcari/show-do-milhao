@@ -4409,4 +4409,15 @@
     "Beirute",
     "Jerusalém"
   ]
+},{
+    "id": 401,
+    "question": "Omde estão distribuídos os elétrons na estrutura atômica?",
+    "correct_answer": "Eletrosfera",
+    "difficulty": "hard",
+    "category": "Ciências",
+    "incorrect_answers": [
+      "Estratosfera",
+      "Núcleo",
+      "Eletrostática"
+    ]
 }]

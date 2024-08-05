@@ -16,7 +16,7 @@ import showdomilhao.model.Guests;
 import showdomilhao.model.Participant;
 import showdomilhao.model.Plaques;
 import showdomilhao.model.Question;
-import showdomilhao.repository.QuestionRepository;
+import showdomilhao.service.QuestionService;
 
 @Controller
 public class MainController {
@@ -32,7 +32,7 @@ public class MainController {
     private Cards cards;
 
     @Autowired
-    private QuestionRepository questionRepository;
+    private QuestionService questionService;
 
     @GetMapping("/")
     public ModelAndView indexPage() {
@@ -44,9 +44,9 @@ public class MainController {
     @GetMapping("/name")
     public ModelAndView namePage() {
         ModelAndView mv = new ModelAndView();
-        this.questions = questionRepository.findAll();
+        this.questions = questionService.list();
         this.user = new Participant(null, null);
-        this.answer = new Answer(1000);
+        this.answer = new Answer(0);
         this.guests = new Guests();
         this.plaques = new Plaques();
         this.cards = new Cards();
@@ -64,11 +64,7 @@ public class MainController {
         listHelp.add(Boolean.parseBoolean(guestsAvailable));
         listHelp.add(Boolean.parseBoolean(plaquesAvailable));
         listHelp.add(Boolean.parseBoolean(cardsAvailable));
-        if(this.index!=0) {
-            if (skipAvailable==null || skipAvailable.equals("")) {
-                this.answer.calculatePremium(this.index);
-            }
-        } else {
+        if(this.index==0) {
             listHelp.replaceAll(element -> element = true);
             if (participant != null) {
                 this.user = participant;
@@ -81,6 +77,8 @@ public class MainController {
             this.user.setName(nameUser);
             this.user.setCategory(categoryUser);
             this.user.setCanSkip(Integer.valueOf(skipAvailable));
+        } else {
+            this.answer.calculatePremium(this.index);
         }
 
         this.indexQuestion = this.answer.choiceQuestion(this.questions, this.idsChoice, this.index, this.user.getCategory());
@@ -89,7 +87,7 @@ public class MainController {
         List<String> options = this.answer.createArrayOptions(question);
         
         String valuePremium = String.format("%.0f", this.answer.getPremium());
-        String valueWrong = String.format("%.0f", this.answer.getPremiumMiss());
+        String valueWrong = String.format("%.0f", this.answer.getPremiumLose());
         String valueStop = String.format("%.0f", this.answer.getPremiumStop());
 
         mv.addObject("VALUE_PREMIUM", valuePremium);

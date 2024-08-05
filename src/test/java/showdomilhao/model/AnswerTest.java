@@ -29,6 +29,8 @@ public class AnswerTest {
         }
 
         Assertions.assertEquals(5000,answer.getPremium());
+        Assertions.assertEquals(4000, answer.getPremiumStop());
+        Assertions.assertEquals(2000, answer.getPremiumLose());
     }
 
     @Test
@@ -42,6 +44,8 @@ public class AnswerTest {
         }
 
         Assertions.assertEquals(50000,answer.getPremium());
+        Assertions.assertEquals(40000, answer.getPremiumStop());
+        Assertions.assertEquals(20000, answer.getPremiumLose());
     }
 
     @Test

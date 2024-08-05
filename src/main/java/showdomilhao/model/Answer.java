@@ -12,7 +12,7 @@ public class Answer {
     //private Participant participant;
     private double premium;
     private double premiumStop = 0;
-    private double premiumMiss = 0;
+    private double premiumLose = 0;
     private Boolean right = true;
     private List<Integer> emptyOptions = new ArrayList<Integer>();
 
@@ -41,12 +41,12 @@ public class Answer {
         this.premiumStop = premiumStop;
     }
 
-    public double getPremiumMiss() {
-        return premiumMiss;
+    public double getPremiumLose() {
+        return premiumLose;
     }
 
-    public void setPremiumMiss(double premiumMiss) {
-        this.premiumMiss = premiumMiss;
+    public void setPremiumLose(double premiumLose) {
+        this.premiumLose = premiumLose;
     }
 
     public Boolean getRight() {
@@ -80,47 +80,6 @@ public class Answer {
             }
         }
         return id;
-    }
-    
-    public void printQuestion(Question question) {
-    	System.out.println("Valendo R$%.2f".formatted(this.getPremium()));
-        System.out.println("Se errar: R$%.2f Se parar: R$%.2f".formatted(this.getPremiumMiss(),this.getPremiumStop()));
-        System.out.println("%s".formatted(question.getQuestion()));
-    }
-    
-    public void printOptions(List<String> options) {
-    	for (Object option : options) {
-            if (!this.emptyOptions.contains(options.indexOf(option))) {
-                System.out.println(options.indexOf(option)+1 + ". " +  option);
-            } else {
-                System.out.println(options.indexOf(option)+1 + ". ");
-            }
-        }
-    }
-    
-    public void printCorrect() {
-    	System.out.println("Certa resposta!");
-        setPremiumStop(getPremium());
-        setPremiumMiss(getPremium()/2);
-    }
-    
-    public void printIncorrect(Question question) {
-    	System.out.println("Que pena. Você errou!");
-        System.out.println("A resposta certa é " + question.getCorrect_answer());
-        System.out.println("Você ganhou R$%.2f".formatted(getPremiumMiss()));
-        setRight(false);
-    }
-
-    public void printActions() {
-        System.out.println("""
-                Você quer ajuda, pular ou parar?
-                0 - Pular
-                1 - Solicitar ajuda aos universitários
-                2 - Solicitar ajuda às placas
-                3 - Solicitar ajuda às cartas
-                4 - Parar
-                5 - Quero responder
-                """);
     }
 
     public List<String> createArrayOptions(Question question) {
@@ -159,7 +118,7 @@ public class Answer {
             setPremium(premium);
         }
         setPremiumStop(currentlyPremium);
-        setPremiumMiss(currentlyPremium/2);
+        setPremiumLose(currentlyPremium/2);
     }
 
 }
