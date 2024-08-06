@@ -20,13 +20,15 @@ import="showdomilhao.model.Scores" import="java.util.ArrayList" import="java.uti
         <table class="table">
             <thead>
                 <tr>
+                    <th class="rank">#</th>
                     <th>Nome</th>
                     <th>Prêmio</th>
                 </tr>
             </thead>
             <tbody>
-            <% for (int i=0; i<listScores.size(); i++) { %>
+            <% for (int i=0; i<listScores.size(); i++) { int j=i+1; %>
                 <tr>
+                    <td class="rank"><%=j%></td>
                     <td class="namePremium"><%=listScores.get(i).getName()%> <% if (i == 0) { %><img src="./img/2355897.svg" class="icon-first" /><% } %></td><td class="valuePremium">R$ <%=listScores.get(i).getPremium()%>0</td>
                 </tr>
             <% } %>

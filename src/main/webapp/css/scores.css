@@ -68,3 +68,8 @@ tr:nth-child(odd) {
     height: 24px;
     padding-left: 3px;
 }
+
+.rank {
+    width: 20px;
+    font-weight: bold;
+}
