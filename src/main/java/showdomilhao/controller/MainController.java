@@ -49,7 +49,7 @@ public class MainController {
     public ModelAndView namePage() {
         ModelAndView mv = new ModelAndView();
         this.questions = questionService.list();
-        this.user = new Participant(null, null);
+        this.user = new Participant();
         this.answer = new Answer(0);
         this.guests = new Guests();
         this.plaques = new Plaques();
