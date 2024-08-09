@@ -5,8 +5,15 @@ import java.util.List;
 import java.util.Random;
 
 public class Plaques extends Help {
+
     private Boolean available = true;
+
     List<Integer> list = new ArrayList<Integer>();
+
+    private int generatePercentage(int max, int min) {
+        Random generator = new Random();
+        return generator.nextInt((max - min) + 1) + min;
+    }
 
     public Boolean getAvailable() {
         return available;
@@ -20,38 +27,27 @@ public class Plaques extends Help {
         this.available = available;
     }
 
-    public void setList(List<Integer> plaques) {
-        this.list = plaques;
-    }
-
-    public List<Integer> listPlaques(List<Integer> plaques, int num) {
-        plaques.add(num);
-        return plaques;
-    }
-
     public void printHelp() {
-        List<Integer> plaques = new ArrayList<Integer>();
-        int sum = 100;
-        int percentage = generatePercentage(sum,50);
-        plaques = listPlaques(plaques, percentage);
-        sum = 100-percentage;
-        int result = percentage;
-        percentage = generatePercentage(sum,0);
-        result += percentage;
-        sum = 100-result;
-        plaques = listPlaques(plaques, percentage);
-        percentage = generatePercentage(sum,0);
-        result += percentage;
-        sum = 100-result;
-        plaques = listPlaques(plaques, percentage);
-        plaques = listPlaques(plaques, sum);
-        this.setList(plaques);
+        int sum = 0;
+
+        for (int i = 0; i < 4; i++) {
+            sum += generateRandomValue(sum, i);
+        }
+
     }
 
-    private int generatePercentage(int max, int min) {
-        Random generator = new Random();
-        int numDado = generator.nextInt(max-min) + min;
+    public int generateRandomValue(int sum, int index) {
+        int value = 0;
 
-        return numDado;
+        if (index != 3) {
+            value = generatePercentage((100 - sum), 0);
+            list.add(value);
+        }else{
+            value = 100 - sum;
+            list.add(value);
+        }
+
+        return value;
     }
+
 }
