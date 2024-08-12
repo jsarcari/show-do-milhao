@@ -1980,7 +1980,7 @@
   ]
 },{
   "id": 180,
-  "question": "O que foi contruído por Noé?",
+  "question": "O que foi construído por Noé?",
   "correct_answer": "Uma arca",
   "difficulty": "easy",
   "category": "História e política",
@@ -3905,7 +3905,7 @@
   ]
 },{
   "id": 356,
-  "question": "O navio Titanic foi contruído por qual país?",
+  "question": "O navio Titanic foi construído por qual país?",
   "correct_answer": "Inglaterra",
   "difficulty": "hard",
   "category": "História e política",
@@ -4048,7 +4048,7 @@
   ]
 },{
   "id": 369,
-  "question": "Qual é o nome da estrutura contruída à beira mar para orientar embarcações?",
+  "question": "Qual é o nome da estrutura construída à beira mar para orientar embarcações?",
   "correct_answer": "Farol",
   "difficulty": "easy",
   "category": "Conhecimentos gerais",
@@ -4466,7 +4466,7 @@
   ]
 },{
   "id": 406,
-  "question": "Quem era o rei da Babilônia quando os jardins suspensos foram contruídos?",
+  "question": "Quem era o rei da Babilônia quando os jardins suspensos foram construídos?",
   "correct_answer": "Nabucodonosor",
   "difficulty": "medium",
   "category": "História e política",
@@ -5024,5 +5024,632 @@
     "Código de Envio Postal",
     "Código do Estatuto Público",
     "Código de Estratégia Postal"
+  ]
+},{
+  "id": 457,
+  "question": "No desenho 'Os Simpsons', onde Homer trabalha?",
+  "correct_answer": "Usina nuclear",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Loja de roupas",
+    "Bar",
+    "Restaurante"
+  ]
+},{
+  "id": 458,
+  "question": "Qual é o primeiro nome do famoso revolucionário Che Guevara?",
+  "correct_answer": "Ernesto",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Elvis",
+    "Hélio",
+    "Hermano"
+  ]
+},{
+  "id": 459,
+  "question": "Que estúdio produziu a série Luke Cage?",
+  "correct_answer": "Marvel",
+  "difficulty": "medium",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Warner Bros.",
+    "Paramount",
+    "PROJAC"
+  ]
+},{
+  "id": 460,
+  "question": "João Calvino foi considerado o pai do:",
+  "correct_answer": "Calvinismo",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Cristianismo",
+    "Catolicismo",
+    "Protestantismo"
+  ]
+},{
+  "id": 461,
+  "question": "Qual dessas palavras não é sinônimo de 'representante'?",
+  "correct_answer": "Dispensável",
+  "difficulty": "easy",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Representador",
+    "Representativo",
+    "Delegado"
+  ]
+},{
+  "id": 462,
+  "question": "Qual a cidade mais popuiosa do estado do Rio de Janeiro?",
+  "correct_answer": "Rio de Janeiro",
+  "difficulty": "easy",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Niterói",
+    "Nova Iguaçu",
+    "Petrópolis"
+  ]
+},{
+  "id": 463,
+  "question": "Qual a língua oficial do Egito?",
+  "correct_answer": "Árabe",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Africâner",
+    "Inglês",
+    "Tagalô"
+  ]
+},{
+  "id": 464,
+  "question": "O salto é uma modalidade de qual desses esportes?",
+  "correct_answer": "Hipismo",
+  "difficulty": "easy",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Tênis",
+    "Futebol",
+    "Golfe"
+  ]
+},{
+  "id": 465,
+  "question": "Como é chamado o tipo de força que atua na direção vertical sob a atração da gravitação da Terra?",
+  "correct_answer": "Força peso",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Força tática",
+    "Força leve",
+    "Força média"
+  ]
+},{
+  "id": 466,
+  "question": "Em que continente está a Etiópia?",
+  "correct_answer": "África",
+  "difficulty": "easy",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Europa",
+    "Ásia",
+    "Oceania"
+  ]
+},{
+  "id": 467,
+  "question": "Qual raiz comestível é de cor alaranjada?",
+  "correct_answer": "Cenoura",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Mandioca",
+    "Batata",
+    "Beterraba"
+  ]
+},{
+  "id": 468,
+  "question": "Quanto é o dobro de 60?",
+  "correct_answer": "120",
+  "difficulty": "easy",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "140",
+    "150",
+    "160"
+  ]
+},{
+  "id": 469,
+  "question": "Leões, onças e leopardos são considerados animais:",
+  "correct_answer": "Carnívoros",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Consumidores",
+    "Herbívoros",
+    "Produtores"
+  ]
+},{
+  "id": 470,
+  "question": "O atacante Robinho recebeu qual apelido após conquistar o Campeonato Brasileiro pelo Santos, em 2002?",
+  "correct_answer": "Rei da pedalada",
+  "difficulty": "easy",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Rei das cabeçadas",
+    "Rei das divididas",
+    "Rei da petecada"
+  ]
+},{
+  "id": 471,
+  "question": "Quem foi o autor do livro As Minas de Prata?",
+  "correct_answer": "José de Alencar",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Chico Anysio",
+    "Machado de Assis",
+    "Graciliano Ramos"
+  ]
+},{
+  "id": 472,
+  "question": "Quem foi o autor do poema do simbolismo chamado A Catedral?",
+  "correct_answer": "Alphonsus de Guimaraens",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Guimarães Rosa",
+    "Edgar Scandurra",
+    "Victor Hugo"
+  ]
+},{
+  "id": 473,
+  "question": "Picasso nasceu em qual cidade da Espanha?",
+  "correct_answer": "Málaga",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Barcelona",
+    "Sevilha",
+    "Madrid"
+  ]
+},{
+  "id": 474,
+  "question": "Quem dizia 'Ábre-te, Sésamo' quando queria entrar na Caverna do Tesouro?",
+  "correct_answer": "Ali Babá",
+  "difficulty": "medium",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Robin Hood",
+    "Capitão Gancho",
+    "Aladim"
+  ]
+},{
+  "id": 475,
+  "question": "Que luta japonesa é disputada por homens geralmente muito pesados, que jogam o adversário para fora do ringue?",
+  "correct_answer": "Sumô",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Judô",
+    "Karatê",
+    "Kung Fu"
+  ]
+},{
+  "id": 476,
+  "question": "Qual tipo de governo vigorava no Brasil em 1824, quando a nossa primeira constituição foi criada?",
+  "correct_answer": "Monarquia",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Presidencialismo",
+    "Socialismo",
+    "República"
+  ]
+},{
+  "id": 477,
+  "question": "A placa de trânsito 'Pare' vermelha é representada por qual figura geométrica?",
+  "correct_answer": "Octógono",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Pentágono",
+    "Losango",
+    "Hexágono"
+  ]
+},{
+  "id": 478,
+  "question": "São Floriano é conhecido por ser o padroeiro de qual dessas profissões?",
+  "correct_answer": "Bombeiros",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Marceneiros",
+    "Arquitetos",
+    "Professores"
+  ]
+},{
+  "id": 479,
+  "question": "Qual é o clima predominante no Sertão Nordestino?",
+  "correct_answer": "Semiárido",
+  "difficulty": "medium",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Árido",
+    "Tropical",
+    "Equatorial úmido"
+  ]
+},{
+  "id": 480,
+  "question": "Qual era o nome do brasileiro morto pela polícia no metrô de Londres, em 2005?",
+  "correct_answer": "Jean Charles",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "João Souza",
+    "Carlos Alvaredas",
+    "Pedro Cândido"
+  ]
+},{
+  "id": 481,
+  "question": "Quem tem uma onicopatia está com uma doença na:",
+  "correct_answer": "Unha",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Língua",
+    "Orelha",
+    "Traqueia"
+  ]
+},{
+  "id": 482,
+  "question": "Qual desses animais dorme de cabeça para baixo?",
+  "correct_answer": "Morcego",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Rato",
+    "Esquilo",
+    "Coruja"
+  ]
+},{
+  "id": 483,
+  "question": "Qual dessas tecnologias foi a última lançada em relação às transações bancárias?",
+  "correct_answer": "Pix",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "TED",
+    "DOC",
+    "Cheque"
+  ]
+},{
+  "id": 484,
+  "question": "Que super-herói, conhecido como Deus do Trovão, usa um martelo para se defender dos inimigos?",
+  "correct_answer": "Thor",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Homem de Ferro",
+    "Fantasma",
+    "Capitão América"
+  ]
+},{
+  "id": 485,
+  "question": "Como é chamada a pessoa que enxerga mal de longe?",
+  "correct_answer": "Míope",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Estrábica",
+    "Vesga",
+    "Cega"
+  ]
+},{
+  "id": 486,
+  "question": "Qual cantor era considerado o príncipe da Jovem Guarda?",
+  "correct_answer": "Ronnie Von",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Erasmo Carlos",
+    "Jerry Adriani",
+    "Roberto Carlos"
+  ]
+},{
+  "id": 487,
+  "question": "Que piloto inglês igualou o recorde de Michael Schumacher, vencendo sete campeonatos na Formula 1?",
+  "correct_answer": "Lewis Hamilton",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Kimi Raikkonen",
+    "Sebastian Vettel",
+    "Fernando Alonso"
+  ]
+},{
+  "id": 488,
+  "question": "Onde trabalha o moleiro?",
+  "correct_answer": "Moinho",
+  "difficulty": "medium",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Padaria",
+    "Shopping",
+    "Banco"
+  ]
+},{
+  "id": 489,
+  "question": "Onde trabalham os personagens da série Grey's Anatomy?",
+  "correct_answer": "Hospital",
+  "difficulty": "medium",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Delegacia",
+    "Laboratório de ciências",
+    "Penitenciária"
+  ]
+},{
+  "id": 490,
+  "question": "Qual filósofo grego foi o primeiro cientista que se interessou em estudar o fenômeno da eletrecidade?",
+  "correct_answer": "Tales de Mileto",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Sócrates",
+    "Aristóteles",
+    "Demócrito"
+  ]
+},{
+  "id": 491,
+  "question": "Qual dessas usinas do Brasil é de energia nuclear?",
+  "correct_answer": "Angra 1",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Igarapava",
+    "Fundão",
+    "Furnas"
+  ]
+},{
+  "id": 492,
+  "question": "Tiger Woods é considerado o melhor jogador de todos os tempos de qual esporte?",
+  "correct_answer": "Golfe",
+  "difficulty": "medium",
+  "category": "Esportes",
+  "incorrect_answers": [
+    "Basquete",
+    "Tênis",
+    "Vôlei"
+  ]
+},{
+  "id": 493,
+  "question": "Que coroa prende o véu na cabeça de uma noiva, deixando-a parecida com uma rainha?",
+  "correct_answer": "Grinalda",
+  "difficulty": "medium",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Presilha",
+    "Fivela",
+    "Turbante"
+  ]
+},{
+  "id": 494,
+  "question": "Quais são as cores dos naipes do baralho?",
+  "correct_answer": "Vermelho e preto",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Vermelho e azul",
+    "Preto e branco",
+    "Vermelho e amarelo"
+  ]
+},{
+  "id": 495,
+  "question": "'Bom dia' em espanhol é:",
+  "correct_answer": "Buenos días",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Buono día",
+    "Bon día",
+    "Buena día"
+  ]
+},{
+  "id": 496,
+  "question": "Qual desses jogos de cartas pode ser jogado sozinho?",
+  "correct_answer": "Paciência",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Truco",
+    "Buraco",
+    "Tranca"
+  ]
+},{
+  "id": 497,
+  "question": "O Ph de uma solução milimolar de ácido clorídrico é:",
+  "correct_answer": "3",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "1",
+    "2",
+    "4"
+  ]
+},{
+  "id": 498,
+  "question": "Quantos cafés da manhã eu tomo em duas semanas?",
+  "correct_answer": "14",
+  "difficulty": "easy",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "7",
+    "28",
+    "1"
+  ]
+},{
+  "id": 499,
+  "question": "Animais diblásticos, com representantes pólipos e medusas, apresentam células típicas conhecidas como:",
+  "correct_answer": "Cnidoblastos",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Anfiblástulas",
+    "Pseudocelomas",
+    "Nêurulas"
+  ]
+},{
+  "id": 500,
+  "question": "Formação vegetal localizada entre a Floresta Amazônica, a Caatinga e o Cerrado:",
+  "correct_answer": "Mata dos Cocais",
+  "difficulty": "hard",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Mata dos Pinhais",
+    "Mata Atlântica",
+    "Mata dos Banhais"
+  ]
+},{
+  "id": 501,
+  "question": "Em que alavanca o fulcro fica entre a carga e o esforço?",
+  "correct_answer": "Interfixa",
+  "difficulty": "hard",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Interpotente",
+    "Inter-resistente",
+    "Central"
+  ]
+},{
+  "id": 502,
+  "question": "Que polígono tem todos os lados iguais?",
+  "correct_answer": "Equilátero",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "Equiângulo",
+    "Equinócio",
+    "Equidistante"
+  ]
+},{
+  "id": 503,
+  "question": "Aquilo que serve de estímulo ao pensamento e a criação de uma obra é chamada de:",
+  "correct_answer": "Inspiração",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Introspecção",
+    "Expiração",
+    "Expedição"
+  ]
+},{
+  "id": 504,
+  "question": "Quem foi o último imperador romano que ao ser deposto marcou o fim da antiguidade?",
+  "correct_answer": "Rômulo Augústulo",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Túlio Cícero",
+    "Marco Antônio",
+    "Júlio César"
+  ]
+},{
+  "id": 505,
+  "question": "Como eram chamados os jovens cabeludos e rebeldes que pregavam 'paz e amor' nas décadas de 1960 e 1970?",
+  "correct_answer": "Hippies",
+  "difficulty": "easy",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Punks",
+    "Metaleiros",
+    "Clubbers"
+  ]
+},{
+  "id": 506,
+  "question": "As hienas são conhecidas por emitirem um som parecido com o quê?",
+  "correct_answer": "Gargalhada",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Choro",
+    "Uivo",
+    "Grito"
+  ]
+},{
+  "id": 507,
+  "question": "Que personagem ficou conhecido como o palhaço mais famoso da televisão nos anos 80?",
+  "correct_answer": "Bozo",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Chiquinho",
+    "Paçoca",
+    "Geleia"
+  ]
+},{
+  "id": 508,
+  "question": "Qual é a primeira pessoa do plural do pronome pessoal do caso reto?",
+  "correct_answer": "Nós",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Vós",
+    "Eles",
+    "Tu"
+  ]
+},{
+  "id": 509,
+  "question": "A sidra é uma bebida alcoólica feita com o suco fermentado de qual fruta?",
+  "correct_answer": "Maçã",
+  "difficulty": "medium",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Uva",
+    "Cereja",
+    "Abacaxi"
+  ]
+},{
+  "id": 510,
+  "question": "Qual aparelho mede a quantidade de chuva que cai em uma região?",
+  "correct_answer": "Pluviômetro",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Anemômetro",
+    "Voltímetro",
+    "Manômetro"
+  ]
+},{
+  "id": 511,
+  "question": "Qual dessas plantas pode causar ardência e coceira na pele ao ter contato direto com ela?",
+  "correct_answer": "Urtiga",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Espada-de-São-Jorge",
+    "Cacto",
+    "Boldo"
+  ]
+},{
+  "id": 512,
+  "question": "O que Leonardo da Vinci, Napoleão Bonaparte, Isaac Newton e Beethoven tinham em comum?",
+  "correct_answer": "Eram canhotos",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Eram geminianos",
+    "Eram gagos",
+    "Eram maçons"
+  ]
+},{
+  "id": 513,
+  "question": "Quantas teclas tem um piano?",
+  "correct_answer": "88",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "86",
+    "87",
+    "90"
   ]
 }]

@@ -120,7 +120,7 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Answer" import="
                 <span class="close-menu">x</span>
                 <div class="guests">
                     <img class="icon-help" id="select-guests" src="./img/2639885_people_icon.svg">
-                    <p id="legend-guests">Convidados</p>
+                    <p id="legend-guests">Universitários</p>
                 </div>
                 <div class="plaques">
                     <img class="icon-help" id="select-plaques" src="./img/PLACA-SINALIZE-DE-SINALIZACAO-NUMERAL-0-A-9-25X5CM.jpg">
@@ -438,8 +438,7 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Answer" import="
                 modalIncorrect.style.display = "block";
                 var options = document.querySelectorAll(".question-li");
                 document.getElementById("time-out").play();
-                var option = options['<%=iCorrect%>'];
-                option.style.backgroundColor = "#01b051";
+                greenOnCorrectAnswer('<%=correct%>');
                 if ('<%=valuePremium%>' === '1000000') {
                     document.formWrongOrStop.premium.value = "0";
                     document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";

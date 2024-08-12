@@ -116,6 +116,14 @@ function disableButton(help) {
 function showModalIncorrect(correctAnswer, premium) {
     var modalIncorrect = document.getElementById("incorrectAnswer");
     modalIncorrect.style.display = "block";
+    greenOnCorrectAnswer(correctAnswer);
+    if (premium === '1000000') {
+        document.formWrongOrStop.premium.value = "0";
+        document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";
+    }
+}
+
+function greenOnCorrectAnswer(correctAnswer) {
     var options = document.querySelectorAll(".question-li");
     for (var i = 0; i < 4; i++) {
         var option = options[i];
@@ -124,9 +132,5 @@ function showModalIncorrect(correctAnswer, premium) {
             option.style.backgroundColor = "#01b051";
             break;
         }
-    }
-    if (premium === '1000000') {
-        document.formWrongOrStop.premium.value = "0";
-        document.getElementById("premiumWrongOrStop").textContent = "Você perdeu tudo.";
     }
 }
