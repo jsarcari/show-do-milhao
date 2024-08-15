@@ -48,7 +48,7 @@ import="showdomilhao.model.Question" import="showdomilhao.model.Answer" import="
     List<Integer> listPlaques = new ArrayList<Integer>();
     Boolean canPlaques = plaques.getAvailable();
     if (canPlaques==true) {
-        plaques.printHelp();
+        plaques.generateRandomValue(0, 0);
         listPlaques = plaques.getList();
     }
     if (listPlaques.size()==0) {
