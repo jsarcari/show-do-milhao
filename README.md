@@ -26,14 +26,19 @@ O jogo tem as seguintes funcionalidades:
 Execute os seguintes comandos para configurar o banco de dados utilizado no jogo criando um cluster fragmentado utilizando Docker:
 
 Criar uma rede no Docker onde apenas os componentes do Cluster vão acessar e executar:
+
 `docker network create ShowDoMilhao`
 
 Criar os containers com as imagens Mongo para os servidores de configuração, no qual será um conjunto de réplicas de três nós rodando na porta 27018:
+
 `docker run --name mongo-config1 --net ShowDoMilhao -d mongo mongod --configsvr --replSet serverConfig --port 27018`
+
 `docker run --name mongo-config2 --net ShowDoMilhao -d mongo mongod --configsvr --replSet serverConfig --port 27018`
+
 `docker run --name mongo-config3 --net ShowDoMilhao -d mongo mongod --configsvr --replSet serverConfig --port 27018`
 
 Acessar o bash do container do nó primário para acessar o servidor:
+
 `docker exec -it mongo-config1 mongosh --port 27018`
 
 Como esse servidor será um conjunto de réplicas, precisamos iniciá-lo:
@@ -51,16 +56,23 @@ rs.initiate({
 ```
 
 Agora vamos criar os fragmentos, servidores que vão armazenar os dados. Criaremos 2 fragmentos, cada um terá 3 nós:
+
 `docker run --name mongo-shard1a --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard1 --port 27019`
+
 `docker run --name mongo-shard1b --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard1 --port 27019`
+
 `docker run --name mongo-shard1c --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard1 --port 27019`
+
 `docker run --name mongo-shard2a --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard2 --port 27020`
+
 `docker run --name mongo-shard2b --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard2 --port 27020`
+
 `docker run --name mongo-shard2c --net ShowDoMilhao -d mongo mongod --shardsvr --replSet shard2 --port 27020`
 
 Agora precisamos inicializar o conjunto de réplicas dos fragmentos:
 
 Para o fragmento 1:
+
 `docker exec -it mongo-shard1a mongosh --port 27019`
 
 ```
@@ -75,6 +87,7 @@ rs.initiate({
 ```
 
 Para o fragmento 2:
+
 `docker exec -it mongo-shard2a mongosh --port 27020`
 
 ```
@@ -89,12 +102,15 @@ rs.initiate({
 ```
 
 Agora vamos criar o roteador (mongos) que vai se conectar com os shards e os servidores de configuração na porta 27021:
+
 `docker run -p 27021:27021 --name mongo-router --net ShowDoMilhao -d mongo mongos --port 27021 --configdb serverConfig/mongo-config1:27018,mongo-config2:27018,mongo-config3:27018 --bind_ip_all`
 
 Agora vamos adicionar as shard (fragmentos) ao servidor de roteamento:
+
 `docker exec -it mongo-router mongosh --port 27021`
 
 `sh.addShard("shard1/mongo-shard1a:27019","shard1/mongo-shard1b:27019","shard1/mongo-shard1c:27019")`
+
 `sh.addShard("shard2/mongo-shard2a:27020","shard2/mongo-shard2b:27020","shard2/mongo-shard2c:27020")`
 
 Após realizar todo o processo acima para criar o cluster fragmentado, recomendo usar as ferramentas Mongodb Compass e NoSQL Booster conectando no cluster fragmento através da porta 27021.
@@ -193,6 +209,7 @@ db.createCollection("scores",
 Após criar o usuário, o banco de dados e as coleções, vamos fragmentar as coleções criadas. No bash do container do roteador, ou seja, o mongos que está executando na porta 27021, execute os seguintes comandos:
 
 `sh.shardCollection("Show_do_Milhao.questions",{_id:1})`
+
 `sh.shardCollection("Show_do_Milhao.scores",{_id:1})`
 
 Agora, no MongoDB Compass, importe na coleção *questions* o arquivo *questions.json* localizado no diretório raiz deste projeto para adicionar todas as questões no banco de dados.
