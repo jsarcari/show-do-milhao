@@ -213,3 +213,8 @@ Após criar o usuário, o banco de dados e as coleções, vamos fragmentar as co
 `sh.shardCollection("Show_do_Milhao.scores",{_id:1})`
 
 Agora, no MongoDB Compass, importe na coleção *questions* o arquivo *questions.json* localizado no diretório raiz deste projeto para adicionar todas as questões no banco de dados.
+
+## Executando o jogo
+
+Para executar o jogo, execute a função *main* da classe *ShowdomilhaoApplication* localizada na raiz do pacote *showdomilhao*.
+Por padrão, o Tomcat executa uma aplicação web na porta 8080, portanto acesse no seu navegador localhost:8080
