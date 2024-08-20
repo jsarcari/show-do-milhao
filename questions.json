@@ -6433,4 +6433,169 @@
     "Igreja de Notre Dame",
     "Arco do Triunfo"
   ]
+},{
+  "id": 585,
+  "question": "Como se chamava a mãe de D. João, rainha de Portugal?",
+  "correct_answer": "D. Maria I",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "D. Marieta",
+    "D. Leopoldina",
+    "D. Isabel"
+  ]
+},{
+  "id": 586,
+  "question": "A que país deve-se viajar para ir a Palo Alto?",
+  "correct_answer": "Estados Unidos",
+  "difficulty": "hard",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Argentina",
+    "México",
+    "Espanha"
+  ]
+},{
+  "id": 587,
+  "question": "Qual era o nome completo de Grace Kelly?",
+  "correct_answer": "Grace Patrice Kelly",
+  "difficulty": "hard",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Grace Maria Kelly",
+    "Ann Grace Kelly",
+    "Grace Sue Kelly"
+  ]
+},{
+  "id": 588,
+  "question": "Motocicleta é uma palavra:",
+  "correct_answer": "Polissílaba",
+  "difficulty": "easy",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Monossílaba",
+    "Trissilaba",
+    "Dissílaba"
+  ]
+},{
+  "id": 589,
+  "question": "A ciência que estuda o clima e o tempo é...",
+  "correct_answer": "Meteorologia",
+  "difficulty": "easy",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Biologia",
+    "Geometria",
+    "Tempologia"
+  ]
+},{
+  "id": 590,
+  "question": "Quem assumiu a presidência do Brasil após o impeachment de Dilma Rousseff?",
+  "correct_answer": "Michel Temer",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Jair Bolsonaro",
+    "Lula",
+    "Fernando Haddad"
+  ]
+},{
+  "id": 591,
+  "question": "Quem assumiu a presidência do Brasil após o impeachment de Collor?",
+  "correct_answer": "Itamar Franco",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "José Sarney",
+    "Fernando Henrique",
+    "Lula"
+  ]
+},{
+  "id": 592,
+  "question": "Qual a frase dita por D. Pedro I às margens do Ipiranga?",
+  "correct_answer": "Independência ou morte",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Diga ao povo que fico",
+    "Ou vai, ou racha",
+    "Ordem e progresso"
+  ]
+},{
+  "id": 593,
+  "question": "Qual é o único mamífero voador?",
+  "correct_answer": "Morcego",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Águia",
+    "Coruja",
+    "Urubu"
+  ]
+},{
+  "id": 594,
+  "question": "Onde se colocam os votos da eleição?",
+  "correct_answer": "Urna",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Caixa",
+    "Sacola",
+    "Cesto"
+  ]
+},{
+  "id": 595,
+  "question": "Que cidade da Itália fica no meio da água?",
+  "correct_answer": "Veneza",
+  "difficulty": "easy",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Milão",
+    "Florença",
+    "Pádua"
+  ]
+},{
+  "id": 596,
+  "question": "A quem se atribui a autoria do Toráh?",
+  "correct_answer": "Moisés",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Abraão",
+    "Salomão",
+    "Davi"
+  ]
+},{
+  "id": 597,
+  "question": "Os órgãos reprodutores das plantas encontram-se:",
+  "correct_answer": "Na flor",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "No caule",
+    "Na raiz",
+    "Nas folhas"
+  ]
+},{
+  "id": 598,
+  "question": "De que nacionalidade era o físico e matemático Galileu?",
+  "correct_answer": "Italiano",
+  "difficulty": "hard",
+  "category": "Conhecimentos gerais",
+  "incorrect_answers": [
+    "Espanhol",
+    "Francês",
+    "Holandês"
+  ]
+},{
+  "id": 599,
+  "question": "Quem foi o autor do primeiro código civil brasileiro?",
+  "correct_answer": "Clóvis Beviláqua",
+  "difficulty": "hard",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Osvaldo Aranha",
+    "Epitácio Pessoa",
+    "Washington Luis"
+  ]
 }]
