@@ -26,11 +26,7 @@ public class ScoresService {
 
         repository.findAll(Sort.by(Sort.Direction.DESC, "premium")).forEach(item -> scores.add(new Scores(item.getName(), item.getPremium())));
 
-        int i=0;
-        while (i<10 && i<scores.size()) {
-            topTen.add(new Scores(scores.get(i).getName(), scores.get(i).getPremium()));
-            i++;
-        }
+        scores.stream().limit(10).forEach(s -> topTen.add(new Scores(s.getName(), s.getPremium())));
 
         return topTen;
     }
