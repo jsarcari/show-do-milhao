@@ -1,80 +1,93 @@
 version: "3.9"
+
 services:
-  # Config servers:
+  # Config servers
   mongo-config1:
     image: mongo:latest
     container_name: mongo-config1
     command: mongod --port 27018 --configsvr --replSet serverConfig
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-config2:
     image: mongo:latest
     container_name: mongo-config2
     command: mongod --port 27018 --configsvr --replSet serverConfig
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-config3:
     image: mongo:latest
     container_name: mongo-config3
     command: mongod --port 27018 --configsvr --replSet serverConfig
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
-  #Shards:
+
+  # Shards
   mongo-shard1a:
     image: mongo:latest
     container_name: mongo-shard1a
     command: mongod --port 27019 --shardsvr --replSet shard1
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-shard1b:
     image: mongo:latest
     container_name: mongo-shard1b
     command: mongod --port 27019 --shardsvr --replSet shard1
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-shard1c:
     image: mongo:latest
     container_name: mongo-shard1c
     command: mongod --port 27019 --shardsvr --replSet shard1
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-shard2a:
     image: mongo:latest
     container_name: mongo-shard2a
     command: mongod --port 27020 --shardsvr --replSet shard2
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-shard2b:
     image: mongo:latest
     container_name: mongo-shard2b
     command: mongod --port 27020 --shardsvr --replSet shard2
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
   mongo-shard2c:
     image: mongo:latest
     container_name: mongo-shard2c
     command: mongod --port 27020 --shardsvr --replSet shard2
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
-  # Server router:
+
+  # Server router
   mongo-router:
     image: mongo:latest
     container_name: mongo-router
     command: mongos --port 27021 --configdb serverConfig/mongo-config1:27018,mongo-config2:27018,mongo-config3:27018 --bind_ip_all
     ports:
       - 27021:27021
-    networks:
-      - ShowDoMilhao
+    networks: [ShowDoMilhao]
     restart: always
+
+  # SERVIÇO DE AUTOMAÇÃO
+  mongo-init-cluster:
+    image: mongo:latest
+    container_name: mongo-init-cluster
+    networks: [ShowDoMilhao]
+    volumes:
+      - ./init-mongo.sh:/init-mongo.sh
+      - ./questions.json:/questions.json
+    depends_on:
+      - mongo-router
+    entrypoint: ["/bin/bash", "/init-mongo.sh"]
+
 networks:
   ShowDoMilhao:
     driver: bridge

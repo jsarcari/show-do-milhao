@@ -4653,7 +4653,7 @@
   ]
 },{
   "id": 440,
-  "question": "Em qual estado do Brasil está localizado o estado de Goiás?",
+  "question": "Em qual região do Brasil está localizado o estado de Goiás?",
   "correct_answer": "Centro-Oeste",
   "difficulty": "easy",
   "category": "Geografia",
@@ -7059,5 +7059,38 @@
     "Pimentinha",
     "Pitica",
     "Sininho"
+  ]
+},{
+  "id": 642,
+  "question": "Apesar do nome, o Mar Morto não é um mar e sim um grande:",
+  "correct_answer": "Lago",
+  "difficulty": "hard",
+  "category": "Geografia",
+  "incorrect_answers": [
+    "Estuário",
+    "Golfo",
+    "Istmo"
+  ]
+},{
+  "id": 643,
+  "question": "Se uma circunferência possui um diâmetro de 10 cm, qual é o seu raio?",
+  "correct_answer": "5 cm",
+  "difficulty": "medium",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "1 cm",
+    "20 cm",
+    "0,5 cm"
+  ]
+},{
+  "id": 644,
+  "question": "Na língua portuguesa, a letra 'N' só pode vir antes de uma consoante desde que ela não seja:",
+  "correct_answer": "Nem 'B', nem 'P'",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Nem 'S', nem 'X'",
+    "Nem 'V', nem 'Z'",
+    "Nem 'H', nem 'Q'"
   ]
 }]
