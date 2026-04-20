@@ -7093,4 +7093,92 @@
     "Nem 'V', nem 'Z'",
     "Nem 'H', nem 'Q'"
   ]
+},{
+  "id": 645,
+  "question": "O personagem Harry Potter tem dois melhores amigos. Como eles se chamam?",
+  "correct_answer": "Hermione e Rony",
+  "difficulty": "easy",
+  "category": "Filmes, desenhos e televisão",
+  "incorrect_answers": [
+    "Severus e Luna",
+    "Dobby e Bellatrix",
+    "Minerva e Alastor"
+  ]
+},{
+  "id": 646,
+  "question": "O plural da palavra 'corrimão' pode ser de duas formas. Quais são?",
+  "correct_answer": "Corrimões e corrimãos",
+  "difficulty": "medium",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Corrimãos e corrimães",
+    "Corrimães e corrimões",
+    "Corrimãs e corrimones"
+  ]
+},{
+  "id": 647,
+  "question": "Além do homem e do macaco, qual desses animais também é um primata?",
+  "correct_answer": "Lêmure",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Ornitorrinco",
+    "Casuar",
+    "Impala"
+  ]
+},{
+  "id": 648,
+  "question": "O conjunto de 12 dúzias corresponde a uma:",
+  "correct_answer": "Grosa",
+  "difficulty": "hard",
+  "category": "Matemática",
+  "incorrect_answers": [
+    "Resma",
+    "Arroba",
+    "Milha"
+  ]
+},{
+  "id": 649,
+  "question": "Que foi o principal articulador da independência do Brasil?",
+  "correct_answer": "José Bonifácio",
+  "difficulty": "medium",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Marechal Deodoro",
+    "Princesa Isabel",
+    "Tiradentes"
+  ]
+},{
+  "id": 650,
+  "question": "Eleita uma das 7 maravilhas do mundo moderno, a cidade de Machu Picchu, no Peru, foi construída pelos:",
+  "correct_answer": "Incas",
+  "difficulty": "easy",
+  "category": "História e política",
+  "incorrect_answers": [
+    "Maias",
+    "Astecas",
+    "Mapuches"
+  ]
+},{
+  "id": 651,
+  "question": "Quem escreveu o livro 'Memórias Póstumas de Brás Cubas'?",
+  "correct_answer": "Machado de Assis",
+  "difficulty": "hard",
+  "category": "Português e literatura",
+  "incorrect_answers": [
+    "Jorge Amado",
+    "Guimarães Rosa",
+    "Euclides da Cunha"
+  ]
+},{
+  "id": 652,
+  "question": "Qual é a matéria-prima do aço?",
+  "correct_answer": "Ferro",
+  "difficulty": "medium",
+  "category": "Ciências",
+  "incorrect_answers": [
+    "Madeira",
+    "Ouro",
+    "Cobre"
+  ]
 }]
